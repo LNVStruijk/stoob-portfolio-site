@@ -1,14 +1,24 @@
-
-
-// NESTING* better in SCSS 
+// NESTING* better in SCSS
 // you can nest stuff here, unlike CSS
-.conatiner{
-    .name{
-        margin-top: 1em;
-        color: red;
-    }
-    .logo {
-        height: 1em;
-        margin-left: 0.5rem;
-    }
-}  
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+  margin-bottom: 1rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+
+  h1 {
+    text-align: center;
+    color: #000000;
+    font-weight: normal;
+    font-size: 1.2rem;
+  }
+
+  .imageContainer {
+		height: 3rem;
+  }
+}

@@ -8,6 +8,12 @@
   height: 100vh;
 }
 
+.shortcutGrid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
 .main {
   padding: 5rem 0;
   flex: 1;
