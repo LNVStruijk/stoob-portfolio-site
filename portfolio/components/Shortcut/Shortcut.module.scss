@@ -1,0 +1,14 @@
+
+
+// NESTING* better in SCSS 
+// you can nest stuff here, unlike CSS
+.conatiner{
+    .name{
+        margin-top: 1em;
+        color: red;
+    }
+    .logo {
+        height: 1em;
+        margin-left: 0.5rem;
+    }
+}  
