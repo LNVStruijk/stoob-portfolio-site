@@ -8,20 +8,30 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 6rem;
   
   margin-bottom: 1rem;
   margin-left: 0.5rem;
   margin-right: 0.5rem;
 
-  h1 {
-    text-align: center;
-    // color: #000000; 
-    // $ declares a 'variable' in SCSS 
-    font-weight: normal;
-    font-size: 1.2rem;
-  }
+  
 
   .imageContainer {
-		height: 3rem;
+		// height: 3rem;
+    width: 5rem;
+  }
+
+  .textContainer{
+    width: 100%;
+    // background-color: red;
+    h1 {
+      text-align: center;
+      // color: #000000; 
+      // $ declares a 'variable' in SCSS 
+      font-weight: normal;
+      font-size: 1.3rem; 
+        // 1rem = 16 px
+        // rem is scalable
+    }
   }
 }
