@@ -1,5 +1,7 @@
 // NESTING* better in SCSS
 // you can nest stuff here, unlike CSS
+@import "../../styles/fonts.scss";
+// @import for importing SCSS
 
 .container {
   display: flex;
@@ -13,7 +15,8 @@
 
   h1 {
     text-align: center;
-    color: #000000;
+    // color: #000000; 
+    // $ declares a 'variable' in SCSS 
     font-weight: normal;
     font-size: 1.2rem;
   }

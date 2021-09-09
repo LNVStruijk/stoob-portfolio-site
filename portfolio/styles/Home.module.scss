@@ -1,0 +1,26 @@
+
+// make class .container
+
+.container{
+    // margin(top, right, bottom, left)
+        // rem = scalable
+        // pixels =/= not scalable!
+    // 1 value for margin = assumes for every side
+    margin: 1rem;
+
+    .shortcutGrid{
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+.backgroundVideo{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -100;
+    background-color: gray;
+}
+
