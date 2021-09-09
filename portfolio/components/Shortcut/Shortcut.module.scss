@@ -18,16 +18,15 @@
 
   .imageContainer {
 		// height: 3rem;
-    width: 5rem;
+    // width: 5rem;
   }
 
   .textContainer{
     width: 100%;
     // background-color: red;
+
     h1 {
-      text-align: center;
-      // color: #000000; 
-      // $ declares a 'variable' in SCSS 
+      text-align: center; 
       font-weight: normal;
       font-size: 1.3rem; 
         // 1rem = 16 px
