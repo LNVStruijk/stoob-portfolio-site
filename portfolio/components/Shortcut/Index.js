@@ -1,5 +1,7 @@
 import Google from "../../assets/svg/Google";
 import styles from "./Shortcut.module.scss";
+import Image from "next/image";
+import SmilingDude from "../../public/images/SmilingDude.gif";
 
 const Shortcut = (props) => {
   // this is component so we want to make it constant
@@ -8,7 +10,8 @@ const Shortcut = (props) => {
     <div className={styles.container}>
       <div className={styles.imageContainer}>
         { props.image === "google" ? (
-          <Google height={'100%'}/>
+          // <Google height={'100%'}/>
+          <Image src={SmilingDude} alt={"dude"} width={50} height={50}/>
         ) : (
           null
         )}

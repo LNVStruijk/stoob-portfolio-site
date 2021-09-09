@@ -22,7 +22,7 @@ export default function Home() {
 
       <div className={styles.container}>
         <div className={styles.shortcutGrid}>
-          <Shortcut name={"Google"} image={"google"} />
+          <Shortcut name={"say \"hi\" "} image={"google"} />
           <Shortcut name={"Google"} image={"google"} />
           <Shortcut name={"Google"} image={"google"} />
         </div>
