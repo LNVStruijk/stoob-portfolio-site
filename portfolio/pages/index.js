@@ -7,31 +7,28 @@ import PageWindow from "../components/PageWindow"; //imports the PageWindow comp
 import React, { useState } from "react";
 
 export default function Home() {
-  // "export default function" sort of declares a "class" in .js
 
+  /**
+   * constant that updates itself automatically using SET method of itself
+   * useState() = checks for change in 'state' in website then updates the constant value automatically
+   * useState is where you put DEFAULT value
+   * https://reactjs.org/docs/hooks-state.html
+   */
   const [isGalleryVisible, setIsGalleryVisible] = useState(false);
-  const [isAboutMeVisible, setAboutMeVisible] = useState(false);
-  // 'useState' sets the DEFAULT VALUE
+  const [isAboutMeVisible, setIsAboutMeVisible] = useState(false);
 
-  // constant that updates itself automatically?
-  // useState() = checks for change in 'state' then updates wtf
-  // useState is where you put DEFAULT value
-
-  // const [x,y]
-
-  const cum = 420.0;
-  var cumTwice = 840.0;
-  // "const" if READ ONLY variable
-  // "var" if MUTATE variable
-
-  //  = () => MEANS IT'S A METHOd
-  const renderWindow = () => {
-    console.log("window shown");
-    //setIsGalleryVisible is BUILT IN FUNCTION for isGalleryVisible
+ /**
+  * this is the format for a method or function
+  */
+  const testMethod = () => {
+    console.log("method activated");
   };
 
   return (
-    // anything below here is rendered on page
+    /**
+    * anything here is rendered on the Home Page
+    * except for the <HEAD> tag which is for the page's metadata like tab title
+    */
     <>
       <Head>
         <title>Lucas Struijk</title>
@@ -39,46 +36,53 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      {/* GALLERY VIEW */}
+      
       <div className={styles.container}>
-        <PageWindow
-          view = {"Gallery"}
-          isVisible={isGalleryVisible}
-          closeWindow={() => 
-            {
-              setIsGalleryVisible(false);
-            }
-          }
-        />
 
-        <div className={styles.shortcutGrid}>
-          <div
-            onClick={() => {
-              setAboutMeVisible(true);
-            }}
-          >
-            <Shortcut name={'gallery view'} image={"image2"} />
+        <section id={"Page Windows"}>
+          {/* GALLERY VIEW */}
+          <PageWindow
+            view = {"Gallery"}
+            isVisible={isGalleryVisible}
+            closeWindow={() => setIsGalleryVisible(false)}
+          />
+
+          {/* ABOUT ME VIEW */}
+          <PageWindow
+            view = {"About Me"}
+            isVisible={isAboutMeVisible}
+            closeWindow={() => setIsAboutMeVisible(false)}
+          />
+        </section>
+        
+
+        <section id={"Shortcut Rows"}>
+          {/* SHORTCUT ROW 1 */}
+          <div className={styles.shortcutGrid}>
+            <div onClick={() => setIsGalleryVisible(true)}>
+              <Shortcut name={'gallery view'} image={"image2"} />
+            </div>
+
+            <div onClick={() => setIsAboutMeVisible(true)}>
+              <Shortcut name={'about me'} image={"image1"} />
+            </div>
+            
+            <Shortcut name={"graphic design"} image={"image1"} />
           </div>
 
-          <div
-            onClick={() => {
-              setAboutMeVisible(true);
-            }}
-          >
-            <Shortcut name={'about me'} image={"image1"} />
+          {/* SHORTCUT ROW 2 */}
+          <div className={styles.shortcutGrid}>
+            <Shortcut name={"typography"} image={"image1"} />
+            <Shortcut name={"posters"} image={"image1"} />
+            <Shortcut name={"paintings"} image={"image1"} />
           </div>
-          
-          <Shortcut name={"graphic design"} image={"image1"} />
-        </div>
 
-        <div className={styles.shortcutGrid}>
-          <Shortcut name={"typography"} image={"image1"} />
-          <Shortcut name={"posters"} image={"image1"} />
-          <Shortcut name={"paintings"} image={"image1"} />
-        </div>
-        <div className={styles.shortcutGrid}>
-          <Shortcut name={'say "hi" '} image={"image1"} />
-        </div>
+          {/* SHORTCUT ROW 3 */}
+          <div className={styles.shortcutGrid}>
+            <Shortcut name={'say "hi" '} image={"image1"} />
+          </div>
+        </section>
+        
       </div>
 
       <video autoPlay={true} muted loop className={styles.backgroundVideo}>
