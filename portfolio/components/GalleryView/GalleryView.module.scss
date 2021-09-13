@@ -1,1 +1,45 @@
 @import "../../styles/fonts.scss"; 
+
+.container{
+    background: linear-gradient(-35deg, #086F6F 0%, #71D8D8 100%);
+    border-top: 0.5rem solid #000064;
+    border-left: 0.5rem solid #000064;
+    border-right: 0.5rem solid #b9a2ec;
+    border-bottom: 0.5rem solid #b9a2ec;
+    height: 40rem;
+    padding: 1rem;
+    overflow-y: scroll;
+
+    // display: flex;
+    // flex-direction: row;
+
+    .images{
+        // object-fit: scale-down;
+        // width: auto;
+        // height: auto;
+        margin: 1rem;
+    }
+
+    .flexRow{
+        height: 30rem;
+        display: flex;
+        flex-direction: row;
+        //flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: space-around;
+    }
+
+    .stalker{
+        flex: 1.6;
+    }
+
+    .vertigo{
+        flex: 1;
+    }
+
+    .radiation{
+        flex: 1;
+    }
+
+
+}

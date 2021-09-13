@@ -2,7 +2,6 @@
 
 .container{
     
-
     z-index: 100;
     position: fixed;
     left: 0;
@@ -21,7 +20,7 @@
 
     width: 55rem;
 
-    margin: 15% auto;
+    margin: 5% auto;
     padding: 1rem;
 
     .header{
@@ -29,6 +28,8 @@
         flex-direction: row;
         justify-content: space-between;
         flex-wrap: nowrap;
+
+        margin-bottom: 00.8rem;
 
         h1{
             font-size: 1rem;
@@ -42,6 +43,10 @@
     border-left: 0.5rem solid #9D9DF5;
     border-right: 0.5rem solid #00002F;
     border-bottom: 0.5rem solid #00002F;
+
+    width: 70rem;
+
+
 }
 
 .aboutMeBackground {

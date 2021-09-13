@@ -7,6 +7,7 @@
         // pixels =/= not scalable!
     // 1 value for margin = assumes for every side
     margin: 1rem;
+    overflow: auto;
 
     .shortcutGrid{
         display: flex;
