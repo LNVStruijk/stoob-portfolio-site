@@ -10,6 +10,17 @@ const Shortcut = (props) => {
 
   const iconSize = 100;
 
+  // PLACE ALL "METHODS" BEFORE 'RETURN'
+  
+  // for defining a FUNCTION
+    // const NAME = () => {
+    //   do your mom heygottem
+    // }
+
+  // const openWindow = () => {
+  //   console.log("window opened")
+  // }
+
   return (
     <div className={styles.container}>
       <div className={styles.imageContainer}>
