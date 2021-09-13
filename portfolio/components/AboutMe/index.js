@@ -8,7 +8,6 @@ const AboutMe = (props) => {
   return (
     <>
       <h1>FIVENGIHTSATFREEYSDIEEEEEEEEEEEEEES</h1>
-      <p>{props.faggot}</p>
     </>
   );
 };

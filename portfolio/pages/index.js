@@ -60,6 +60,7 @@ export default function Home() {
             <Shortcut name={'gallery view'} image={"image2"} />
           </div>
 
+        {/* ABOUT ME PAGE */}
           <div
             onClick={() => {
               setAboutMeVisible(true);
