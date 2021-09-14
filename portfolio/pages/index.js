@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
+import ReactAudioPlayer from "react-audio-player";
 import styles from "../styles/Home.module.scss";
 import AboutMe from "../components/AboutMe"; //importing the whole AboutMe folder
 import Shortcut from "../components/Shortcut"; //imports the Shortcut component
@@ -7,7 +8,6 @@ import PageWindow from "../components/PageWindow"; //imports the PageWindow comp
 import React, { useState } from "react";
 
 export default function Home() {
-
   /**
    * constant that updates itself automatically using SET method of itself
    * useState() = checks for change in 'state' in website then updates the constant value automatically
@@ -16,19 +16,20 @@ export default function Home() {
    */
   const [isGalleryVisible, setIsGalleryVisible] = useState(false);
   const [isAboutMeVisible, setIsAboutMeVisible] = useState(false);
+  const [isContactMeVisible, setIsContactMeVisible] = useState(false);
 
- /**
-  * this is the format for a method or function
-  */
+  /**
+   * this is the format for a method or function
+   */
   const testMethod = () => {
     console.log("method activated");
   };
 
   return (
     /**
-    * anything here is rendered on the Home Page
-    * except for the <HEAD> tag which is for the page's metadata like tab title
-    */
+     * anything here is rendered on the Home Page
+     * except for the <HEAD> tag which is for the page's metadata like tab title
+     */
     <>
       <Head>
         <title>Lucas Struijk</title>
@@ -36,38 +37,42 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      
       <div className={styles.container}>
-
         <section id={"Page Windows"}>
           {/* GALLERY VIEW */}
           <PageWindow
-            view = {"Gallery"}
+            view={"Gallery"}
             isVisible={isGalleryVisible}
             closeWindow={() => setIsGalleryVisible(false)}
           />
 
           {/* ABOUT ME VIEW */}
           <PageWindow
-            view = {"About Me"}
+            view={"About Me"}
             isVisible={isAboutMeVisible}
             closeWindow={() => setIsAboutMeVisible(false)}
           />
+          {/* CONTACT ME VIEW */}
+          <PageWindow
+            view={"Contact Me"}
+            isVisible={isContactMeVisible}
+            closeWindow={() => setIsContactMeVisible(false)}
+          />
         </section>
-        
 
         <section id={"Shortcut Rows"}>
           {/* SHORTCUT ROW 1 */}
           <div className={styles.shortcutGrid}>
             <div onClick={() => setIsGalleryVisible(true)}>
-              <Shortcut name={'gallery view'} image={"image2"} />
+              <Shortcut name={"gallery view"} image={"image2"} />
             </div>
 
             <div onClick={() => setIsAboutMeVisible(true)}>
-              <Shortcut name={'about me'} image={"image1"} />
+              <Shortcut name={"about me"} image={"image1"} />
             </div>
-            
-            <Shortcut name={"graphic design"} image={"image1"} />
+            <div onClick={() => setIsContactMeVisible(true)}>
+              <Shortcut name={"contact me"} image={"image1"} />
+            </div>
           </div>
 
           {/* SHORTCUT ROW 2 */}
@@ -81,8 +86,11 @@ export default function Home() {
           <div className={styles.shortcutGrid}>
             <Shortcut name={'say "hi" '} image={"image1"} />
           </div>
+          {/* PLAYER ROW */}
+          <div className={styles.shortcutGrid}>
+            <ReactAudioPlayer src="my_audio_file.ogg" autoPlay controls />
+          </div>
         </section>
-        
       </div>
 
       <video autoPlay={true} muted loop className={styles.backgroundVideo}>

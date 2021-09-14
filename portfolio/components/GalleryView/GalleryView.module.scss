@@ -1,45 +1,85 @@
-@import "../../styles/fonts.scss"; 
+@import "../../styles/fonts.scss";
 
-.container{
-    background: linear-gradient(-35deg, #086F6F 0%, #71D8D8 100%);
-    border-top: 0.5rem solid #000064;
-    border-left: 0.5rem solid #000064;
-    border-right: 0.5rem solid #b9a2ec;
-    border-bottom: 0.5rem solid #b9a2ec;
-    height: 40rem;
-    padding: 1rem;
-    overflow-y: scroll;
+.container {
+  // background: linear-gradient(-35deg, #086f6f 0%, #71d8d8 100%);
+  //background:  linear-gradient(-35deg, #086f6f 0%, #71d8d8 100%);
+  border-top: 0.5rem solid #000064;
+  border-left: 0.5rem solid #000064;
+  border-right: 0.5rem solid #b9a2ec;
+  border-bottom: 0.5rem solid #b9a2ec;
 
-    // display: flex;
-    // flex-direction: row;
+  height: 45rem;
+  padding: 1rem;
+  overflow-y: scroll;
 
-    .images{
-        // object-fit: scale-down;
-        // width: auto;
-        // height: auto;
-        margin: 1rem;
-    }
+  background-image: url("../../public/backgrounds/gallery-background.png");
+  background-size: 80rem;
+  background-repeat: no-repeat;
+  // display: flex;
+  // flex-direction: row;
 
-    .flexRow{
-        height: 30rem;
-        display: flex;
-        flex-direction: row;
-        //flex-wrap: wrap;
-        align-items: flex-start;
-        justify-content: space-around;
-    }
+  .texture {
+    //background-image: url("../../public/images/dither-texture.png");
+    transform: scale(0.2);
+    opacity: 0.5;
+    z-index: 1;
+    position: absolute;
+  }
 
-    .stalker{
-        flex: 1.6;
-    }
+  .images {
+    // object-fit: scale-down;
+    // width: auto;
+    // height: auto;
+    margin: 1rem;
+    z-index: 2;
+  }
 
-    .vertigo{
-        flex: 1;
-    }
+  .flexRow {
+    height: 30rem;
+    display: flex;
+    flex-direction: row;
+    //flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-around;
+  }
 
-    .radiation{
-        flex: 1;
-    }
+  .stalker {
+    flex: 1.6;
+  }
 
+  .vertigo {
+    flex: 1;
+  }
 
+  .radiation {
+    flex: 1;
+  }
+
+  .williams {
+    flex: 1.5;
+  }
+
+  .shining {
+    flex: 0.8;
+  }
+
+  .burnVictim {
+    flex: 0.8;
+  }
+
+  .blood {
+    flex: 0.5;
+  }
+
+  .tortoise {
+    flex: 1;
+  }
+
+  .baby {
+    flex: 1;
+  }
+
+  .whiplash {
+    flex: 1;
+  }
 }
