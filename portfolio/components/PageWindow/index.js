@@ -2,6 +2,7 @@ import styles from "./PageWindow.module.scss";
 import GalleryView from "../GalleryView";
 import AboutMe from "../AboutMe";
 import ContactMe from "../ContactMe";
+import CloseButton from "../CloseButton";
 
 const pageWindow = (props) => {
   return (
@@ -42,7 +43,7 @@ const pageWindow = (props) => {
               </div>
 
               <div onClick={props.closeWindow}>
-                <p>CLOSE</p>
+                <CloseButton />
               </div>
             </div>
 

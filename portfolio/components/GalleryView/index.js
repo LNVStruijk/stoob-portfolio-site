@@ -2,16 +2,18 @@ import styles from "./GalleryView.module.scss";
 import Image from "next/image";
 import Link from "next/link";
 import DitherTexture from "../../public/images/dither-texture.png";
-import Stalker from "../../public/images/stalker.png";
-import Vertigo from "../../public/images/vertigo-poster.png";
-import Radiation from "../../public/images/radiation2.png";
-import Williams from "../../public/images/ash-williams.png";
-import Shining from "../../public/images/shining-poster.png";
-import BurnVictim from "../../public/images/burn-victim.png";
-import Blood from "../../public/images/blood-poster.png";
-import Tortoise from "../../public/images/tortoise.jpg";
-import Baby from "../../public/images/baby.png";
-import Whiplash from "../../public/images/whip-poster.png";
+import Stalker from "../../public/images/gallery-low-resolution/stalker-low.png";
+import Vertigo from "../../public/images/gallery-low-resolution/vertigo-poster-low.png";
+import Radiation from "../../public/images/gallery-low-resolution/radiation2-low.png";
+import Williams from "../../public/images/gallery-low-resolution/ash-williams-low.png";
+import Shining from "../../public/images/gallery-low-resolution/shining-poster-low.png";
+import BurnVictim from "../../public/images/gallery-low-resolution/burn-victim-low.png";
+import Blood from "../../public/images/gallery-low-resolution/blood-poster-low.png";
+import Tortoise from "../../public/images/gallery-low-resolution/tortoise-low.png";
+import Baby from "../../public/images/gallery-low-resolution/baby-low.png";
+import Whiplash from "../../public/images/gallery-low-resolution/whip-poster-low.png";
+import OldBoy from "../../public/images/gallery-low-resolution/old-poster-low.png";
+import Reptile from "../../public/images/gallery-low-resolution/reptile-study-low.png";
 
 const galleryView = (props) => {
   const imgSize = 200;
@@ -64,6 +66,12 @@ const galleryView = (props) => {
         <div className={styles.flexRow}>
           <div className={styles.whiplash + " " + styles.images}>
             <Image src={Whiplash} />
+          </div>
+          <div className={styles.reptile + " " + styles.images}>
+            <Image src={Reptile} />
+          </div>
+          <div className={styles.oldboy + " " + styles.images}>
+            <Image src={OldBoy} />
           </div>
         </div>
       </div>

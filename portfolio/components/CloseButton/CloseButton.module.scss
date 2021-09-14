@@ -1,0 +1,27 @@
+@import "../../styles/fonts.scss";
+
+.container {
+  height: 2rem;
+  width: 2rem;
+  background-color: khaki;
+  text-align: center;
+  border-top: 0.25rem solid blueviolet;
+  border-left: 0.25rem solid blueviolet;
+  border-right: 0.25rem solid hotpink;
+  border-bottom: 0.25rem solid hotpink;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  align-items: center;
+  // PUT ALIGN-ITEMS:CENTER IN PARENT
+
+  h3 {
+    color: #1100ff;
+  }
+  .galleryBackground {
+    background-color: #ff0000;
+  }
+}
+
+

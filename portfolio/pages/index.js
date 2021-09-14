@@ -5,6 +5,7 @@ import styles from "../styles/Home.module.scss";
 import AboutMe from "../components/AboutMe"; //importing the whole AboutMe folder
 import Shortcut from "../components/Shortcut"; //imports the Shortcut component
 import PageWindow from "../components/PageWindow"; //imports the PageWindow component
+import CloseButton from "../components/CloseButton"; 
 import React, { useState } from "react";
 
 export default function Home() {
@@ -90,6 +91,12 @@ export default function Home() {
           <div className={styles.shortcutGrid}>
             <ReactAudioPlayer src="my_audio_file.ogg" autoPlay controls />
           </div>
+
+          {/* TEST */}
+          <div className={styles.shortcutGrid}>
+            <CloseButton />
+          </div>
+          
         </section>
       </div>
 
