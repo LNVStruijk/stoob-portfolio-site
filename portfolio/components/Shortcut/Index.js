@@ -3,6 +3,8 @@ import styles from "./Shortcut.module.scss";
 import Image from "next/image";
 import SmilingDude from "../../public/images/smiling-dude.gif";
 import DoomGuy from "../../public/images/doom-guy-anim.gif";
+import AboutMeIcon from "../../public/images/shortcuts/about-me.gif";
+import GalleryViewIcon from "../../public/images/shortcuts/gallery-view.gif";
 
 const Shortcut = (props) => {
   // this is component so we want to make it constant
@@ -25,19 +27,19 @@ const Shortcut = (props) => {
     <div className={styles.container}>
       <div className={styles.imageContainer}>
         {props.image === "image1" ? (
-          <Image src={SmilingDude} width={iconSize} height={iconSize} />
+          <Image src={GalleryViewIcon} width={iconSize} height={iconSize} />
         ) : props.image === "image2" ? (
           <Image src={DoomGuy} width={iconSize} height={iconSize} />
         ) : props.image === "image3" ? (
-          <Image src={DoomGuy} width={iconSize} height={iconSize} />
+          <Image src={AboutMeIcon} width={iconSize} height={iconSize} />
         ) : props.image === "image4" ? (
-          <Image src={DoomGuy} width={iconSize} height={iconSize} />
+          <Image src={SmilingDude} width={iconSize} height={iconSize} />
         ) : props.image === "image5" ? (
-          <Image src={DoomGuy} width={iconSize} height={iconSize} />
+          <Image src={SmilingDude} width={iconSize} height={iconSize} />
         ) : props.image === "image6" ? (
-          <Image src={DoomGuy} width={iconSize} height={iconSize} />
+          <Image src={SmilingDude} width={iconSize} height={iconSize} />
         ) : props.image === "image7" ? (
-          <Image src={DoomGuy} width={iconSize} height={iconSize} />
+          <Image src={SmilingDude} width={iconSize} height={iconSize} />
         ) : null }
       </div>
 

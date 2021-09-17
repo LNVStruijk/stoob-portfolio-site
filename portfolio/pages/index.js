@@ -65,27 +65,27 @@ export default function Home() {
           {/* SHORTCUT ROW 1 */}
           <div className={styles.shortcutGrid}>
             <div onClick={() => setIsGalleryVisible(true)}>
-              <Shortcut name={"gallery view"} image={"image2"} />
+              <Shortcut name={"gallery view"} image={"image1"} />
             </div>
 
             <div onClick={() => setIsAboutMeVisible(true)}>
-              <Shortcut name={"about me"} image={"image1"} />
+              <Shortcut name={"about me"} image={"image3"} />
             </div>
             <div onClick={() => setIsContactMeVisible(true)}>
-              <Shortcut name={"contact me"} image={"image1"} />
+              <Shortcut name={"contact me"} image={"image7"} />
             </div>
           </div>
 
           {/* SHORTCUT ROW 2 */}
           <div className={styles.shortcutGrid}>
-            <Shortcut name={"typography"} image={"image1"} />
-            <Shortcut name={"posters"} image={"image1"} />
-            <Shortcut name={"paintings"} image={"image1"} />
+            <Shortcut name={"typography"} image={"image7"} />
+            <Shortcut name={"posters"} image={"image7"} />
+            <Shortcut name={"paintings"} image={"image7"} />
           </div>
 
           {/* SHORTCUT ROW 3 */}
           <div className={styles.shortcutGrid}>
-            <Shortcut name={'say "hi" '} image={"image1"} />
+            <Shortcut name={'say "hi" '} image={"image7"} />
           </div>
           {/* PLAYER ROW */}
           <div className={styles.shortcutGrid}>
