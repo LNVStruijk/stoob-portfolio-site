@@ -3,11 +3,18 @@ import styles from "./CloseButton.module.scss";
 const CloseButton = (props) => {
   return (
     <>
-    
-      <div className={styles.container}>
-        <div className={styles.XBox}>
-          <h3>X</h3>
-        </div>
+      <div
+        className={
+          props.closeColor === "Gallery"
+            ? styles.container + " " + styles.galleryViewBackground
+            : props.closeColor === "About Me"
+            ? styles.container + " " + styles.aboutMeBackground
+            :props.closeColor === "Contact Me"
+            ? styles.container + " " + styles.contactMeBackground
+            :null
+        }
+      >
+        <h3>X</h3>
       </div>
     </>
   );

@@ -72,7 +72,7 @@ export default function Home() {
               <Shortcut name={"about me"} image={"image3"} />
             </div>
             <div onClick={() => setIsContactMeVisible(true)}>
-              <Shortcut name={"contact me"} image={"image7"} />
+              <Shortcut name={"contact me"} image={"image4"} />
             </div>
           </div>
 
