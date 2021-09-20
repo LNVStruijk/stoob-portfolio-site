@@ -1,8 +1,12 @@
 import styles from "./PageWindow.module.scss";
+import Image from "next/image";
 import GalleryView from "../GalleryView";
 import AboutMe from "../AboutMe";
 import ContactMe from "../ContactMe";
 import CloseButton from "../CloseButton";
+import GalleryIcon from "../../public/images/shortcuts/gallery-view.gif";
+import AboutMeIcon from "../../public/images/shortcuts/about-me.gif";
+import ContactMeIcon from "../../public/images/shortcuts/contact-me.gif";
 
 const pageWindow = (props) => {
   return (
@@ -35,10 +39,16 @@ const pageWindow = (props) => {
             {/* HEADER OF PAGE */}
             <div className={styles.header}>
               <div className={styles.image}>
-                <p>IMAGE</p>
+                {props.view === "Gallery" ? (
+                  <Image src={GalleryIcon} />
+                ) : props.view === "About Me" ? (
+                  <Image src={AboutMeIcon} />
+                ) : props.view === "Contact Me" ? (
+                  <Image src={ContactMeIcon} />
+                ) : null}
               </div>
 
-              <div>
+              <div className={styles.pageTitle}>
                 <h1>{props.view}</h1>
               </div>
 

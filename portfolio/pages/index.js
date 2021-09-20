@@ -94,7 +94,7 @@ export default function Home() {
 
           {/* TEST */}
           <div className={styles.shortcutGrid}>
-            <CloseButton />
+            
           </div>
           
         </section>
