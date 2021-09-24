@@ -6,3 +6,9 @@
 }
 
 $default: "W95FA";
+
+$w-mobile: 1366px;
+// $w-small: 1920px;
+
+// $mq-small: '(max-width: #{$w-small})';
+$mq-mobile: '(max-width: #{$w-mobile})';

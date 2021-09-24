@@ -6,7 +6,8 @@ import AboutMe from "../components/AboutMe"; //importing the whole AboutMe folde
 import Shortcut from "../components/Shortcut"; //imports the Shortcut component
 import PageWindow from "../components/PageWindow"; //imports the PageWindow component
 import CloseButton from "../components/CloseButton"; 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import {isMobile} from 'react-device-detect';
 
 export default function Home() {
   /**
@@ -15,15 +16,33 @@ export default function Home() {
    * useState is where you put DEFAULT value
    * https://reactjs.org/docs/hooks-state.html
    */
-  const [isGalleryVisible, setIsGalleryVisible] = useState(false);
+  const [mobileView, setMobileView] = useState(false);
+
+  const [isGalleryVisible, setIsGalleryVisible] = useState(true);
   const [isAboutMeVisible, setIsAboutMeVisible] = useState(false);
   const [isContactMeVisible, setIsContactMeVisible] = useState(false);
+
+  const [crtFilter, setCrtFilter] = useState(true);
+
+  useEffect(() => {
+    setMobileView(isMobile);
+  }, [isMobile]);
 
   /**
    * this is the format for a method or function
    */
   const testMethod = () => {
     console.log("method activated");
+  };
+
+  const renderMobilePopUp = () => {
+    if (mobileView) {
+      return (
+        <div className={styles.mobilePopUp}>
+          <p>This site is better in desktop view</p>
+        </div>
+      );
+    }
   };
 
   return (
@@ -38,71 +57,79 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div className={styles.container}>
-        <section id={"Page Windows"}>
-          {/* GALLERY VIEW */}
-          <PageWindow
-            view={"Gallery"}
-            isVisible={isGalleryVisible}
-            closeWindow={() => setIsGalleryVisible(false)}
-          />
-
-          {/* ABOUT ME VIEW */}
-          <PageWindow
-            view={"About Me"}
-            isVisible={isAboutMeVisible}
-            closeWindow={() => setIsAboutMeVisible(false)}
-          />
-          {/* CONTACT ME VIEW */}
-          <PageWindow
-            view={"Contact Me"}
-            isVisible={isContactMeVisible}
-            closeWindow={() => setIsContactMeVisible(false)}
-          />
-        </section>
-
-        <section id={"Shortcut Rows"}>
-          {/* SHORTCUT ROW 1 */}
-          <div className={styles.shortcutGrid}>
-            <div onClick={() => setIsGalleryVisible(true)}>
-              <Shortcut name={"gallery view"} image={"image1"} />
-            </div>
-
-            <div onClick={() => setIsAboutMeVisible(true)}>
-              <Shortcut name={"about me"} image={"image3"} />
-            </div>
-            <div onClick={() => setIsContactMeVisible(true)}>
-              <Shortcut name={"contact me"} image={"image4"} />
-            </div>
-          </div>
-
-          {/* SHORTCUT ROW 2 */}
-          <div className={styles.shortcutGrid}>
-            <Shortcut name={"typography"} image={"image7"} />
-            <Shortcut name={"posters"} image={"image7"} />
-            <Shortcut name={"paintings"} image={"image7"} />
-          </div>
-
-          {/* SHORTCUT ROW 3 */}
-          <div className={styles.shortcutGrid}>
-            <Shortcut name={'say "hi" '} image={"image7"} />
-          </div>
-          {/* PLAYER ROW */}
-          <div className={styles.shortcutGrid}>
-            <ReactAudioPlayer src="my_audio_file.ogg" autoPlay controls />
-          </div>
-
-          {/* TEST */}
-          <div className={styles.shortcutGrid}>
-            
-          </div>
+      <div className={styles.crt}>
+        {/* <div className={styles.crtSwitch} onClick={()=> {crtFilter ? setCrtFilter(false) : setCrtFilter(true)}}>
+          <p>CRT</p>
+        </div> */}
+        {renderMobilePopUp()}
+        <div className={styles.container}>
           
-        </section>
+          <section id={"Page Windows"}>
+            {/* GALLERY VIEW */}
+            <PageWindow
+              view={"Gallery"}
+              isVisible={isGalleryVisible}
+              // closeWindow={() => setIsGalleryVisible(false)}
+            />
+
+            {/* ABOUT ME VIEW */}
+            <PageWindow
+              view={"About Me"}
+              isVisible={isAboutMeVisible}
+              closeWindow={() => setIsAboutMeVisible(false)}
+            />
+            {/* CONTACT ME VIEW */}
+            <PageWindow
+              view={"Contact Me"}
+              isVisible={isContactMeVisible}
+              closeWindow={() => setIsContactMeVisible(false)}
+            />
+          </section>
+
+          <section id={"Shortcut Rows"}>
+            {/* SHORTCUT ROW 1 */}
+            <div className={styles.shortcutGrid}>
+              <div onClick={() => setIsGalleryVisible(true)}>
+                <Shortcut name={"gallery view"} image={"image1"} />
+              </div>
+
+              <div onClick={() => setIsAboutMeVisible(true)}>
+                <Shortcut name={"about me"} image={"image3"} />
+              </div>
+              <div onClick={() => setIsContactMeVisible(true)}>
+                <Shortcut name={"contact me"} image={"image4"} />
+              </div>
+            </div>
+
+            {/* SHORTCUT ROW 2 */}
+            <div className={styles.shortcutGrid}>
+              <Shortcut name={"typography"} image={"image7"} />
+              <Shortcut name={"posters"} image={"image7"} />
+              <Shortcut name={"paintings"} image={"image7"} />
+            </div>
+
+            {/* SHORTCUT ROW 3 */}
+            <div className={styles.shortcutGrid}>
+              <Shortcut name={'say "hi" '} image={"image7"} />
+            </div>
+            {/* PLAYER ROW */}
+            <div className={styles.shortcutGrid}>
+              <ReactAudioPlayer src="my_audio_file.ogg" autoPlay controls />
+            </div>
+
+            {/* TEST */}
+            <div className={styles.shortcutGrid}>
+              
+            </div>
+            
+          </section>
+        </div>
+
+        {/* <video autoPlay={true} muted loop className={styles.backgroundVideo}>
+          <source src={"/videos/flowerboxWindows.mp4#t=3"} type="video/mp4" />
+        </video> */}
       </div>
 
-      <video autoPlay={true} muted loop className={styles.backgroundVideo}>
-        <source src={"/videos/flowerboxWindows.mp4#t=3"} type="video/mp4" />
-      </video>
     </>
   );
 }
