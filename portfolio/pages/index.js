@@ -101,7 +101,8 @@ export default function Home() {
       </div>
 
       <video autoPlay={true} muted loop className={styles.backgroundVideo}>
-        <source src={"/videos/flowerboxWindows.mp4#t=3"} type="video/mp4" />
+        {/* <source src={"/videos/flowerboxWindows.mp4#t=3"} type="video/mp4" /> */}
+        <source src={"/videos/flowerboxWindowsEdited.mp4"} type="video/mp4" />
       </video>
     </>
   );
