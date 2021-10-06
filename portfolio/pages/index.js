@@ -7,7 +7,7 @@ import Shortcut from "../components/Shortcut"; //imports the Shortcut component
 import PageWindow from "../components/PageWindow"; //imports the PageWindow component
 import CloseButton from "../components/CloseButton"; 
 import React, { useState, useEffect } from "react";
-import {isMobile} from 'react-device-detect';
+import {isMobile} from 'react-device-detect'; 
 
 export default function Home() {
   /**
@@ -113,9 +113,9 @@ export default function Home() {
               <Shortcut name={'say "hi" '} image={"image7"} />
             </div>
             {/* PLAYER ROW */}
-            <div className={styles.shortcutGrid}>
+            {/* <div className={styles.shortcutGrid}>
               <ReactAudioPlayer src="my_audio_file.ogg" autoPlay controls />
-            </div>
+            </div> */}
 
             {/* TEST */}
             <div className={styles.shortcutGrid}>
@@ -125,9 +125,9 @@ export default function Home() {
           </section>
         </div>
 
-        {/* <video autoPlay={true} muted loop className={styles.backgroundVideo}>
-          <source src={"/videos/flowerboxWindows.mp4#t=3"} type="video/mp4" />
-        </video> */}
+        <video autoPlay={true} muted loop className={styles.backgroundVideo}>
+          <source src={"/videos/siteWallpaperFull.mp4"} type="video/mp4" />
+        </video>
       </div>
 
     </>

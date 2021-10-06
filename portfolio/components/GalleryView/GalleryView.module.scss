@@ -1,5 +1,13 @@
 @import "../../styles/fonts.scss";
 
+.onHover {
+  background-color: red;
+  font-size: 48rem;
+  z-index: 3;
+  bottom: 0;
+  color: white;
+}
+
 .container {
   // background: linear-gradient(-35deg, #086f6f 0%, #71d8d8 100%);
   //background:  linear-gradient(-35deg, #086f6f 0%, #71d8d8 100%);
@@ -7,8 +15,6 @@
   border-left: 0.35rem solid #000064;
   border-right: 0.35rem solid #b9a2ec;
   border-bottom: 0.35rem solid #b9a2ec;
-
-
 
   // height: 45rem;
   max-height: calc(100vh - 12rem);
@@ -43,10 +49,16 @@
     margin: 1rem;
     z-index: 2;
     box-shadow: 1rem 0.75rem 0.8rem 0.25rem #1b1b1b;
+    background-color: #1b1b1b;
 
     @media #{$mq-mobile} {
       margin: 0.5rem;
     }
+  }
+
+  .images:hover {
+    margin: 2.5rem;
+    transform: scale(1.1);
   }
 
   .flexRow {
@@ -55,7 +67,6 @@
     //flex-wrap: wrap;
     align-items: flex-start;
     justify-content: space-around;
-  
   }
 
   .stalker {
@@ -94,16 +105,16 @@
     flex: 1;
   }
 
-//   ROW 4
+  //   ROW 4
   .whiplash {
     flex: 0.7;
   }
 
-  .reptile{
-      flex: 0.99;
+  .reptile {
+    flex: 0.99;
   }
 
-  .oldboy{
-      flex: 0.7;
+  .oldboy {
+    flex: 0.7;
   }
 }

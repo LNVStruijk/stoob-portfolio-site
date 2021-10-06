@@ -14,7 +14,8 @@ import Baby from "../../public/images/gallery-low-resolution/baby-low.png";
 import Whiplash from "../../public/images/gallery-low-resolution/whip-poster-low.png";
 import OldBoy from "../../public/images/gallery-low-resolution/old-poster-low.png";
 import Reptile from "../../public/images/gallery-low-resolution/reptile-study-low.png";
-import {isMobile} from 'react-device-detect';
+import ReactTooltip from "react-tooltip"; //tooltip extension
+import { isMobile } from "react-device-detect";
 import React, { useState, useEffect } from "react";
 
 const galleryView = (props) => {
@@ -28,102 +29,105 @@ const galleryView = (props) => {
   const renderMobileView = () => {
     return (
       <>
-      <div className={styles.container}>
-        <div className={styles.stalker + " " + styles.images}>
+        <div className={styles.container}>
+          <div className={styles.stalker + " " + styles.images}>
             <a
               href="https://drive.google.com/file/d/14v2qsZ__RR7-m-zFJi-BLD9GWwjc7PCS/view?usp=sharing"
               target="_blank"
             >
               <Image src={Stalker} />
             </a>
-        </div>
-        <div className={styles.vertigo + " " + styles.images}>
+          </div>
+          <a data-tip="React-tooltip"> ◕‿‿◕ </a>
+
+          <ReactTooltip place="top" type="dark" effect="float" />
+          <div className={styles.vertigo + " " + styles.images}>
             <a
               href="https://drive.google.com/file/d/1zmxn3moPF8Gm3UOHw2Jjru4cmN6cpTix/view?usp=sharing"
               target="_blank"
             >
               <Image src={Vertigo} />
             </a>
-        </div>
-        <div className={styles.radiation + " " + styles.images}>
+          </div>
+          <div className={styles.radiation + " " + styles.images}>
             <a
               href="https://drive.google.com/file/d/1ec7PMKk7FGdMIfhsLSIVkGfLiR9nhBy0/view?usp=sharing"
               target="_blank"
             >
-            <Image src={Radiation} />
+              <Image src={Radiation} />
             </a>
-        </div>
-        <div className={styles.shining + " " + styles.images}>
+          </div>
+          <div className={styles.shining + " " + styles.images}>
             <a
               href="https://drive.google.com/file/d/1U1FIcQh0mCDIylKcvw9pM2hrVlLzyI2t/view?usp=sharing"
               target="_blank"
             >
-            <Image src={Shining} />
+              <Image src={Shining} />
             </a>
-        </div>
-        <div className={styles.williams + " " + styles.images}>
-          <a
+          </div>
+          <div className={styles.williams + " " + styles.images}>
+            <a
               href="https://drive.google.com/file/d/1JPFo6WKsbDhX7FsDhNVFXYYxOjOc87fG/view?usp=sharing"
               target="_blank"
             >
-            <Image src={Williams} />
+              <Image src={Williams} />
             </a>
-        </div>
-        <div className={styles.burnVictim + " " + styles.images}>
-          <a
+          </div>
+          <div className={styles.burnVictim + " " + styles.images}>
+            <a
               href="https://drive.google.com/file/d/1mMHOQqsLbZ3k0lQFB_rCfXazcHkNJOtQ/view?usp=sharing"
               target="_blank"
             >
-            <Image src={BurnVictim} />
+              <Image src={BurnVictim} />
             </a>
-        </div>
-        <div className={styles.blood + " " + styles.images}>
-          <a
+          </div>
+          <div className={styles.blood + " " + styles.images}>
+            <a
               href="https://drive.google.com/file/d/1s_HggDR7-sRF1A4GmpZDzxQevjPhkv4g/view?usp=sharing"
               target="_blank"
             >
-            <Image src={Blood} />
+              <Image src={Blood} />
             </a>
-        </div>
+          </div>
           <div className={styles.tortoise + " " + styles.images}>
-          <a
+            <a
               href="https://drive.google.com/file/d/1DLuVSGGeByaCGQxCDcOe_VeauDLacf1c/view?usp=sharing"
               target="_blank"
             >
-            <Image src={Tortoise} />
+              <Image src={Tortoise} />
             </a>
-        </div>
-        <div className={styles.baby + " " + styles.images}>
-          <a
+          </div>
+          <div className={styles.baby + " " + styles.images}>
+            <a
               href="https://drive.google.com/file/d/1BacQuo4TRiacZYgzNA1Z1R0H8COmd18g/view?usp=sharing"
               target="_blank"
             >
-            <Image src={Baby} />
+              <Image src={Baby} />
             </a>
-        </div>
-        
-        <div className={styles.whiplash + " " + styles.images}>
-          <a
+          </div>
+
+          <div className={styles.whiplash + " " + styles.images}>
+            <a
               href="https://drive.google.com/file/d/1EOo4Ul8v_Tg8c5z1nmKqEAVSvsJ8F2bc/view?usp=sharing"
               target="_blank"
             >
-            <Image src={Whiplash} />
+              <Image src={Whiplash} />
             </a>
           </div>
           <div className={styles.reptile + " " + styles.images}>
-          <a
+            <a
               href="https://drive.google.com/file/d/1z6l12fP9db2r4ECLBB8pU4tZtqC7EBQg/view?usp=sharing"
               target="_blank"
             >
-            <Image src={Reptile} />
+              <Image src={Reptile} />
             </a>
           </div>
           <div className={styles.oldboy + " " + styles.images}>
-          <a
+            <a
               href="https://drive.google.com/file/d/1JFpIzT5wW9YVpVsm0lZcKperEFlXZ6Tb/view?usp=sharing"
               target="_blank"
             >
-            <Image src={OldBoy} />
+              <Image src={OldBoy} />
             </a>
           </div>
         </div>
@@ -133,7 +137,7 @@ const galleryView = (props) => {
 
   return (
     <>
-      { mobileView ? (
+      {mobileView ? (
         renderMobileView()
       ) : (
         <div className={styles.container}>
@@ -156,11 +160,11 @@ const galleryView = (props) => {
               </a>
             </div>
             <div className={styles.radiation + " " + styles.images}>
-            <a
+              <a
                 href="https://drive.google.com/file/d/1ec7PMKk7FGdMIfhsLSIVkGfLiR9nhBy0/view?usp=sharing"
                 target="_blank"
               >
-              <Image src={Radiation} />
+                <Image src={Radiation} />
               </a>
             </div>
           </div>
@@ -171,83 +175,82 @@ const galleryView = (props) => {
                 href="https://drive.google.com/file/d/1U1FIcQh0mCDIylKcvw9pM2hrVlLzyI2t/view?usp=sharing"
                 target="_blank"
               >
-              <Image src={Shining} />
+                <Image src={Shining} />
               </a>
             </div>
             <div className={styles.williams + " " + styles.images}>
-            <a
+              <a
                 href="https://drive.google.com/file/d/1JPFo6WKsbDhX7FsDhNVFXYYxOjOc87fG/view?usp=sharing"
                 target="_blank"
               >
-              <Image src={Williams} />
+                <Image src={Williams} />
               </a>
             </div>
             <div className={styles.burnVictim + " " + styles.images}>
-            <a
+              <a
                 href="https://drive.google.com/file/d/1mMHOQqsLbZ3k0lQFB_rCfXazcHkNJOtQ/view?usp=sharing"
                 target="_blank"
               >
-              <Image src={BurnVictim} />
+                <Image src={BurnVictim} />
               </a>
             </div>
           </div>
           {/* ROW 3 */}
           <div className={styles.flexRow}>
             <div className={styles.blood + " " + styles.images}>
-            <a
+              <a
                 href="https://drive.google.com/file/d/1s_HggDR7-sRF1A4GmpZDzxQevjPhkv4g/view?usp=sharing"
                 target="_blank"
               >
-              <Image src={Blood} />
+                <Image src={Blood} />
               </a>
             </div>
             <div className={styles.tortoise + " " + styles.images}>
-            <a
+              <a
                 href="https://drive.google.com/file/d/1DLuVSGGeByaCGQxCDcOe_VeauDLacf1c/view?usp=sharing"
                 target="_blank"
               >
-              <Image src={Tortoise} />
+                <Image src={Tortoise} />
               </a>
             </div>
             <div className={styles.baby + " " + styles.images}>
-            <a
+              <a
                 href="https://drive.google.com/file/d/1BacQuo4TRiacZYgzNA1Z1R0H8COmd18g/view?usp=sharing"
                 target="_blank"
               >
-              <Image src={Baby} />
+                <Image src={Baby} />
               </a>
             </div>
           </div>
           {/* ROW 4 */}
           <div className={styles.flexRow}>
             <div className={styles.whiplash + " " + styles.images}>
-            <a
+              <a
                 href="https://drive.google.com/file/d/1EOo4Ul8v_Tg8c5z1nmKqEAVSvsJ8F2bc/view?usp=sharing"
                 target="_blank"
               >
-              <Image src={Whiplash} />
+                <Image src={Whiplash} />
               </a>
             </div>
             <div className={styles.reptile + " " + styles.images}>
-            <a
+              <a
                 href="https://drive.google.com/file/d/1z6l12fP9db2r4ECLBB8pU4tZtqC7EBQg/view?usp=sharing"
                 target="_blank"
               >
-              <Image src={Reptile} />
+                <Image src={Reptile} />
               </a>
             </div>
             <div className={styles.oldboy + " " + styles.images}>
-            <a
+              <a
                 href="https://drive.google.com/file/d/1JFpIzT5wW9YVpVsm0lZcKperEFlXZ6Tb/view?usp=sharing"
                 target="_blank"
               >
-              <Image src={OldBoy} />
+                <Image src={OldBoy} />
               </a>
             </div>
           </div>
         </div>
       )}
-      
     </>
   );
 };
