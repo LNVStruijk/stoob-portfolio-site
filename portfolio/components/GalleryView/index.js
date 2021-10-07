@@ -14,7 +14,7 @@ import Baby from "../../public/images/gallery-low-resolution/baby-low.png";
 import Whiplash from "../../public/images/gallery-low-resolution/whip-poster-low.png";
 import OldBoy from "../../public/images/gallery-low-resolution/old-poster-low.png";
 import Reptile from "../../public/images/gallery-low-resolution/reptile-study-low.png";
-import ReactTooltip from "react-tooltip"; //tooltip extension
+
 import { isMobile } from "react-device-detect";
 import React, { useState, useEffect } from "react";
 
