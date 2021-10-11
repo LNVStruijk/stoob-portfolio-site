@@ -6,12 +6,16 @@ const StickyFooter = (props) => {
     <>
       <div className={styles.footer}>
         <div className={styles.taskWindow}>
-          <p>
-            <span>START</span>
-          </p>
-          <p>
-            <span>WINDOW 2</span>
-          </p>
+          <div className={styles.inactiveWindow}>
+            <p>
+              <span>START</span>
+            </p>
+          </div>
+          <div className={styles.activeWindow}>
+            <p>
+              <span>WINDOW 2</span>
+            </p>
+          </div>
         </div>
       </div>
     </>

@@ -18,17 +18,28 @@
   display: flex;
   justify-content: start;
   flex-direction: row;
-  margin-top: 0.35rem;
-  margin-bottom: 0.25rem;
+//   margin-top: 0.35rem;
+//   margin-bottom: 0.25rem;
   p {
     span {
       margin-left: 0.25rem;
       padding-right: 00.5rem;
       padding-left: 0.5rem;
-      border-top: 0.2rem solid #b9a2ec;
-      border-left: 0.2rem solid #b9a2ec;
-      border-right: 0.2rem solid #000064;
-      border-bottom: 0.2rem solid #000064;
     }
   }
+}
+
+.activeWindow {
+  background-color: #000064;
+  border-top: 0.2rem solid #000020;
+  border-left: 0.2rem solid #000020;
+  border-right: 0.2rem solid #b9a2ec;
+  border-bottom: 0.2rem solid #b9a2ec;
+}
+
+.inactiveWindow {
+  border-top: 0.2rem solid #b9a2ec;
+  border-left: 0.2rem solid #b9a2ec;
+  border-right: 0.2rem solid #000064;
+  border-bottom: 0.2rem solid #000064;
 }
