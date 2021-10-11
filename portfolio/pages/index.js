@@ -5,6 +5,7 @@ import styles from "../styles/Home.module.scss";
 import AboutMe from "../components/AboutMe"; //importing the whole AboutMe folder
 import Shortcut from "../components/Shortcut"; //imports the Shortcut component
 import PageWindow from "../components/PageWindow"; //imports the PageWindow component
+import StickyFooter from "../components/StickyFooter";
 import CloseButton from "../components/CloseButton"; 
 import React, { useState, useEffect } from "react";
 import {isMobile} from 'react-device-detect'; 
@@ -128,6 +129,8 @@ export default function Home() {
         <video autoPlay={true} muted loop className={styles.backgroundVideo}>
           <source src={"/videos/flowerboxWindowsCompressed.mp4"} type="video/mp4" />
         </video>
+
+        <StickyFooter/>
       </div>
 
     </>
