@@ -12,8 +12,8 @@ const StickyFooter = (props) => {
             </p>
           </div>
           <div className={styles.activeWindow}>
-            <p>
-              <span>WINDOW 2</span>
+            <p className={styles.notStart}>
+              <span >Window 2</span>
             </p>
           </div>
         </div>

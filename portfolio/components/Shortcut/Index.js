@@ -6,6 +6,8 @@ import DoomGuy from "../../public/images/doom-guy-anim.gif";
 import AboutMeIcon from "../../public/images/shortcuts/about-me.gif";
 import GalleryViewIcon from "../../public/images/shortcuts/gallery-view.gif";
 import ContactMeIcon from "../../public/images/shortcuts/contact-me.gif";
+import TypographyIcon from "../../public/images/shortcuts/typography.gif";
+
 
 const Shortcut = (props) => {
   // this is component so we want to make it constant
@@ -36,7 +38,7 @@ const Shortcut = (props) => {
         ) : props.image === "image4" ? (
           <Image src={ContactMeIcon} width={iconSize} height={iconSize} />
         ) : props.image === "image5" ? (
-          <Image src={SmilingDude} width={iconSize} height={iconSize} />
+          <Image src={TypographyIcon} width={iconSize} height={iconSize} />
         ) : props.image === "image6" ? (
           <Image src={SmilingDude} width={iconSize} height={iconSize} />
         ) : props.image === "image7" ? (

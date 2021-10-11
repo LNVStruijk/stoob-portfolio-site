@@ -104,7 +104,7 @@ export default function Home() {
 
             {/* SHORTCUT ROW 2 */}
             <div className={styles.shortcutGrid}>
-              <Shortcut name={"typography"} image={"image7"} />
+              <Shortcut name={"typography"} image={"image5"} />
               <Shortcut name={"posters"} image={"image7"} />
               <Shortcut name={"paintings"} image={"image7"} />
             </div>
