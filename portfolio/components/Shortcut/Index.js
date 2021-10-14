@@ -9,6 +9,7 @@ import ContactMeIcon from "../../public/images/shortcuts/contact-me.gif";
 import TypographyIcon from "../../public/images/shortcuts/typography.gif";
 import PaintingsIcon from "../../public/images/shortcuts/paintings.gif";
 import DoomLaugh from "../../public/images/shortcuts/doom-laugh.gif";
+import PostersIcon from "../../public/images/shortcuts/posters.gif";
 
 
 const Shortcut = (props) => {
@@ -34,7 +35,7 @@ const Shortcut = (props) => {
         {props.image === "image1" ? (
           <Image src={GalleryViewIcon} width={iconSize} height={iconSize} />
         ) : props.image === "image2" ? (
-          <Image src={DoomGuy} width={iconSize} height={iconSize} />
+          <Image src={PostersIcon} width={iconSize} height={iconSize} />
         ) : props.image === "image3" ? (
           <Image src={AboutMeIcon} width={iconSize} height={iconSize} />
         ) : props.image === "image4" ? (
