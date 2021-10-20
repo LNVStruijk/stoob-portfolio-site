@@ -127,7 +127,7 @@ export default function Home() {
         </div>
 
         <video autoPlay={true} muted loop className={styles.backgroundVideo}>
-          <source src={"/videos/flowerboxWindowsCompressed.mp4"} type="video/mp4" />
+          <source src={"/videos/backgroundVideoCompressed.mp4"} type="video/mp4" />
         </video>
 
         <StickyFooter/>
