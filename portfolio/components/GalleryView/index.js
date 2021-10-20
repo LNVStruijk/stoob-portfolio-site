@@ -14,6 +14,7 @@ import Baby from "../../public/images/gallery-low-resolution/baby-low.png";
 import Whiplash from "../../public/images/gallery-low-resolution/whip-poster-low.png";
 import OldBoy from "../../public/images/gallery-low-resolution/old-poster-low.png";
 import Reptile from "../../public/images/gallery-low-resolution/reptile-study-low.png";
+import Triggers from "../../public/images/gallery-low-resolution/triggers-link.jpg";
 
 import { isMobile } from "react-device-detect";
 import React, { useState, useEffect } from "react";
@@ -246,6 +247,17 @@ const galleryView = (props) => {
                 target="_blank"
               >
                 <Image src={OldBoy} />
+              </a>
+            </div>
+          </div>
+          {/* ROW 5 */}
+          <div className={styles.flexRow}>
+            <div className={styles.triggers + " " + styles.images}>
+              <a
+                href="https://www.youtube.com/watch?v=4ytMCMDOq2M"
+                target="_blank"
+              >
+                <Image src={Triggers} />
               </a>
             </div>
           </div>
