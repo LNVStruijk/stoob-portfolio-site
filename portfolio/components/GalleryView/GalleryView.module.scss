@@ -1,24 +1,11 @@
 @import "../../styles/fonts.scss";
 
-.onHover {
-  background-color: red;
-  font-size: 48rem;
-  z-index: 3;
-  bottom: 0;
-  color: white;
-}
-
 .container {
-  // background: linear-gradient(-35deg, #086f6f 0%, #71d8d8 100%);
-  //background:  linear-gradient(-35deg, #086f6f 0%, #71d8d8 100%);
   border-top: 0.35rem solid #000064;
   border-left: 0.35rem solid #000064;
   border-right: 0.35rem solid #b9a2ec;
   border-bottom: 0.35rem solid #b9a2ec;
 
-  position: relative;
-
-  // height: 45rem;
   max-height: calc(100vh - 12rem);
   padding: 1rem;
   overflow-y: scroll;
@@ -26,8 +13,6 @@
   background-image: url("../../public/backgrounds/gallery-background.png");
   background-size: 80rem;
   background-repeat: no-repeat;
-  // display: flex;
-  // flex-direction: row;
 
   @media #{$mq-mobile} {
     border-top: 0.25rem solid #000064;
@@ -37,7 +22,6 @@
   }
 
   .texture {
-    //background-image: url("../../public/images/dither-texture.png");
     transform: scale(0.2);
     opacity: 0.5;
     z-index: 1;
@@ -45,11 +29,8 @@
   }
 
   .images {
-    // object-fit: scale-down;
-    // width: auto;
-    // height: auto;
     margin: 1rem;
-    // z-index: 2;
+    z-index: 2;
     box-shadow: 1rem 0.75rem 0.8rem 0.25rem #1b1b1b;
     background-color: #1b1b1b;
 
@@ -66,9 +47,12 @@
   .flexRow {
     display: flex;
     flex-direction: row;
-    //flex-wrap: wrap;
     align-items: flex-start;
     justify-content: space-around;
+
+    @media #{$mq-mobile} {
+      display: block;
+    }
   }
 
   .stalker {

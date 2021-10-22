@@ -37,15 +37,15 @@ export default function Home() {
     console.log("method activated");
   };
 
-  const renderMobilePopUp = () => {
-    if (mobileView) {
-      return (
-        <div className={styles.mobilePopUp}>
-          <p>This site is better in desktop view</p>
-        </div>
-      );
-    }
-  };
+  // const renderMobilePopUp = () => {
+  //   if (mobileView) {
+  //     return (
+  //       <div className={styles.mobilePopUp}>
+  //         <p>This site is better with desktop view enabled</p>
+  //       </div>
+  //     );
+  //   }
+  // };
 
   return (
     /**
@@ -63,7 +63,8 @@ export default function Home() {
         {/* <div className={styles.crtSwitch} onClick={()=> {crtFilter ? setCrtFilter(false) : setCrtFilter(true)}}>
           <p>CRT</p>
         </div> */}
-        {renderMobilePopUp()}
+
+        {/* {renderMobilePopUp()} */}
         <div className={styles.container}>
           
           <section id={"Page Windows"}>
@@ -94,7 +95,6 @@ export default function Home() {
               <div onClick={() => setIsGalleryVisible(true)}>
                 <Shortcut name={"gallery view"} image={"image1"} />
               </div>
-
               <div onClick={() => setIsAboutMeVisible(true)}>
                 <Shortcut name={"about me"} image={"image3"} />
               </div>
@@ -113,8 +113,6 @@ export default function Home() {
             {/* SHORTCUT ROW 3 */}
             <div className={styles.shortcutGrid}>
               <Shortcut name={'say "hi" '} image={"image7"} />
-              <p data-tip="hello world">KANTOT</p>
-              <ReactTooltip className={styles.toolTip}/>
             </div>
 
             
