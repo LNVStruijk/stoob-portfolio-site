@@ -58,6 +58,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
+    {/* ur mum gay also fnaf */}
+
       <div className={styles.crt}>
         {/* <div className={styles.crtSwitch} onClick={()=> {crtFilter ? setCrtFilter(false) : setCrtFilter(true)}}>
           <p>CRT</p>
