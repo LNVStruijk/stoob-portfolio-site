@@ -15,7 +15,6 @@ import Whiplash from "../../public/images/gallery-low-resolution/whip-poster-low
 import OldBoy from "../../public/images/gallery-low-resolution/old-poster-low.png";
 import Reptile from "../../public/images/gallery-low-resolution/reptile-study-low.png";
 import Triggers from "../../public/images/gallery-low-resolution/triggers-link.jpg";
-
 import { isMobile } from "react-device-detect";
 import React, { useState, useEffect } from "react";
 
@@ -39,9 +38,11 @@ const galleryView = (props) => {
               <Image src={Stalker} />
             </a>
           </div>
-          <a data-tip="React-tooltip"> ◕‿‿◕ </a>
+          
+          <div className={styles.toolTip}>
+            <span>Tooltip text</span>
+          </div>
 
-          <ReactTooltip place="top" type="dark" effect="float" />
           <div className={styles.vertigo + " " + styles.images}>
             <a
               href="https://drive.google.com/file/d/1zmxn3moPF8Gm3UOHw2Jjru4cmN6cpTix/view?usp=sharing"

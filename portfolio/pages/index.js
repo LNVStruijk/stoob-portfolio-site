@@ -9,6 +9,7 @@ import StickyFooter from "../components/StickyFooter";
 import CloseButton from "../components/CloseButton"; 
 import React, { useState, useEffect } from "react";
 import {isMobile} from 'react-device-detect'; 
+import ReactTooltip from "react-tooltip";
 
 export default function Home() {
   /**
@@ -58,8 +59,6 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-    {/* ur mum gay also fnaf */}
-
       <div className={styles.crt}>
         {/* <div className={styles.crtSwitch} onClick={()=> {crtFilter ? setCrtFilter(false) : setCrtFilter(true)}}>
           <p>CRT</p>
@@ -72,7 +71,7 @@ export default function Home() {
             <PageWindow
               view={"Gallery"}
               isVisible={isGalleryVisible}
-              // closeWindow={() => setIsGalleryVisible(false)}
+              closeWindow={() => setIsGalleryVisible(false)}
             />
 
             {/* ABOUT ME VIEW */}
@@ -114,7 +113,11 @@ export default function Home() {
             {/* SHORTCUT ROW 3 */}
             <div className={styles.shortcutGrid}>
               <Shortcut name={'say "hi" '} image={"image7"} />
+              <p data-tip="hello world">KANTOT</p>
+              <ReactTooltip className={styles.toolTip}/>
             </div>
+
+            
             {/* PLAYER ROW */}
             {/* <div className={styles.shortcutGrid}>
               <ReactAudioPlayer src="my_audio_file.ogg" autoPlay controls />
