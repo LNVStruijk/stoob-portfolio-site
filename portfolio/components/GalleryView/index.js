@@ -220,7 +220,7 @@ const galleryView = (props) => {
         <div className={styles.flexRow}>
           <div
             data-tip={
-              '<h1>"Triggers" - Master\'s Thesis</h1> <h4> VR, UnityEngine </h4> <p>Therapeautic experiment to address \'Misophonia\' disorder</p> <h5>Click to see video demo</h5>'
+              '<h1>"Triggers" - Master\'s Thesis</h1> <h4> VR, UnityEngine </h4> <p>Therapeutic experiment to address \'Misophonia\' disorder</p> <h5>Click to see video demo</h5>'
             }
             data-html={true}
             className={styles.triggers + " " + styles.images}
