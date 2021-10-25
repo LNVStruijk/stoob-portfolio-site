@@ -40,7 +40,7 @@ const pageWindow = (props) => {
                   " " +
                   styles.TypographyBackground +
                   " " +
-                  styles.smallWidth
+                  styles.largeWidth
                 : null
             }
           >

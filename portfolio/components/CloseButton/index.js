@@ -11,6 +11,8 @@ const CloseButton = (props) => {
             ? styles.container + " " + styles.aboutMeBackground
             :props.closeColor === "Contact Me"
             ? styles.container + " " + styles.contactMeBackground
+            :props.closeColor === "Typography"
+            ? styles.container + " " + styles.TypographyBackground
             :null
         }
       >

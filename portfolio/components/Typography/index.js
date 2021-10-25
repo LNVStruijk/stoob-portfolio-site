@@ -2,19 +2,9 @@ import styles from "./Typography.module.scss";
 import Image from "next/image";
 import Link from "next/link";
 import DitherTexture from "../../public/images/dither-texture.png";
-import Stalker from "../../public/images/gallery-low-resolution/stalker-low.png";
-import Vertigo from "../../public/images/gallery-low-resolution/vertigo-poster-low.png";
-import Radiation from "../../public/images/gallery-low-resolution/radiation2-low.png";
-import Williams from "../../public/images/gallery-low-resolution/ash-williams-low.png";
-import Shining from "../../public/images/gallery-low-resolution/shining-poster-low.png";
-import BurnVictim from "../../public/images/gallery-low-resolution/burn-victim-low.png";
-import Blood from "../../public/images/gallery-low-resolution/blood-poster-low.png";
-import Tortoise from "../../public/images/gallery-low-resolution/tortoise-low.png";
-import Baby from "../../public/images/gallery-low-resolution/baby-low.png";
-import Whiplash from "../../public/images/gallery-low-resolution/whip-poster-low.png";
-import OldBoy from "../../public/images/gallery-low-resolution/old-poster-low.png";
-import Reptile from "../../public/images/gallery-low-resolution/reptile-study-low.png";
-import Triggers from "../../public/images/gallery-low-resolution/triggers-link.jpg";
+import Droid from "../../public/images/typography-low-res/droid.png";
+import Circuit from "../../public/images/typography-low-res/circuit.jpg";
+import CenturyGothic from "../../public/images/typography-low-res/century-gothic.jpg";
 import ReactTooltip from "react-tooltip";
 import { isMobile } from "react-device-detect";
 import React, { useState, useEffect } from "react";
@@ -35,7 +25,51 @@ const Typography = (props) => {
   return (
     <>
       <div className={styles.container}>
-        <div className={styles.flexRow}>{/* ROW 1 */}</div>
+        <div className={styles.flexRow}>
+          {/* ROW 1 */}
+          <div
+            data-tip={
+              '<h1>"Droid Font Poster"</h1> <h4> PaintToolSAI </h4> <p>Inspired by Tarkovky\'s Stalker (1979)</p> <h5>Click to see full image</h5>'
+            }
+            data-html={true}
+            className={styles.droid + " " + styles.images}
+          >
+            <a
+              href="https://drive.google.com/file/d/14v2qsZ__RR7-m-zFJi-BLD9GWwjc7PCS/view?usp=sharing"
+              target="_blank"
+            >
+              <Image src={Droid} />
+            </a>
+          </div>
+          <div
+            data-tip={
+              '<h1>"Droid Font Poster"</h1> <h4> PaintToolSAI </h4> <p>Inspired by Tarkovky\'s Stalker (1979)</p> <h5>Click to see full image</h5>'
+            }
+            data-html={true}
+            className={styles.circuit + " " + styles.images}
+          >
+            <a
+              href="https://drive.google.com/file/d/14v2qsZ__RR7-m-zFJi-BLD9GWwjc7PCS/view?usp=sharing"
+              target="_blank"
+            >
+              <Image src={Circuit} />
+            </a>
+          </div>
+          <div
+            data-tip={
+              '<h1>"Droid Font Poster"</h1> <h4> PaintToolSAI </h4> <p>Inspired by Tarkovky\'s Stalker (1979)</p> <h5>Click to see full image</h5>'
+            }
+            data-html={true}
+            className={styles.circuit + " " + styles.images}
+          >
+            <a
+              href="https://drive.google.com/file/d/14v2qsZ__RR7-m-zFJi-BLD9GWwjc7PCS/view?usp=sharing"
+              target="_blank"
+            >
+              <Image src={CenturyGothic} />
+            </a>
+          </div>
+        </div>
         {/* ROW 2 */}
         <div className={styles.flexRow}></div>
         {/* ROW 3 */}
