@@ -9,6 +9,10 @@ import Spread1 from "../../public/images/typography-low-res/mag-spread-1.jpg";
 import Spread2 from "../../public/images/typography-low-res/mag-spread-2.jpg";
 import Spread3 from "../../public/images/typography-low-res/mag-spread-3.jpg";
 import Spread4 from "../../public/images/typography-low-res/mag-spread-4.jpg";
+import News1 from "../../public/images/typography-low-res/news-1.jpg";
+import News2 from "../../public/images/typography-low-res/news-2.jpg";
+import News3 from "../../public/images/typography-low-res/news-3.jpg";
+import News4 from "../../public/images/typography-low-res/news-4.jpg";
 import ReactTooltip from "react-tooltip";
 import { isMobile } from "react-device-detect";
 import React, { useState, useEffect } from "react";
@@ -33,7 +37,7 @@ const Typography = (props) => {
           {/* ROW 1 */}
           <div
             data-tip={
-              '<h1>"Droid Typeface Poster"</h1> <h4> Adobe Illustrator </h4> <p>Typeface poster inspired by the \"Droid\" typeface</p> <h5>Click to see full image</h5>'
+              '<h1>"Droid Typeface Poster"</h1> <h4> Adobe Illustrator </h4> <p>Typeface poster inspired by the "Droid" typeface</p> <h5>Click to see full image</h5>'
             }
             data-html={true}
             className={styles.droid + " " + styles.images}
@@ -107,7 +111,7 @@ const Typography = (props) => {
         </div>
         {/* ROW 3 */}
         <div className={styles.flexRow}>
-        <div
+          <div
             data-tip={
               '<h1>"Droid Font Poster"</h1> <h4> PaintToolSAI </h4> <p>Inspired by Tarkovky\'s Stalker (1979)</p> <h5>Click to see full image</h5>'
             }
@@ -137,7 +141,64 @@ const Typography = (props) => {
           </div>
         </div>
         {/* ROW 4 */}
-        <div className={styles.flexRow}></div>
+        <div className={styles.flexRow}>
+          <div
+            data-tip={
+              '<h1>"Droid Font Poster"</h1> <h4> PaintToolSAI </h4> <p>Inspired by Tarkovky\'s Stalker (1979)</p> <h5>Click to see full image</h5>'
+            }
+            data-html={true}
+            className={styles.Spread1 + " " + styles.images}
+          >
+            <a
+              href="https://drive.google.com/file/d/14v2qsZ__RR7-m-zFJi-BLD9GWwjc7PCS/view?usp=sharing"
+              target="_blank"
+            >
+              <Image src={News1} />
+            </a>
+          </div>
+          <div
+            data-tip={
+              '<h1>"Droid Font Poster"</h1> <h4> PaintToolSAI </h4> <p>Inspired by Tarkovky\'s Stalker (1979)</p> <h5>Click to see full image</h5>'
+            }
+            data-html={true}
+            className={styles.Spread1 + " " + styles.images}
+          >
+            <a
+              href="https://drive.google.com/file/d/14v2qsZ__RR7-m-zFJi-BLD9GWwjc7PCS/view?usp=sharing"
+              target="_blank"
+            >
+              <Image src={News2} />
+            </a>
+          </div>
+          <div
+            data-tip={
+              '<h1>"Droid Font Poster"</h1> <h4> PaintToolSAI </h4> <p>Inspired by Tarkovky\'s Stalker (1979)</p> <h5>Click to see full image</h5>'
+            }
+            data-html={true}
+            className={styles.Spread1 + " " + styles.images}
+          >
+            <a
+              href="https://drive.google.com/file/d/14v2qsZ__RR7-m-zFJi-BLD9GWwjc7PCS/view?usp=sharing"
+              target="_blank"
+            >
+              <Image src={News3} />
+            </a>
+          </div>
+          <div
+            data-tip={
+              '<h1>"Droid Font Poster"</h1> <h4> PaintToolSAI </h4> <p>Inspired by Tarkovky\'s Stalker (1979)</p> <h5>Click to see full image</h5>'
+            }
+            data-html={true}
+            className={styles.Spread1 + " " + styles.images}
+          >
+            <a
+              href="https://drive.google.com/file/d/14v2qsZ__RR7-m-zFJi-BLD9GWwjc7PCS/view?usp=sharing"
+              target="_blank"
+            >
+              <Image src={News4} />
+            </a>
+          </div>
+        </div>
         {/* ROW 5 */}
         <div className={styles.flexRow}></div>
         <ReactTooltip className={styles.toolTip} />
