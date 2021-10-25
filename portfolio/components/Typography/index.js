@@ -43,7 +43,7 @@ const Typography = (props) => {
             className={styles.droid + " " + styles.images}
           >
             <a
-              href="https://drive.google.com/file/d/14v2qsZ__RR7-m-zFJi-BLD9GWwjc7PCS/view?usp=sharing"
+              href="https://drive.google.com/file/d/1peLdSfEPV8BGK1HwXIuzk06SElZ7ezs3/view?usp=sharing"
               target="_blank"
             >
               <Image src={Droid} />
@@ -57,7 +57,7 @@ const Typography = (props) => {
             className={styles.circuit + " " + styles.images}
           >
             <a
-              href="https://drive.google.com/file/d/14v2qsZ__RR7-m-zFJi-BLD9GWwjc7PCS/view?usp=sharing"
+              href="https://drive.google.com/file/d/1nmGKLAhqcddQUV1IK0U6XF88PsZIvQWI/view?usp=sharing"
               target="_blank"
             >
               <Image src={Circuit} />
@@ -71,7 +71,7 @@ const Typography = (props) => {
             className={styles.centuryGothic + " " + styles.images}
           >
             <a
-              href="https://drive.google.com/file/d/14v2qsZ__RR7-m-zFJi-BLD9GWwjc7PCS/view?usp=sharing"
+              href="https://drive.google.com/file/d/1kIAu-ferfKYU4d91S30j1a2fGgtD6sQW/view?usp=sharing"
               target="_blank"
             >
               <Image src={CenturyGothic} />
@@ -88,7 +88,7 @@ const Typography = (props) => {
             className={styles.Spread1 + " " + styles.images}
           >
             <a
-              href="https://drive.google.com/file/d/14v2qsZ__RR7-m-zFJi-BLD9GWwjc7PCS/view?usp=sharing"
+              href="https://drive.google.com/file/d/1m-4EJv6OrKhjwKd-NE3ggS6oZjUm9a4M/view?usp=sharing"
               target="_blank"
             >
               <Image src={Spread1} />
@@ -102,7 +102,7 @@ const Typography = (props) => {
             className={styles.Spread1 + " " + styles.images}
           >
             <a
-              href="https://drive.google.com/file/d/14v2qsZ__RR7-m-zFJi-BLD9GWwjc7PCS/view?usp=sharing"
+              href="https://drive.google.com/file/d/1t7ihpVSYfkGGVYKWuhC2sxD2sUlw5_nH/view?usp=sharing"
               target="_blank"
             >
               <Image src={Spread4} />
@@ -119,7 +119,7 @@ const Typography = (props) => {
             className={styles.Spread1 + " " + styles.images}
           >
             <a
-              href="https://drive.google.com/file/d/14v2qsZ__RR7-m-zFJi-BLD9GWwjc7PCS/view?usp=sharing"
+              href="https://drive.google.com/file/d/1ItHRYer79X22cGEdOrNfPlDiofTulVPs/view?usp=sharing"
               target="_blank"
             >
               <Image src={Spread3} />
@@ -133,7 +133,7 @@ const Typography = (props) => {
             className={styles.Spread1 + " " + styles.images}
           >
             <a
-              href="https://drive.google.com/file/d/14v2qsZ__RR7-m-zFJi-BLD9GWwjc7PCS/view?usp=sharing"
+              href="https://drive.google.com/file/d/1huptcC_LDnttdrunjY981d3vMlM16X4o/view?usp=sharing"
               target="_blank"
             >
               <Image src={Spread2} />
@@ -144,13 +144,13 @@ const Typography = (props) => {
         <div className={styles.flexRow}>
           <div
             data-tip={
-              '<h1>"Onion Newspaper 1"</h1> <h4> Adobe InDesign </h4> <p>Mockup for \'The Onion\' Newspaper</p> <h5>Click to see full image</h5>'
+              "<h1>\"Onion Newspaper 1\"</h1> <h4> Adobe InDesign </h4> <p>Mockup for 'The Onion' Newspaper</p> <h5>Click to see full image</h5>"
             }
             data-html={true}
             className={styles.Spread1 + " " + styles.images}
           >
             <a
-              href="https://drive.google.com/file/d/14v2qsZ__RR7-m-zFJi-BLD9GWwjc7PCS/view?usp=sharing"
+              href="https://drive.google.com/file/d/1h38UTnFDsSUWaPiWFLThil4WsuTqzgbv/view?usp=sharing"
               target="_blank"
             >
               <Image src={News1} />
@@ -158,13 +158,13 @@ const Typography = (props) => {
           </div>
           <div
             data-tip={
-                '<h1>"Onion Newspaper 2"</h1> <h4> Adobe InDesign </h4> <p>Mockup for \'The Onion\' Newspaper</p> <h5>Click to see full image</h5>'
+              "<h1>\"Onion Newspaper 2\"</h1> <h4> Adobe InDesign </h4> <p>Mockup for 'The Onion' Newspaper</p> <h5>Click to see full image</h5>"
             }
             data-html={true}
             className={styles.Spread1 + " " + styles.images}
           >
             <a
-              href="https://drive.google.com/file/d/14v2qsZ__RR7-m-zFJi-BLD9GWwjc7PCS/view?usp=sharing"
+              href="https://drive.google.com/file/d/1ETau9EQM9bVjoGN1gMpzDk9G4tDLj6Eo/view?usp=sharing"
               target="_blank"
             >
               <Image src={News2} />
@@ -175,13 +175,13 @@ const Typography = (props) => {
         <div className={styles.flexRow}>
           <div
             data-tip={
-                '<h1>"Onion Newspaper 3"</h1> <h4> Adobe InDesign </h4> <p>Mockup for \'The Onion\' Newspaper</p> <h5>Click to see full image</h5>'
+              "<h1>\"Onion Newspaper 3\"</h1> <h4> Adobe InDesign </h4> <p>Mockup for 'The Onion' Newspaper</p> <h5>Click to see full image</h5>"
             }
             data-html={true}
             className={styles.Spread1 + " " + styles.images}
           >
             <a
-              href="https://drive.google.com/file/d/14v2qsZ__RR7-m-zFJi-BLD9GWwjc7PCS/view?usp=sharing"
+              href="https://drive.google.com/file/d/1RSXmWzI2JyTkCyb4SLcjtquyrVo-gnHK/view?usp=sharing"
               target="_blank"
             >
               <Image src={News3} />
@@ -189,13 +189,13 @@ const Typography = (props) => {
           </div>
           <div
             data-tip={
-                '<h1>"Onion Newspaper 4"</h1> <h4> Adobe InDesign </h4> <p>Mockup for \'The Onion\' Newspaper</p> <h5>Click to see full image</h5>'
+              "<h1>\"Onion Newspaper 4\"</h1> <h4> Adobe InDesign </h4> <p>Mockup for 'The Onion' Newspaper</p> <h5>Click to see full image</h5>"
             }
             data-html={true}
             className={styles.Spread1 + " " + styles.images}
           >
             <a
-              href="https://drive.google.com/file/d/14v2qsZ__RR7-m-zFJi-BLD9GWwjc7PCS/view?usp=sharing"
+              href="https://drive.google.com/file/d/13oD7oqb_6Rz6MYODAi6DhSqfhrYfQsPh/view?usp=sharing"
               target="_blank"
             >
               <Image src={News4} />
