@@ -33,7 +33,7 @@ const Typography = (props) => {
           {/* ROW 1 */}
           <div
             data-tip={
-              '<h1>"Droid Typeface Poster"</h1> <h4> PaintToolSAI </h4> <p>Inspired by Tarkovky\'s Stalker (1979)</p> <h5>Click to see full image</h5>'
+              '<h1>"Droid Typeface Poster"</h1> <h4> Adobe Illustrator </h4> <p>Typeface poster inspired by the \"Droid\" typeface</p> <h5>Click to see full image</h5>'
             }
             data-html={true}
             className={styles.droid + " " + styles.images}
@@ -47,7 +47,7 @@ const Typography = (props) => {
           </div>
           <div
             data-tip={
-              '<h1>"Droid Font Poster"</h1> <h4> PaintToolSAI </h4> <p>Inspired by Tarkovky\'s Stalker (1979)</p> <h5>Click to see full image</h5>'
+              '<h1>"Curcuit Typeface Poster"</h1> <h4> Adobe Illustrator </h4> <p>Custom-made typeface taken from computer circuitry</p> <h5>Click to see full image</h5>'
             }
             data-html={true}
             className={styles.circuit + " " + styles.images}
@@ -61,7 +61,7 @@ const Typography = (props) => {
           </div>
           <div
             data-tip={
-              '<h1>"Droid Font Poster"</h1> <h4> PaintToolSAI </h4> <p>Inspired by Tarkovky\'s Stalker (1979)</p> <h5>Click to see full image</h5>'
+              '<h1>"Century Gothic Typeface Poster"</h1> <h4> PaintToolSAI </h4> <p>Inspired by Tarkovky\'s Stalker (1979)</p> <h5>Click to see full image</h5>'
             }
             data-html={true}
             className={styles.centuryGothic + " " + styles.images}
