@@ -3,10 +3,12 @@ import Image from "next/image";
 import GalleryView from "../GalleryView";
 import AboutMe from "../AboutMe";
 import ContactMe from "../ContactMe";
+import Typography from "../Typography";
 import CloseButton from "../CloseButton";
 import GalleryIcon from "../../public/images/shortcuts/gallery-view.gif";
 import AboutMeIcon from "../../public/images/shortcuts/about-me.gif";
 import ContactMeIcon from "../../public/images/shortcuts/contact-me.gif";
+import TypographyIcon from "../../public/images/shortcuts/typography.gif";
 
 const pageWindow = (props) => {
   return (
@@ -33,6 +35,12 @@ const pageWindow = (props) => {
                   styles.contactMeBackground +
                   " " +
                   styles.smallWidth
+                : props.view === "Typography"
+                ? styles.content +
+                  " " +
+                  styles.TypographyBackground +
+                  " " +
+                  styles.smallWidth
                 : null
             }
           >
@@ -45,6 +53,8 @@ const pageWindow = (props) => {
                   <Image src={AboutMeIcon} />
                 ) : props.view === "Contact Me" ? (
                   <Image src={ContactMeIcon} />
+                ) : props.view === "Typography" ? (
+                  <Image src={TypographyIcon} />
                 ) : null}
               </div>
 
@@ -64,6 +74,8 @@ const pageWindow = (props) => {
               <AboutMe />
             ) : props.view === "Contact Me" ? (
               <ContactMe />
+            ) : props.view === "Typography" ? (
+              <Typography />
             ) : null}
           </div>
         </div>

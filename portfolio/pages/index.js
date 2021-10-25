@@ -6,9 +6,9 @@ import AboutMe from "../components/AboutMe"; //importing the whole AboutMe folde
 import Shortcut from "../components/Shortcut"; //imports the Shortcut component
 import PageWindow from "../components/PageWindow"; //imports the PageWindow component
 import StickyFooter from "../components/StickyFooter";
-import CloseButton from "../components/CloseButton"; 
+import CloseButton from "../components/CloseButton";
 import React, { useState, useEffect } from "react";
-import {isMobile} from 'react-device-detect'; 
+import { isMobile } from "react-device-detect";
 import ReactTooltip from "react-tooltip";
 
 export default function Home() {
@@ -23,6 +23,7 @@ export default function Home() {
   const [isGalleryVisible, setIsGalleryVisible] = useState(true);
   const [isAboutMeVisible, setIsAboutMeVisible] = useState(false);
   const [isContactMeVisible, setIsContactMeVisible] = useState(false);
+  const [isTypographyVisible, setTypographyVisible] = useState(false);
 
   const [crtFilter, setCrtFilter] = useState(true);
 
@@ -66,7 +67,6 @@ export default function Home() {
 
         {/* {renderMobilePopUp()} */}
         <div className={styles.container}>
-          
           <section id={"Page Windows"}>
             {/* GALLERY VIEW */}
             <PageWindow
@@ -87,6 +87,13 @@ export default function Home() {
               isVisible={isContactMeVisible}
               closeWindow={() => setIsContactMeVisible(false)}
             />
+
+            {/* TYPOGRAPHY VIEW */}
+            <PageWindow
+              view={"Typography"}
+              isVisible={isTypographyVisible}
+              closeWindow={() => setTypographyVisible(false)}
+            />
           </section>
 
           <section id={"Shortcut Rows"}>
@@ -105,7 +112,9 @@ export default function Home() {
 
             {/* SHORTCUT ROW 2 */}
             <div className={styles.shortcutGrid}>
-              <Shortcut name={"typography"} image={"image5"} />
+              <div onClick={() => setTypographyVisible(true)}>
+                <Shortcut name={"typography"} image={"image5"} />
+              </div>
               <Shortcut name={"posters"} image={"image2"} />
               <Shortcut name={"paintings"} image={"image6"} />
             </div>
@@ -115,27 +124,25 @@ export default function Home() {
               <Shortcut name={'say "hi" '} image={"image7"} />
             </div>
 
-            
             {/* PLAYER ROW */}
             {/* <div className={styles.shortcutGrid}>
               <ReactAudioPlayer src="my_audio_file.ogg" autoPlay controls />
             </div> */}
 
             {/* TEST */}
-            <div className={styles.shortcutGrid}>
-              
-            </div>
-            
+            <div className={styles.shortcutGrid}></div>
           </section>
         </div>
 
         <video autoPlay={true} muted loop className={styles.backgroundVideo}>
-          <source src={"/videos/backgroundVideoCompressed.mp4"} type="video/mp4" />
+          <source
+            src={"/videos/backgroundVideoCompressed.mp4"}
+            type="video/mp4"
+          />
         </video>
 
-        <StickyFooter/>
+        <StickyFooter />
       </div>
-
     </>
   );
 }
