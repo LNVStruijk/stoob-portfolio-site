@@ -37,7 +37,7 @@ const Typography = (props) => {
           {/* ROW 1 */}
           <div
             data-tip={
-              '<h1>"Droid Typeface Poster"</h1> <h4> Adobe Illustrator </h4> <p>Poster inspired by the "Droid" typeface</p> <h5>Click to see full image</h5>'
+              '<h1>"Droid Typeface Poster"</h1> <h4> Adobe Illustrator - 2016</h4> <p>Poster inspired by the "Droid" typeface</p> <h5>Click to see full image</h5>'
             }
             data-html={true}
             className={styles.droid + " " + styles.images}
@@ -51,7 +51,7 @@ const Typography = (props) => {
           </div>
           <div
             data-tip={
-              '<h1>"Curcuit Typeface Poster"</h1> <h4> Adobe Illustrator </h4> <p>Custom-made typeface taken from computer circuitry</p> <h5>Click to see full image</h5>'
+              '<h1>"Curcuit Typeface Poster"</h1> <h4> Adobe Illustrator - 2016</h4> <p>Custom-made typeface taken from computer circuitry</p> <h5>Click to see full image</h5>'
             }
             data-html={true}
             className={styles.circuit + " " + styles.images}
@@ -65,7 +65,7 @@ const Typography = (props) => {
           </div>
           <div
             data-tip={
-              '<h1>"Century Gothic Typeface Poster"</h1> <h4> PaintToolSAI </h4> <p>Poster inspired by the \'Century Gothic\' typeface</p> <h5>Click to see full image</h5>'
+              '<h1>"Century Gothic Typeface Poster"</h1> <h4> PaintToolSAI - 2016</h4> <p>Poster inspired by the \'Century Gothic\' typeface</p> <h5>Click to see full image</h5>'
             }
             data-html={true}
             className={styles.centuryGothic + " " + styles.images}
@@ -82,7 +82,7 @@ const Typography = (props) => {
         <div className={styles.flexRow}>
           <div
             data-tip={
-              '<h1>"Jazz Magazine 1"</h1> <h4> Adobe InDesign </h4> <p>Mockup of a jazz magazine</p> <h5>Click to see full image</h5>'
+              '<h1>"Jazz Magazine 1"</h1> <h4> Adobe InDesign - 2016</h4> <p>Mockup of a jazz magazine</p> <h5>Click to see full image</h5>'
             }
             data-html={true}
             className={styles.Spread1 + " " + styles.images}
@@ -96,7 +96,7 @@ const Typography = (props) => {
           </div>
           <div
             data-tip={
-              '<h1>"Jazz Magazine 2"</h1> <h4> Adobe InDesign </h4> <p>Mockup of a jazz magazine</p> <h5>Click to see full image</h5>'
+              '<h1>"Jazz Magazine 2"</h1> <h4> Adobe InDesign - 2016</h4> <p>Mockup of a jazz magazine</p> <h5>Click to see full image</h5>'
             }
             data-html={true}
             className={styles.Spread1 + " " + styles.images}
@@ -113,7 +113,7 @@ const Typography = (props) => {
         <div className={styles.flexRow}>
           <div
             data-tip={
-              '<h1>"Jazz Magazine 3"</h1> <h4> Adobe InDesign </h4> <p>Mockup of a jazz magazine</p> <h5>Click to see full image</h5>'
+              '<h1>"Jazz Magazine 3"</h1> <h4> Adobe InDesign - 2016</h4> <p>Mockup of a jazz magazine</p> <h5>Click to see full image</h5>'
             }
             data-html={true}
             className={styles.Spread1 + " " + styles.images}
@@ -127,7 +127,7 @@ const Typography = (props) => {
           </div>
           <div
             data-tip={
-              '<h1>"Jazz Magazine 4"</h1> <h4> Adobe InDesign </h4> <p>Mockup of a jazz magazine</p> <h5>Click to see full image</h5>'
+              '<h1>"Jazz Magazine 4"</h1> <h4> Adobe InDesign - 2016</h4> <p>Mockup of a jazz magazine</p> <h5>Click to see full image</h5>'
             }
             data-html={true}
             className={styles.Spread1 + " " + styles.images}
@@ -144,7 +144,7 @@ const Typography = (props) => {
         <div className={styles.flexRow}>
           <div
             data-tip={
-              "<h1>\"Onion Newspaper 1\"</h1> <h4> Adobe InDesign </h4> <p>Mockup for 'The Onion' Newspaper</p> <h5>Click to see full image</h5>"
+              "<h1>\"Onion Newspaper 1\"</h1> <h4> Adobe InDesign - 2016</h4> <p>Mockup for 'The Onion' Newspaper</p> <h5>Click to see full image</h5>"
             }
             data-html={true}
             className={styles.Spread1 + " " + styles.images}
@@ -158,7 +158,7 @@ const Typography = (props) => {
           </div>
           <div
             data-tip={
-              "<h1>\"Onion Newspaper 2\"</h1> <h4> Adobe InDesign </h4> <p>Mockup for 'The Onion' Newspaper</p> <h5>Click to see full image</h5>"
+              "<h1>\"Onion Newspaper 2\"</h1> <h4> Adobe InDesign - 2016</h4> <p>Mockup for 'The Onion' Newspaper</p> <h5>Click to see full image</h5>"
             }
             data-html={true}
             className={styles.Spread1 + " " + styles.images}
@@ -175,7 +175,7 @@ const Typography = (props) => {
         <div className={styles.flexRow}>
           <div
             data-tip={
-              "<h1>\"Onion Newspaper 3\"</h1> <h4> Adobe InDesign </h4> <p>Mockup for 'The Onion' Newspaper</p> <h5>Click to see full image</h5>"
+              "<h1>\"Onion Newspaper 3\"</h1> <h4> Adobe InDesign - 2016</h4> <p>Mockup for 'The Onion' Newspaper</p> <h5>Click to see full image</h5>"
             }
             data-html={true}
             className={styles.Spread1 + " " + styles.images}
@@ -189,7 +189,7 @@ const Typography = (props) => {
           </div>
           <div
             data-tip={
-              "<h1>\"Onion Newspaper 4\"</h1> <h4> Adobe InDesign </h4> <p>Mockup for 'The Onion' Newspaper</p> <h5>Click to see full image</h5>"
+              "<h1>\"Onion Newspaper 4\"</h1> <h4> Adobe InDesign - 2016</h4> <p>Mockup for 'The Onion' Newspaper</p> <h5>Click to see full image</h5>"
             }
             data-html={true}
             className={styles.Spread1 + " " + styles.images}

@@ -39,7 +39,7 @@ const galleryView = (props) => {
           {/* ROW 1 */}
           <div
             data-tip={
-              '<h1>"Stalker"</h1> <h4> PaintToolSAI </h4> <p>Inspired by Tarkovky\'s Stalker (1979)</p> <h5>Click to see full image</h5>'
+              '<h1>"Stalker"</h1> <h4> PaintToolSAI - 2020</h4> <p>Inspired by Tarkovky\'s Stalker (1979)</p> <h5>Click to see full image</h5>'
             }
             data-html={true}
             className={styles.stalker + " " + styles.images}
@@ -54,7 +54,7 @@ const galleryView = (props) => {
 
           <div
             data-tip={
-              '<h1>"Vertigo Poster"</h1> <h4> Adobe Photoshop </h4> <p>Poster inspired by Hitchcock\'s (1958)</p> <h5>Click to see full image</h5>'
+              '<h1>"Vertigo Poster"</h1> <h4> Adobe Photoshop - 2017</h4> <p>Poster inspired by Hitchcock\'s (1958)</p> <h5>Click to see full image</h5>'
             }
             data-html={true}
             className={styles.vertigo + " " + styles.images}
@@ -68,7 +68,7 @@ const galleryView = (props) => {
           </div>
           <div
             data-tip={
-              '<h1>"radiation2"</h1> <h4> PaintToolSAI </h4> <p>Digital painting of a radiation Victim</p> <h5>Click to see full image</h5>'
+              '<h1>"radiation2"</h1> <h4> PaintToolSAI - 2020</h4> <p>Digital painting of a radiation Victim</p> <h5>Click to see full image</h5>'
             }
             data-html={true}
             className={styles.radiation + " " + styles.images}
@@ -85,7 +85,7 @@ const galleryView = (props) => {
         <div className={styles.flexRow}>
           <div
             data-tip={
-              '<h1>"Shining Poster"</h1> <h4> Adobe Illustrator </h4> <p>Poster of Kubrick\'s Shining (1980) using only type</p> <h5>Click to see full image</h5>'
+              '<h1>"Shining Poster"</h1> <h4> Adobe Illustrator - 2016</h4> <p>Poster of Kubrick\'s Shining (1980) using only type</p> <h5>Click to see full image</h5>'
             }
             data-html={true}
             className={styles.shining + " " + styles.images}
@@ -99,7 +99,7 @@ const galleryView = (props) => {
           </div>
           <div
             data-tip={
-              '<h1>"Ash Williams"</h1> <h4> PaintToolSAI </h4> <p>Image of Ash Williams from \'Evil Dead II\'</p> <h5>Click to see full image</h5>'
+              '<h1>"Ash Williams"</h1> <h4> PaintToolSAI - 2021</h4> <p>Image of Ash Williams from \'Evil Dead II\'</p> <h5>Click to see full image</h5>'
             }
             data-html={true}
             className={styles.williams + " " + styles.images}
@@ -113,7 +113,7 @@ const galleryView = (props) => {
           </div>
           <div
             data-tip={
-              '<h1>"Burn Victim"</h1> <h4> PaintToolSAI </h4> <p>Study of a burn victim</p> <h5>Click to see full image</h5>'
+              '<h1>"Burn Victim"</h1> <h4> PaintToolSAI - 2021</h4> <p>Study of a burn victim</p> <h5>Click to see full image</h5>'
             }
             data-html={true}
             className={styles.burnVictim + " " + styles.images}
@@ -130,7 +130,7 @@ const galleryView = (props) => {
         <div className={styles.flexRow}>
           <div
             data-tip={
-              '<h1>"There Will Be Blood Poster"</h1> <h4> Adobe Photoshop </h4> <p>Poster inspired by Thomas Anderson\'s There Will Be Blood (2007)</p> <h5>Click to see full image</h5>'
+              '<h1>"There Will Be Blood Poster"</h1> <h4> Adobe Photoshop - 2017</h4> <p>Poster inspired by Thomas Anderson\'s There Will Be Blood (2007)</p> <h5>Click to see full image</h5>'
             }
             data-html={true}
             className={styles.blood + " " + styles.images}
@@ -144,7 +144,7 @@ const galleryView = (props) => {
           </div>
           <div
             data-tip={
-              '<h1>"Tortoise Study"</h1> <h4> PaintToolSAI </h4> <p>Study of a tortoise</p> <h5>Click to see full image</h5>'
+              '<h1>"Tortoise Study"</h1> <h4> PaintToolSAI - 2021 </h4> <p>Study of a tortoise</p> <h5>Click to see full image</h5>'
             }
             data-html={true}
             className={styles.tortoise + " " + styles.images}
@@ -158,7 +158,7 @@ const galleryView = (props) => {
           </div>
           <div
             data-tip={
-              '<h1>"Baby"</h1> <h4> PaintToolSAI </h4> <p>Inspired by a case of \'Holoproscencephaly\' on a child</p> <h5>Click to see full image</h5>'
+              '<h1>"Baby"</h1> <h4> PaintToolSAI - 2021 </h4> <p>Inspired by a case of \'Holoproscencephaly\' on a child</p> <h5>Click to see full image</h5>'
             }
             data-html={true}
             className={styles.baby + " " + styles.images}
@@ -175,7 +175,7 @@ const galleryView = (props) => {
         <div className={styles.flexRow}>
           <div
             data-tip={
-              '<h1>"Whiplash"</h1> <h4> Adobe Photoshop </h4> <p>Poster inspired by Chazelle\'s Whiplash (2014)</p> <h5>Click to see full image</h5>'
+              '<h1>"Whiplash"</h1> <h4> Adobe Photoshop - 2017 </h4> <p>Poster inspired by Chazelle\'s Whiplash (2014)</p> <h5>Click to see full image</h5>'
             }
             data-html={true}
             className={styles.whiplash + " " + styles.images}
@@ -189,7 +189,7 @@ const galleryView = (props) => {
           </div>
           <div
             data-tip={
-              '<h1>"Reptile Study"</h1> <h4> PaintToolSAI </h4> <p>Studies of various reptiles</p> <h5>Click to see full image</h5>'
+              '<h1>"Reptile Study"</h1> <h4> PaintToolSAI - 2021</h4> <p>Studies of various reptiles</p> <h5>Click to see full image</h5>'
             }
             data-html={true}
             className={styles.reptile + " " + styles.images}
@@ -203,7 +203,7 @@ const galleryView = (props) => {
           </div>
           <div
             data-tip={
-              '<h1>"Oldboy Poster"</h1> <h4> Adobe Photoshop </h4> <p>Inspired by Chan-wook\'s Oldboy (2003)</p> <h5>Click to see full image</h5>'
+              '<h1>"Oldboy Poster"</h1> <h4> Adobe Photoshop - 2017 </h4> <p>Inspired by Chan-wook\'s Oldboy (2003)</p> <h5>Click to see full image</h5>'
             }
             data-html={true}
             className={styles.oldboy + " " + styles.images}
@@ -220,7 +220,7 @@ const galleryView = (props) => {
         <div className={styles.flexRow}>
           <div
             data-tip={
-              '<h1>"Triggers" - Master\'s Thesis</h1> <h4> VR, UnityEngine </h4> <p>Therapeutic experiment to address \'Misophonia\' disorder</p> <h5>Click to see video demo</h5>'
+              '<h1>"Triggers" - Master\'s Thesis</h1> <h4> VR, UnityEngine - 2021 </h4> <p>Therapeutic experiment to address \'Misophonia\' disorder</p> <h5>Click to see video demo</h5>'
             }
             data-html={true}
             className={styles.triggers + " " + styles.images}

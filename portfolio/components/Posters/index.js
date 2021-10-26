@@ -2,17 +2,14 @@ import styles from "./Posters.module.scss";
 import Image from "next/image";
 import Link from "next/link";
 import DitherTexture from "../../public/images/dither-texture.png";
-import Droid from "../../public/images/typography-low-res/droid.png";
-import Circuit from "../../public/images/typography-low-res/circuit.jpg";
-import CenturyGothic from "../../public/images/typography-low-res/century-gothic.jpg";
-import Spread1 from "../../public/images/typography-low-res/mag-spread-1.jpg";
-import Spread2 from "../../public/images/typography-low-res/mag-spread-2.jpg";
-import Spread3 from "../../public/images/typography-low-res/mag-spread-3.jpg";
-import Spread4 from "../../public/images/typography-low-res/mag-spread-4.jpg";
-import News1 from "../../public/images/typography-low-res/news-1.jpg";
-import News2 from "../../public/images/typography-low-res/news-2.jpg";
-import News3 from "../../public/images/typography-low-res/news-3.jpg";
-import News4 from "../../public/images/typography-low-res/news-4.jpg";
+import Omikuji from "../../public/images/posters-low-res/omikuji.png";
+import Orange from "../../public/images/posters-low-res/orange.png";
+import PunShirts from "../../public/images/posters-low-res/pun-shirts.png";
+import Shining from "../../public/images/gallery-low-resolution/shining-poster-low.png";
+import Blood from "../../public/images/gallery-low-resolution/blood-poster-low.png";
+import Whiplash from "../../public/images/gallery-low-resolution/whip-poster-low.png";
+import OldBoy from "../../public/images/gallery-low-resolution/old-poster-low.png";
+import Vertigo from "../../public/images/gallery-low-resolution/vertigo-poster-low.png";
 import ReactTooltip from "react-tooltip";
 import { isMobile } from "react-device-detect";
 import React, { useState, useEffect } from "react";
@@ -37,75 +34,89 @@ const Posters = (props) => {
           {/* ROW 1 */}
           <div
             data-tip={
-              '<h1>"Droid Typeface Poster"</h1> <h4> Adobe Illustrator </h4> <p>Poster inspired by the "Droid" typeface</p> <h5>Click to see full image</h5>'
+              '<h1>"Omikuji Event Poster"</h1> <h4> Adobe Illustrator - 2017 </h4> <p>Campaign poster for a school Organization event</p> <h5>Click to see full image</h5>'
             }
             data-html={true}
-            className={styles.droid + " " + styles.images}
+            className={styles.omikuji + " " + styles.images}
           >
             <a
-              href="https://drive.google.com/file/d/1peLdSfEPV8BGK1HwXIuzk06SElZ7ezs3/view?usp=sharing"
+              href="https://drive.google.com/file/d/11yo2IWir46g3O8dINxaPUm6SXegbnYh9/view?usp=sharing"
               target="_blank"
             >
-              <Image src={Droid} />
+              <Image src={Omikuji} />
             </a>
           </div>
           <div
             data-tip={
-              '<h1>"Curcuit Typeface Poster"</h1> <h4> Adobe Illustrator </h4> <p>Custom-made typeface taken from computer circuitry</p> <h5>Click to see full image</h5>'
+              '<h1>"Film Showing Poster"</h1> <h4> Multimedia - 2017 </h4> <p>Custom-made typeface taken from computer circuitry</p> <h5>Click to see full image</h5>'
             }
             data-html={true}
-            className={styles.circuit + " " + styles.images}
+            className={styles.orange + " " + styles.images}
           >
             <a
-              href="https://drive.google.com/file/d/1nmGKLAhqcddQUV1IK0U6XF88PsZIvQWI/view?usp=sharing"
+              href="https://drive.google.com/file/d/1dg_yEBB2Qj46QEny7tLgg9frYuj7l4en/view?usp=sharing"
               target="_blank"
             >
-              <Image src={Circuit} />
+              <Image src={Orange} />
             </a>
           </div>
-          <div
+          {/* <div
             data-tip={
-              '<h1>"Century Gothic Typeface Poster"</h1> <h4> PaintToolSAI </h4> <p>Poster inspired by the \'Century Gothic\' typeface</p> <h5>Click to see full image</h5>'
+              "<h1>\"Century Gothic Typeface Poster\"</h1> <h4> PaintToolSAI </h4> <p>Poster inspired by the 'Century Gothic' typeface</p> <h5>Click to see full image</h5>"
             }
             data-html={true}
-            className={styles.centuryGothic + " " + styles.images}
+            className={styles.punShirts + " " + styles.images}
           >
             <a
               href="https://drive.google.com/file/d/1kIAu-ferfKYU4d91S30j1a2fGgtD6sQW/view?usp=sharing"
               target="_blank"
             >
-              <Image src={CenturyGothic} />
+              <Image src={PunShirts} />
             </a>
-          </div>
+          </div> */}
         </div>
         {/* ROW 2 */}
         <div className={styles.flexRow}>
           <div
             data-tip={
-              '<h1>"Jazz Magazine 1"</h1> <h4> Adobe InDesign </h4> <p>Mockup of a jazz magazine</p> <h5>Click to see full image</h5>'
+              '<h1>"Shining Poster"</h1> <h4> Adobe Illustrator - 2016</h4> <p>Poster of Kubrick\'s Shining (1980) using only type</p> <h5>Click to see full image</h5>'
             }
             data-html={true}
-            className={styles.Spread1 + " " + styles.images}
+            className={styles.shining + " " + styles.images}
           >
             <a
-              href="https://drive.google.com/file/d/1m-4EJv6OrKhjwKd-NE3ggS6oZjUm9a4M/view?usp=sharing"
+              href="https://drive.google.com/file/d/1U1FIcQh0mCDIylKcvw9pM2hrVlLzyI2t/view?usp=sharing"
               target="_blank"
             >
-              <Image src={Spread1} />
+              <Image src={Shining} />
             </a>
           </div>
           <div
             data-tip={
-              '<h1>"Jazz Magazine 2"</h1> <h4> Adobe InDesign </h4> <p>Mockup of a jazz magazine</p> <h5>Click to see full image</h5>'
+              '<h1>"There Will Be Blood Poster"</h1> <h4> Adobe Photoshop - 2017</h4> <p>Poster inspired by Thomas Anderson\'s There Will Be Blood (2007)</p> <h5>Click to see full image</h5>'
             }
             data-html={true}
-            className={styles.Spread1 + " " + styles.images}
+            className={styles.blood + " " + styles.images}
           >
             <a
-              href="https://drive.google.com/file/d/1t7ihpVSYfkGGVYKWuhC2sxD2sUlw5_nH/view?usp=sharing"
+              href="https://drive.google.com/file/d/1s_HggDR7-sRF1A4GmpZDzxQevjPhkv4g/view?usp=sharing"
               target="_blank"
             >
-              <Image src={Spread4} />
+              <Image src={Blood} />
+            </a>
+          </div>
+          <div
+            data-tip={
+              '<h1>"Whiplash"</h1> <h4> Adobe Photoshop - 2017</h4> <p>Poster inspired by Chazelle\'s Whiplash (2014)</p> <h5>Click to see full image</h5>'
+            }
+            data-html={true}
+            className={styles.whiplash + " " + styles.images}
+          >
+            <a
+              href="https://drive.google.com/file/d/1EOo4Ul8v_Tg8c5z1nmKqEAVSvsJ8F2bc/view?usp=sharing"
+              target="_blank"
+            >
+              <Image src={Whiplash} />
             </a>
           </div>
         </div>
@@ -113,95 +124,37 @@ const Posters = (props) => {
         <div className={styles.flexRow}>
           <div
             data-tip={
-              '<h1>"Jazz Magazine 3"</h1> <h4> Adobe InDesign </h4> <p>Mockup of a jazz magazine</p> <h5>Click to see full image</h5>'
+              '<h1>"Vertigo Poster"</h1> <h4> Adobe Photoshop - 2017</h4> <p>Poster inspired by Hitchcock\'s (1958)</p> <h5>Click to see full image</h5>'
             }
             data-html={true}
-            className={styles.Spread1 + " " + styles.images}
+            className={styles.vertigo + " " + styles.images}
           >
             <a
-              href="https://drive.google.com/file/d/1ItHRYer79X22cGEdOrNfPlDiofTulVPs/view?usp=sharing"
+              href="https://drive.google.com/file/d/1zmxn3moPF8Gm3UOHw2Jjru4cmN6cpTix/view?usp=sharing"
               target="_blank"
             >
-              <Image src={Spread3} />
+              <Image src={Vertigo} />
             </a>
           </div>
           <div
             data-tip={
-              '<h1>"Jazz Magazine 4"</h1> <h4> Adobe InDesign </h4> <p>Mockup of a jazz magazine</p> <h5>Click to see full image</h5>'
+              '<h1>"Oldboy Poster"</h1> <h4> Adobe Photoshop - 2017</h4> <p>Inspired by Chan-wook\'s Oldboy (2003)</p> <h5>Click to see full image</h5>'
             }
             data-html={true}
-            className={styles.Spread1 + " " + styles.images}
+            className={styles.oldboy + " " + styles.images}
           >
             <a
-              href="https://drive.google.com/file/d/1huptcC_LDnttdrunjY981d3vMlM16X4o/view?usp=sharing"
+              href="https://drive.google.com/file/d/1JFpIzT5wW9YVpVsm0lZcKperEFlXZ6Tb/view?usp=sharing"
               target="_blank"
             >
-              <Image src={Spread2} />
+              <Image src={OldBoy} />
             </a>
           </div>
         </div>
         {/* ROW 4 */}
-        <div className={styles.flexRow}>
-          <div
-            data-tip={
-              "<h1>\"Onion Newspaper 1\"</h1> <h4> Adobe InDesign </h4> <p>Mockup for 'The Onion' Newspaper</p> <h5>Click to see full image</h5>"
-            }
-            data-html={true}
-            className={styles.Spread1 + " " + styles.images}
-          >
-            <a
-              href="https://drive.google.com/file/d/1h38UTnFDsSUWaPiWFLThil4WsuTqzgbv/view?usp=sharing"
-              target="_blank"
-            >
-              <Image src={News1} />
-            </a>
-          </div>
-          <div
-            data-tip={
-              "<h1>\"Onion Newspaper 2\"</h1> <h4> Adobe InDesign </h4> <p>Mockup for 'The Onion' Newspaper</p> <h5>Click to see full image</h5>"
-            }
-            data-html={true}
-            className={styles.Spread1 + " " + styles.images}
-          >
-            <a
-              href="https://drive.google.com/file/d/1ETau9EQM9bVjoGN1gMpzDk9G4tDLj6Eo/view?usp=sharing"
-              target="_blank"
-            >
-              <Image src={News2} />
-            </a>
-          </div>
-        </div>
+        <div className={styles.flexRow}></div>
         {/* ROW 5 */}
-        <div className={styles.flexRow}>
-          <div
-            data-tip={
-              "<h1>\"Onion Newspaper 3\"</h1> <h4> Adobe InDesign </h4> <p>Mockup for 'The Onion' Newspaper</p> <h5>Click to see full image</h5>"
-            }
-            data-html={true}
-            className={styles.Spread1 + " " + styles.images}
-          >
-            <a
-              href="https://drive.google.com/file/d/1RSXmWzI2JyTkCyb4SLcjtquyrVo-gnHK/view?usp=sharing"
-              target="_blank"
-            >
-              <Image src={News3} />
-            </a>
-          </div>
-          <div
-            data-tip={
-              "<h1>\"Onion Newspaper 4\"</h1> <h4> Adobe InDesign </h4> <p>Mockup for 'The Onion' Newspaper</p> <h5>Click to see full image</h5>"
-            }
-            data-html={true}
-            className={styles.Spread1 + " " + styles.images}
-          >
-            <a
-              href="https://drive.google.com/file/d/13oD7oqb_6Rz6MYODAi6DhSqfhrYfQsPh/view?usp=sharing"
-              target="_blank"
-            >
-              <Image src={News4} />
-            </a>
-          </div>
-        </div>
+        <div className={styles.flexRow}></div>
         <ReactTooltip className={styles.toolTip} />
       </div>
     </>

@@ -132,7 +132,9 @@ export default function Home() {
             {/* SHORTCUT ROW 3 */}
             <div className={styles.shortcutGrid}>
               <Shortcut name={'say "hi" '} image={"image7"} />
+              <Shortcut name={'other works'} image={"image7"} />
             </div>
+            
 
             {/* PLAYER ROW */}
             {/* <div className={styles.shortcutGrid}>
