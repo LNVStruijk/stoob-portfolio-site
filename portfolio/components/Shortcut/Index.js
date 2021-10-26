@@ -11,7 +11,6 @@ import PaintingsIcon from "../../public/images/shortcuts/paintings.gif";
 import DoomLaugh from "../../public/images/shortcuts/doom-laugh.gif";
 import PostersIcon from "../../public/images/shortcuts/posters.gif";
 
-
 const Shortcut = (props) => {
   // this is component so we want to make it constant
   //'props' is a parameter that you can change or smth

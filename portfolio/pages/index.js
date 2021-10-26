@@ -24,6 +24,7 @@ export default function Home() {
   const [isAboutMeVisible, setIsAboutMeVisible] = useState(false);
   const [isContactMeVisible, setIsContactMeVisible] = useState(false);
   const [isTypographyVisible, setTypographyVisible] = useState(false);
+  const [isPostersVisible, setPostersVisible] = useState(false);
 
   const [crtFilter, setCrtFilter] = useState(true);
 
@@ -94,6 +95,12 @@ export default function Home() {
               isVisible={isTypographyVisible}
               closeWindow={() => setTypographyVisible(false)}
             />
+            {/* TYPOGRAPHY VIEW */}
+            <PageWindow
+              view={"Posters"}
+              isVisible={isPostersVisible}
+              closeWindow={() => setPostersVisible(false)}
+            />
           </section>
 
           <section id={"Shortcut Rows"}>
@@ -115,7 +122,10 @@ export default function Home() {
               <div onClick={() => setTypographyVisible(true)}>
                 <Shortcut name={"typography"} image={"image5"} />
               </div>
-              <Shortcut name={"posters"} image={"image2"} />
+              <div onClick={() => setPostersVisible(true)}>
+                <Shortcut name={"posters"} image={"image2"} />
+              </div>
+
               <Shortcut name={"paintings"} image={"image6"} />
             </div>
 

@@ -5,10 +5,12 @@ import AboutMe from "../AboutMe";
 import ContactMe from "../ContactMe";
 import Typography from "../Typography";
 import CloseButton from "../CloseButton";
+import Posters from "../Posters";
 import GalleryIcon from "../../public/images/shortcuts/gallery-view.gif";
 import AboutMeIcon from "../../public/images/shortcuts/about-me.gif";
 import ContactMeIcon from "../../public/images/shortcuts/contact-me.gif";
 import TypographyIcon from "../../public/images/shortcuts/typography.gif";
+import PostersIcon from "../../public/images/shortcuts/posters.gif";
 
 const pageWindow = (props) => {
   return (
@@ -41,6 +43,12 @@ const pageWindow = (props) => {
                   styles.TypographyBackground +
                   " " +
                   styles.largeWidth
+                : props.view === "Posters"
+                ? styles.content +
+                  " " +
+                  styles.PostersBackground +
+                  " " +
+                  styles.largeWidth
                 : null
             }
           >
@@ -55,6 +63,8 @@ const pageWindow = (props) => {
                   <Image src={ContactMeIcon} />
                 ) : props.view === "Typography" ? (
                   <Image src={TypographyIcon} />
+                ) : props.view === "Posters" ? (
+                  <Image src={PostersIcon} />
                 ) : null}
               </div>
 
@@ -76,6 +86,8 @@ const pageWindow = (props) => {
               <ContactMe />
             ) : props.view === "Typography" ? (
               <Typography />
+            ) : props.view === "Posters" ? (
+              <Posters />
             ) : null}
           </div>
         </div>
