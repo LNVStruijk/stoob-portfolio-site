@@ -11,7 +11,7 @@
   overflow-y: scroll;
 
   background-image: url("../../public/backgrounds/gallery-background.png");
-  background-size: 80rem;
+  background-size: 100rem;
   background-repeat: no-repeat;
 
   @media #{$mq-mobile} {
@@ -59,18 +59,54 @@
     line-height: 1.5rem;
     text-align: center;
     border: 0.05rem solid white;
-    background-color:#01019eaf;
+    background-color: #01019eaf;
     color: white;
     font-size: 1rem;
     // width: 11rem;
   }
 
-  .omikuji{
+  .stalker {
+    flex: 0.52;
+  }
+
+  .baby {
+    flex: 0.55;
+  }
+
+  .williams {
+    flex: 0.9;
+  }
+
+  .burnVictim {
+    flex: 0.475;
+  }
+
+  .tortoise {
+    flex: 0.98;
+  }
+
+  .caligula {
+    flex: 1;
+  }
+
+  .radiation {
+    flex: 0.93;
+  }
+  .chernobyl {
+    flex: 0.95;
+  }
+
+  .shark1 {
+    // flex: 0.6;
+  }
+  .shark2 {
     flex: 0.5;
   }
 
-  .orange{
-    flex: 0.5;
+  .reptile{
+    flex: 0.28;
   }
-
+  .radiation1{
+    flex: 0.38;
+  }
 }

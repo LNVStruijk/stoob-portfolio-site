@@ -68,7 +68,7 @@ const galleryView = (props) => {
           </div>
           <div
             data-tip={
-              '<h1>"radiation2"</h1> <h4> PaintToolSAI - 2020</h4> <p>Digital painting of a radiation Victim</p> <h5>Click to see full image</h5>'
+              '<h1>"radiation2"</h1> <h4> PaintToolSAI - 2019</h4> <p>Digital painting of a radiation Victim</p> <h5>Click to see full image</h5>'
             }
             data-html={true}
             className={styles.radiation + " " + styles.images}
@@ -99,7 +99,7 @@ const galleryView = (props) => {
           </div>
           <div
             data-tip={
-              '<h1>"Ash Williams"</h1> <h4> PaintToolSAI - 2021</h4> <p>Image of Ash Williams from \'Evil Dead II\'</p> <h5>Click to see full image</h5>'
+              '<h1>"Ash Williams"</h1> <h4> PaintToolSAI - 2020</h4> <p>Image of Ash Williams from \'Evil Dead II\'</p> <h5>Click to see full image</h5>'
             }
             data-html={true}
             className={styles.williams + " " + styles.images}
@@ -113,7 +113,7 @@ const galleryView = (props) => {
           </div>
           <div
             data-tip={
-              '<h1>"Burn Victim"</h1> <h4> PaintToolSAI - 2021</h4> <p>Study of a burn victim</p> <h5>Click to see full image</h5>'
+              '<h1>"Burn Victim"</h1> <h4> PaintToolSAI - 2020</h4> <p>Study of a burn victim</p> <h5>Click to see full image</h5>'
             }
             data-html={true}
             className={styles.burnVictim + " " + styles.images}
@@ -144,7 +144,7 @@ const galleryView = (props) => {
           </div>
           <div
             data-tip={
-              '<h1>"Tortoise Study"</h1> <h4> PaintToolSAI - 2021 </h4> <p>Study of a tortoise</p> <h5>Click to see full image</h5>'
+              '<h1>"Tortoise Study"</h1> <h4> PaintToolSAI - 2020 </h4> <p>Study of a tortoise</p> <h5>Click to see full image</h5>'
             }
             data-html={true}
             className={styles.tortoise + " " + styles.images}
@@ -189,7 +189,7 @@ const galleryView = (props) => {
           </div>
           <div
             data-tip={
-              '<h1>"Reptile Study"</h1> <h4> PaintToolSAI - 2021</h4> <p>Studies of various reptiles</p> <h5>Click to see full image</h5>'
+              '<h1>"Reptile Study"</h1> <h4> PaintToolSAI - 2020</h4> <p>Studies of various reptiles</p> <h5>Click to see full image</h5>'
             }
             data-html={true}
             className={styles.reptile + " " + styles.images}
