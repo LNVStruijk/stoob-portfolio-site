@@ -122,7 +122,7 @@ const Paintings = (props) => {
             className={styles.shark1 + " " + styles.images}
           >
             <a
-              href="https://drive.google.com/file/d/1BacQuo4TRiacZYgzNA1Z1R0H8COmd18g/view?usp=sharing"
+              href="https://drive.google.com/file/d/19VueCqKCVcAY4rkhJB1SJfkyAYJk2YjB/view?usp=sharing"
               target="_blank"
             >
               <Image src={Shark1} />
@@ -139,7 +139,7 @@ const Paintings = (props) => {
             className={styles.caligula + " " + styles.images}
           >
             <a
-              href="https://drive.google.com/file/d/1mMHOQqsLbZ3k0lQFB_rCfXazcHkNJOtQ/view?usp=sharing"
+              href="https://drive.google.com/file/d/1jFLcgLLvdhmf5LzTk0cd4KbZDqkNI2tR/view?usp=sharing"
               target="_blank"
             >
               <Image src={Caligula} />
@@ -167,7 +167,7 @@ const Paintings = (props) => {
             className={styles.chernobyl + " " + styles.images}
           >
             <a
-              href="https://drive.google.com/file/d/1ec7PMKk7FGdMIfhsLSIVkGfLiR9nhBy0/view?usp=sharing"
+              href="https://drive.google.com/file/d/1XJ06Q9i24luWjlrRGL8XBrC5regxTiJH/view?usp=sharing"
               target="_blank"
             >
               <Image src={Chernobyl} />
@@ -184,7 +184,7 @@ const Paintings = (props) => {
             className={styles.shark2 + " " + styles.images}
           >
             <a
-              href="https://drive.google.com/file/d/1BacQuo4TRiacZYgzNA1Z1R0H8COmd18g/view?usp=sharing"
+              href="https://drive.google.com/file/d/1p1IBbgG0ri6_ccYhl6xqyk8UP8ifA2F6/view?usp=sharing"
               target="_blank"
             >
               <Image src={Shark2} />
@@ -212,7 +212,7 @@ const Paintings = (props) => {
             className={styles.radiation1 + " " + styles.images}
           >
             <a
-              href="https://drive.google.com/file/d/1ec7PMKk7FGdMIfhsLSIVkGfLiR9nhBy0/view?usp=sharing"
+              href="https://drive.google.com/file/d/1lFHI0z1YkLRjCXXlZ-yMv2kXMLLAZXZw/view?usp=sharing"
               target="_blank"
             >
               <Image src={Radiation1} />
