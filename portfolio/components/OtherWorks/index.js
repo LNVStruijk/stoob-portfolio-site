@@ -41,7 +41,7 @@ const OtherWorks = (props) => {
           {/* ROW 1 */}
           <div
             data-tip={
-              '<h1>"Omikuji Event Poster"</h1> <h4> Adobe Illustrator - 2017 </h4> <p>Campaign poster for a school Organization event</p> <h5>Click to see full image</h5>'
+              '<h1>"Rice Cards"</h1> <h4> Adobe Photoshop - 2020 </h4> <p>Component for bachelor thesis project</p> <h5>Click to see full image</h5>'
             }
             data-html={true}
             className={styles.riceCards + " " + styles.images}
@@ -55,7 +55,7 @@ const OtherWorks = (props) => {
           </div>
           <div
             data-tip={
-              '<h1>"Burger Machine Menu"</h1> <h4> Multimedia - 2017 </h4> <p>Custom-made typeface taken from computer circuitry</p> <h5>Click to see full image</h5>'
+              '<h1>"Burger Machine Menu"</h1> <h4> Photoshop - 2019 </h4> <p>Final project for branding class</p> <h5>Click to see full image</h5>'
             }
             data-html={true}
             className={styles.burgerMachine + " " + styles.images}
@@ -72,7 +72,7 @@ const OtherWorks = (props) => {
         <div className={styles.flexRow}>
           <div
             data-tip={
-              '<h1>"Shining Poster"</h1> <h4> Adobe Illustrator - 2016</h4> <p>Poster of Kubrick\'s Shining (1980) using only type</p> <h5>Click to see full image</h5>'
+              '<h1>"Rice Posters"</h1> <h4> Adobe Photoshop - 2020</h4> <p>Component for bachelor thesis project</p> <h5>Click to see full image</h5>'
             }
             data-html={true}
             className={styles.ricePoster + " " + styles.images}
@@ -86,7 +86,7 @@ const OtherWorks = (props) => {
           </div>
           <div
             data-tip={
-              '<h1>"There Will Be Blood Poster"</h1> <h4> Adobe Photoshop - 2017</h4> <p>Poster inspired by Thomas Anderson\'s There Will Be Blood (2007)</p> <h5>Click to see full image</h5>'
+              '<h1>"Rice Stickers"</h1> <h4> Adobe Photoshop - 2020</h4> <p>Component for bachelor thesis project</p> <h5>Click to see full image</h5>'
             }
             data-html={true}
             className={styles.rickeStickers + " " + styles.images}
