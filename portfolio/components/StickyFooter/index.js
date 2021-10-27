@@ -13,8 +13,11 @@ const StickyFooter = (props) => {
           </div>
           <div className={styles.activeWindow}>
             <p className={styles.notStart}>
-              <span >Window 2</span>
+              <span>Window 2</span>
             </p>
+          </div>
+          <div className={styles.nonClickable}>
+            <p className={styles.creators}>Created by Lucas Struijk {"\&"} Andrea Ang</p>
           </div>
         </div>
       </div>
