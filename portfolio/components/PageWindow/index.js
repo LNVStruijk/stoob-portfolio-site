@@ -7,13 +7,13 @@ import Typography from "../Typography";
 import CloseButton from "../CloseButton";
 import Posters from "../Posters";
 import Paintings from "../Paintings";
+import OtherWorks from "../OtherWorks";
 import GalleryIcon from "../../public/images/shortcuts/gallery-view.gif";
 import AboutMeIcon from "../../public/images/shortcuts/about-me.gif";
 import ContactMeIcon from "../../public/images/shortcuts/contact-me.gif";
 import TypographyIcon from "../../public/images/shortcuts/typography.gif";
 import PostersIcon from "../../public/images/shortcuts/posters.gif";
 import PaintingsIcon from "../../public/images/shortcuts/paintings.gif";
-
 
 const pageWindow = (props) => {
   return (
@@ -58,6 +58,12 @@ const pageWindow = (props) => {
                   styles.PaintingsBackground +
                   " " +
                   styles.largeWidth
+                : props.view === "Other Works"
+                ? styles.content +
+                  " " +
+                  styles.OtherWorksBackground +
+                  " " +
+                  styles.largeWidth
                 : null
             }
           >
@@ -75,6 +81,8 @@ const pageWindow = (props) => {
                 ) : props.view === "Posters" ? (
                   <Image src={PostersIcon} />
                 ) : props.view === "Paintings" ? (
+                  <Image src={PaintingsIcon} />
+                ) : props.view === "Other Works" ? (
                   <Image src={PaintingsIcon} />
                 ) : null}
               </div>
@@ -99,8 +107,10 @@ const pageWindow = (props) => {
               <Typography />
             ) : props.view === "Posters" ? (
               <Posters />
-            ) :props.view === "Paintings" ? (
+            ) : props.view === "Paintings" ? (
               <Paintings />
+            ) : props.view === "Other Works" ? (
+              <OtherWorks />
             ) : null}
           </div>
         </div>

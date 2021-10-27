@@ -26,6 +26,7 @@ export default function Home() {
   const [isTypographyVisible, setTypographyVisible] = useState(false);
   const [isPostersVisible, setPostersVisible] = useState(false);
   const [isPaintingsVisible, setPaintingsVisible] = useState(false);
+  const [isOtherWorksVisible, setOtherWorksVisible] = useState(false);
 
   const [crtFilter, setCrtFilter] = useState(true);
 
@@ -108,6 +109,12 @@ export default function Home() {
               isVisible={isPaintingsVisible}
               closeWindow={() => setPaintingsVisible(false)}
             />
+            {/* OTHER WORKS VIEW */}
+            <PageWindow
+              view={"Other Works"}
+              isVisible={isOtherWorksVisible}
+              closeWindow={() => setOtherWorksVisible(false)}
+            />
           </section>
 
           <section id={"Shortcut Rows"}>
@@ -140,7 +147,9 @@ export default function Home() {
             {/* SHORTCUT ROW 3 */}
             <div className={styles.shortcutGrid}>
               <Shortcut name={'say "hi" '} image={"image7"} />
-              <Shortcut name={"other works"} image={"image7"} />
+              <div onClick={() => setOtherWorksVisible(true)}>
+                <Shortcut name={"other works"} image={"image7"} />
+              </div>
             </div>
 
             {/* PLAYER ROW */}

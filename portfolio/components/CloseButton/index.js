@@ -17,6 +17,8 @@ const CloseButton = (props) => {
             ? styles.container + " " + styles.PostersBackground
             : props.closeColor === "Paintings"
             ? styles.container + " " + styles.PaintingsBackground
+            : props.closeColor === "Other Works"
+            ? styles.container + " " + styles.OtherWorksBackground
             : null
         }
       >
