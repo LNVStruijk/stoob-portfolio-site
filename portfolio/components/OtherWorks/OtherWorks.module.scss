@@ -59,22 +59,18 @@
     line-height: 1.5rem;
     text-align: center;
     border: 0.05rem solid white;
-    background-color:#01019eaf;
+    background-color: #01019eaf;
     color: white;
     font-size: 1rem;
     // width: 11rem;
   }
 
-  .omikuji{
-    flex: 0.5;
+  .riceCards{
+      flex: 1;
   }
 
-  .orange{
-    flex: 0.5;
-  }
-
-  .punShirts{
-    flex: 0.4;
+  .burgerMachine{
+      flex: 0.94;
   }
 
 }
