@@ -6,11 +6,14 @@ import ContactMe from "../ContactMe";
 import Typography from "../Typography";
 import CloseButton from "../CloseButton";
 import Posters from "../Posters";
+import Paintings from "../Paintings";
 import GalleryIcon from "../../public/images/shortcuts/gallery-view.gif";
 import AboutMeIcon from "../../public/images/shortcuts/about-me.gif";
 import ContactMeIcon from "../../public/images/shortcuts/contact-me.gif";
 import TypographyIcon from "../../public/images/shortcuts/typography.gif";
 import PostersIcon from "../../public/images/shortcuts/posters.gif";
+import PaintingsIcon from "../../public/images/shortcuts/paintings.gif";
+
 
 const pageWindow = (props) => {
   return (
@@ -49,6 +52,12 @@ const pageWindow = (props) => {
                   styles.PostersBackground +
                   " " +
                   styles.largeWidth
+                : props.view === "Paintings"
+                ? styles.content +
+                  " " +
+                  styles.PaintingsBackground +
+                  " " +
+                  styles.largeWidth
                 : null
             }
           >
@@ -65,6 +74,8 @@ const pageWindow = (props) => {
                   <Image src={TypographyIcon} />
                 ) : props.view === "Posters" ? (
                   <Image src={PostersIcon} />
+                ) : props.view === "Paintings" ? (
+                  <Image src={PaintingsIcon} />
                 ) : null}
               </div>
 
@@ -88,6 +99,8 @@ const pageWindow = (props) => {
               <Typography />
             ) : props.view === "Posters" ? (
               <Posters />
+            ) :props.view === "Paintings" ? (
+              <Paintings />
             ) : null}
           </div>
         </div>
