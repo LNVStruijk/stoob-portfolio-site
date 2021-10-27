@@ -19,7 +19,7 @@ const pageWindow = (props) => {
         <div className={styles.container}>
           <div
             className={
-              props.view === "Gallery"
+              props.view === "Featured Works"
                 ? styles.content +
                   " " +
                   styles.galleryBackground +
@@ -52,10 +52,10 @@ const pageWindow = (props) => {
                 : null
             }
           >
-            {/* HEADER OF PAGE */}
+            {/* HEADER ICON OF PAGE */}
             <div className={styles.header}>
               <div className={styles.image}>
-                {props.view === "Gallery" ? (
+                {props.view === "Featured Works" ? (
                   <Image src={GalleryIcon} />
                 ) : props.view === "About Me" ? (
                   <Image src={AboutMeIcon} />
@@ -78,7 +78,7 @@ const pageWindow = (props) => {
             </div>
 
             {/* CONTENT OF PAGE */}
-            {props.view === "Gallery" ? (
+            {props.view === "Featured Works" ? (
               <GalleryView />
             ) : props.view === "About Me" ? (
               <AboutMe />

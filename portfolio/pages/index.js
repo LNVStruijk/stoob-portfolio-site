@@ -71,7 +71,7 @@ export default function Home() {
           <section id={"Page Windows"}>
             {/* GALLERY VIEW */}
             <PageWindow
-              view={"Gallery"}
+              view={"Featured Works"}
               isVisible={isGalleryVisible}
               closeWindow={() => setIsGalleryVisible(false)}
             />
@@ -107,7 +107,7 @@ export default function Home() {
             {/* SHORTCUT ROW 1 */}
             <div className={styles.shortcutGrid}>
               <div onClick={() => setIsGalleryVisible(true)}>
-                <Shortcut name={"gallery view"} image={"image1"} />
+                <Shortcut name={"featured works"} image={"image1"} />
               </div>
               <div onClick={() => setIsAboutMeVisible(true)}>
                 <Shortcut name={"about me"} image={"image3"} />

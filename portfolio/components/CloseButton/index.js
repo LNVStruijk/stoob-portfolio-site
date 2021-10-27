@@ -5,7 +5,7 @@ const CloseButton = (props) => {
     <>
       <div
         className={
-          props.closeColor === "Gallery"
+          props.closeColor === "Featured Works"
             ? styles.container + " " + styles.galleryViewBackground
             : props.closeColor === "About Me"
             ? styles.container + " " + styles.aboutMeBackground
