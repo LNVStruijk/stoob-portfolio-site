@@ -5,6 +5,8 @@
   width: 2rem;
   text-align: center;
 
+  cursor: pointer;
+
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -35,6 +37,15 @@
   }
 }
 
+.galleryViewBackground:active {
+  background-color: #694baa;
+
+  border-top: 0.25rem solid #00002f;
+  border-left: 0.25rem solid #00002f;
+  border-right: 0.25rem solid #9d9df5;
+  border-bottom: 0.25rem solid #9d9df5;
+}
+
 .aboutMeBackground {
   background-color: #c3c3c3;
   border-top: 0.25rem solid #ebebeb;
@@ -47,16 +58,32 @@
   }
 }
 
+.aboutMeBackground:active {
+  background-color: #8d8d8d;
+  border-top: 0.25rem solid #2c2c2c;
+  border-left: 0.25rem solid #2c2c2c;
+  border-right: 0.25rem solid #ebebeb;
+  border-bottom: 0.25rem solid #ebebeb;
+}
+
 .contactMeBackground {
-  background-color: #412B17;
-  border-top: 0.25rem solid #956C49;
-  border-left: 0.25rem solid #956C49;
+  background-color: #412b17;
+  border-top: 0.25rem solid #956c49;
+  border-left: 0.25rem solid #956c49;
   border-right: 0.25rem solid #312011;
   border-bottom: 0.25rem solid #312011;
 
   h3 {
     color: #ffffff;
   }
+}
+
+.contactMeBackground:active {
+  background-color: #312111;
+  border-top: 0.25rem solid #312011;
+  border-left: 0.25rem solid #312011;
+  border-right: 0.25rem solid #956c49;
+  border-bottom: 0.25rem solid #956c49;
 }
 
 .TypographyBackground {
@@ -71,6 +98,14 @@
   }
 }
 
+.TypographyBackground:active {
+  background-color: #694baa;
+  border-top: 0.25rem solid #00002f;
+  border-left: 0.25rem solid #00002f;
+  border-right: 0.25rem solid #9d9df5;
+  border-bottom: 0.25rem solid #9d9df5;
+}
+
 .PostersBackground {
   background-color: #926ce2;
   border-top: 0.25rem solid #9d9df5;
@@ -81,6 +116,14 @@
   h3 {
     color: #ffffff;
   }
+}
+
+.PostersBackground:active {
+  background-color: #694baa;
+  border-top: 0.25rem solid #00002f;
+  border-left: 0.25rem solid #00002f;
+  border-right: 0.25rem solid #9d9df5;
+  border-bottom: 0.25rem solid #9d9df5;
 }
 
 .PaintingsBackground {
@@ -95,6 +138,14 @@
   }
 }
 
+.PaintingsBackground:active {
+  background-color: #694baa;
+  border-top: 0.25rem solid #00002f;
+  border-left: 0.25rem solid #00002f;
+  border-right: 0.25rem solid #9d9df5;
+  border-bottom: 0.25rem solid #9d9df5;
+}
+
 .OtherWorksBackground {
   background-color: #926ce2;
   border-top: 0.25rem solid #9d9df5;
@@ -105,4 +156,12 @@
   h3 {
     color: #ffffff;
   }
+}
+
+.OtherWorksBackground:active {
+  background-color: #694baa;
+  border-top: 0.25rem solid #00002f;
+  border-left: 0.25rem solid #00002f;
+  border-right: 0.25rem solid #9d9df5;
+  border-bottom: 0.25rem solid #9d9df5;
 }

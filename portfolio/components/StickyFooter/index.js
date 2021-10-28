@@ -2,6 +2,9 @@ import styles from "./StickyFooter.module.scss";
 import Image from "next/image";
 
 const StickyFooter = (props) => {
+
+
+
   return (
     <>
       <div className={styles.footer}>

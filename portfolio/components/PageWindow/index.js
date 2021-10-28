@@ -92,7 +92,7 @@ const pageWindow = (props) => {
               </div>
 
               <div onClick={props.closeWindow}>
-                <CloseButton closeColor={props.view} />
+                <CloseButton closeColor={props.view}/>
               </div>
             </div>
 
