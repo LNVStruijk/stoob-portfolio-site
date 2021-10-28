@@ -11,13 +11,59 @@ const StickyFooter = (props) => {
               <span>START</span>
             </p>
           </div>
-          <div className={styles.activeWindow}>
-            <p className={styles.notStart}>
-              <span>Window 2</span>
-            </p>
-          </div>
+          {props.currentWindow === "Featured Works" ? (
+            <div className={styles.activeWindow}>
+              <p className={styles.notStart}>
+                <span>{props.currentWindow}</span>
+              </p>
+            </div>
+          ) : props.currentWindow === "About Me" ? (
+            <div className={styles.activeWindow}>
+              <p className={styles.notStart}>
+                <span>{props.currentWindow}</span>
+              </p>
+            </div>
+          ) : props.currentWindow === "Contact Me" ? (
+            <div className={styles.activeWindow}>
+              <p className={styles.notStart}>
+                <span>{props.currentWindow}</span>
+              </p>
+            </div>
+          ) : props.currentWindow === "About Me" ? (
+            <div className={styles.activeWindow}>
+              <p className={styles.notStart}>
+                <span>{props.currentWindow}</span>
+              </p>
+            </div>
+          ) :props.currentWindow === "Typography" ? (
+            <div className={styles.activeWindow}>
+              <p className={styles.notStart}>
+                <span>{props.currentWindow}</span>
+              </p>
+            </div>
+          ) :props.currentWindow === "Posters" ? (
+            <div className={styles.activeWindow}>
+              <p className={styles.notStart}>
+                <span>{props.currentWindow}</span>
+              </p>
+            </div>
+          ) : props.currentWindow === "Paintings" ? (
+            <div className={styles.activeWindow}>
+              <p className={styles.notStart}>
+                <span>{props.currentWindow}</span>
+              </p>
+            </div>
+          ) : props.currentWindow === "Other Works" ? (
+            <div className={styles.activeWindow}>
+              <p className={styles.notStart}>
+                <span>{props.currentWindow}</span>
+              </p>
+            </div>
+          ) :null}
           <div className={styles.nonClickable}>
-            <p className={styles.creators}>Created by Lucas Struijk {"\&"} Andrea Ang</p>
+            <p className={styles.creators}>
+              Created by Lucas Struijk {"&"} Andrea Ang
+            </p>
           </div>
         </div>
       </div>

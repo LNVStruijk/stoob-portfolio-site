@@ -140,7 +140,7 @@ export default function Home() {
                 <Shortcut name={"posters"} image={"image2"} />
               </div>
               <div onClick={() => setPaintingsVisible(true)}>
-                <Shortcut name={"paintings"} image={"image6"} />{" "}
+                <Shortcut name={"paintings"} image={"image6"} />
               </div>
             </div>
 
@@ -169,7 +169,25 @@ export default function Home() {
           />
         </video>
 
-        <StickyFooter />
+        <StickyFooter
+          currentWindow={
+            isGalleryVisible
+              ? "Featured Works"
+              : isAboutMeVisible
+              ? "About Me"
+              : isContactMeVisible
+              ? "Contact Me"
+              : isTypographyVisible
+              ? "Typography"
+              : isPostersVisible
+              ? "Posters"
+              : isPaintingsVisible
+              ? "Paintings"
+              : isOtherWorksVisible
+              ? "Other Works"
+              : null
+          }
+        />
       </div>
     </>
   );
