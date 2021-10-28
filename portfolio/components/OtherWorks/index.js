@@ -47,7 +47,7 @@ const OtherWorks = (props) => {
             className={styles.riceCards + " " + styles.images}
           >
             <a
-              href="https://drive.google.com/file/d/11yo2IWir46g3O8dINxaPUm6SXegbnYh9/view?usp=sharing"
+              href="https://drive.google.com/file/d/1KA281cvRbwUstpYG8lZiSd2ISdR-MP0c/view?usp=sharing"
               target="_blank"
             >
               <Image src={RiceCards} />
@@ -61,7 +61,7 @@ const OtherWorks = (props) => {
             className={styles.burgerMachine + " " + styles.images}
           >
             <a
-              href="https://drive.google.com/file/d/1dg_yEBB2Qj46QEny7tLgg9frYuj7l4en/view?usp=sharing"
+              href="https://drive.google.com/file/d/1pHRdDKotDId7d0n_Bolso16sywkJHh_L/view?usp=sharing"
               target="_blank"
             >
               <Image src={BurgerMachine} />
@@ -78,7 +78,7 @@ const OtherWorks = (props) => {
             className={styles.ricePoster + " " + styles.images}
           >
             <a
-              href="https://drive.google.com/file/d/1U1FIcQh0mCDIylKcvw9pM2hrVlLzyI2t/view?usp=sharing"
+              href="https://drive.google.com/file/d/1S6NMWSmb0iIh01FaKCEIpEH4exBeaqIC/view?usp=sharing"
               target="_blank"
             >
               <Image src={RicePoster} />
@@ -92,7 +92,7 @@ const OtherWorks = (props) => {
             className={styles.rickeStickers + " " + styles.images}
           >
             <a
-              href="https://drive.google.com/file/d/1s_HggDR7-sRF1A4GmpZDzxQevjPhkv4g/view?usp=sharing"
+              href="https://drive.google.com/file/d/1gBfZphDjUzipOyrDLdUmK6fHmMXRyxpP/view?usp=sharing"
               target="_blank"
             >
               <Image src={RiceSticker} />

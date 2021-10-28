@@ -120,9 +120,9 @@ export default function Home() {
           <section id={"Shortcut Rows"}>
             {/* SHORTCUT ROW 1 */}
             <div className={styles.shortcutGrid}>
-              <div onClick={() => setIsGalleryVisible(true)}>
-                <Shortcut name={"featured works"} image={"image1"} />
-              </div>
+                <div onClick={() => setIsGalleryVisible(true)}>
+                  <Shortcut name={"featured works"} image={"image1"} />
+                </div>
               <div onClick={() => setIsAboutMeVisible(true)}>
                 <Shortcut name={"about me"} image={"image3"} />
               </div>
