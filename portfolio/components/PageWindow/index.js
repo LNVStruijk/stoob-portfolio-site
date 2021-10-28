@@ -14,6 +14,8 @@ import ContactMeIcon from "../../public/images/shortcuts/contact-me.gif";
 import TypographyIcon from "../../public/images/shortcuts/typography.gif";
 import PostersIcon from "../../public/images/shortcuts/posters.gif";
 import PaintingsIcon from "../../public/images/shortcuts/paintings.gif";
+import OtherWorksIcon from "../../public/images/shortcuts/other-works.gif";
+
 
 const pageWindow = (props) => {
   return (
@@ -83,7 +85,7 @@ const pageWindow = (props) => {
                 ) : props.view === "Paintings" ? (
                   <Image src={PaintingsIcon} />
                 ) : props.view === "Other Works" ? (
-                  <Image src={PaintingsIcon} />
+                  <Image src={OtherWorksIcon} />
                 ) : null}
               </div>
 

@@ -121,34 +121,34 @@ export default function Home() {
             {/* SHORTCUT ROW 1 */}
             <div className={styles.shortcutGrid}>
                 <div onClick={() => setIsGalleryVisible(true)}>
-                  <Shortcut name={"featured works"} image={"image1"} />
+                  <Shortcut name={"featured works"} image={"Featured"} />
                 </div>
               <div onClick={() => setIsAboutMeVisible(true)}>
-                <Shortcut name={"about me"} image={"image3"} />
+                <Shortcut name={"about me"} image={"AboutMe"} />
               </div>
               <div onClick={() => setIsContactMeVisible(true)}>
-                <Shortcut name={"contact me"} image={"image4"} />
+                <Shortcut name={"contact me"} image={"ContactMe"} />
               </div>
             </div>
 
             {/* SHORTCUT ROW 2 */}
             <div className={styles.shortcutGrid}>
               <div onClick={() => setTypographyVisible(true)}>
-                <Shortcut name={"typography"} image={"image5"} />
+                <Shortcut name={"typography"} image={"Typography"} />
               </div>
               <div onClick={() => setPostersVisible(true)}>
-                <Shortcut name={"posters"} image={"image2"} />
+                <Shortcut name={"posters"} image={"Posters"} />
               </div>
               <div onClick={() => setPaintingsVisible(true)}>
-                <Shortcut name={"paintings"} image={"image6"} />
+                <Shortcut name={"paintings"} image={"Paintings"} />
               </div>
             </div>
 
             {/* SHORTCUT ROW 3 */}
             <div className={styles.shortcutGrid}>
-              <Shortcut name={'say "hi" '} image={"image7"} />
+              <Shortcut name={'say "hi" '} image={"Doom"} />
               <div onClick={() => setOtherWorksVisible(true)}>
-                <Shortcut name={"other works"} image={"image7"} />
+                <Shortcut name={"other works"} image={"OtherWorks"} />
               </div>
             </div>
 
