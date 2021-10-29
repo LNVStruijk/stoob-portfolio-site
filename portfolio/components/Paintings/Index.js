@@ -14,6 +14,8 @@ import Shark2 from "../../public/images/paintings-low-res/shark-2.png";
 import Caligula from "../../public/images/paintings-low-res/emperor.jpg";
 import Chernobyl from "../../public/images/paintings-low-res/child-of-chernobyl.png";
 import Radiation1 from "../../public/images/paintings-low-res/radiation-1.png";
+import Clouds from "../../public/images/paintings-low-res/clouds-small.png";
+import Plains from "../../public/images/paintings-low-res/plains-small.png";
 
 import ReactTooltip from "react-tooltip";
 import { isMobile } from "react-device-detect";
@@ -116,7 +118,7 @@ const Paintings = (props) => {
           </div>
           <div
             data-tip={
-              "<h1>\"Shark Study 1\"</h1> <h4> PaintToolSAI - 2020 </h4> <p>Study of several shark figures</p> <h5>Click to see full image</h5>"
+              '<h1>"Shark Study 1"</h1> <h4> PaintToolSAI - 2020 </h4> <p>Study of several shark figures</p> <h5>Click to see full image</h5>'
             }
             data-html={true}
             className={styles.shark1 + " " + styles.images}
@@ -178,7 +180,7 @@ const Paintings = (props) => {
         <div className={styles.flexRow}>
           <div
             data-tip={
-              "<h1>\"Shark Study 2\"</h1> <h4> PaintToolSAI - 2020 </h4> <p>Study of several shark figures</p> <h5>Click to see full image</h5>"
+              '<h1>"Shark Study 2"</h1> <h4> PaintToolSAI - 2020 </h4> <p>Study of several shark figures</p> <h5>Click to see full image</h5>'
             }
             data-html={true}
             className={styles.shark2 + " " + styles.images}
@@ -216,6 +218,37 @@ const Paintings = (props) => {
               target="_blank"
             >
               <Image src={Radiation1} />
+            </a>
+          </div>
+        </div>
+        {/* ROW 6 */}
+        <div className={styles.flexRow}>
+          <div
+            data-tip={
+              '<h1>"Untitled"</h1> <h4> Oil on Canvas - 2009 </h4> <p>Study of several shark figures</p> <h5>Click to see full image</h5>'
+            }
+            data-html={true}
+            className={styles.clouds + " " + styles.images}
+          >
+            <a
+              href="https://drive.google.com/file/d/1p1IBbgG0ri6_ccYhl6xqyk8UP8ifA2F6/view?usp=sharing"
+              target="_blank"
+            >
+              <Image src={Clouds} />
+            </a>
+          </div>
+          <div
+            data-tip={
+              '<h1>"Untitled"</h1> <h4> Oil on Canvas - 2009 </h4> <p>Study of several shark figures</p> <h5>Click to see full image</h5>'
+            }
+            data-html={true}
+            className={styles.plains + " " + styles.images}
+          >
+            <a
+              href="https://drive.google.com/file/d/1p1IBbgG0ri6_ccYhl6xqyk8UP8ifA2F6/view?usp=sharing"
+              target="_blank"
+            >
+              <Image src={Plains} />
             </a>
           </div>
         </div>

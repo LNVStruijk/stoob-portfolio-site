@@ -11,7 +11,7 @@
   overflow-y: scroll;
 
   background-image: url("../../public/backgrounds/gallery-background.png");
-  background-size: 100rem;
+  background-size: 80rem;
   background-repeat: no-repeat;
 
   @media #{$mq-mobile} {
@@ -82,7 +82,7 @@
   }
 
   .tortoise {
-    flex: 0.98;
+    flex: 0.8;
   }
 
   .caligula {
@@ -97,7 +97,7 @@
   }
 
   .shark1 {
-    // flex: 0.6;
+    flex: 1;
   }
   .shark2 {
     flex: 0.5;
@@ -108,5 +108,13 @@
   }
   .radiation1{
     flex: 0.38;
+  }
+
+  .clouds{
+    flex: 1;
+  }
+
+  .plains{
+    flex: 1.6;
   }
 }
