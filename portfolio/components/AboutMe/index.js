@@ -1,10 +1,9 @@
 //HTML n JAVASCRIPT location for AboutMe page
-import Image from 'next/image'
+import Image from "next/image";
 
 import styles from "./AboutMe.module.scss";
-import BackgroundImage from "../../public/images/planet-earth.gif"
-import Portrait from "../../public/images/portrait-32bit.png"
-
+import BackgroundImage from "../../public/images/planet-earth.gif";
+import Portrait from "../../public/images/portrait-32bit.png";
 
 const AboutMe = (props) => {
   // this is component so we want to make it constant
@@ -23,46 +22,47 @@ const AboutMe = (props) => {
             <h2>Birth: 12/11/1996</h2>
           </div>
           <div className={styles.greenBox}>
-            <h2>Profession</h2>
+            <h2>Painter / Illustrator</h2>
             <h2>Graphic Designer</h2>
           </div>
           <div className={styles.portrait}>
-            <Image src={Portrait} layout={"responsive"}/>
+            <Image src={Portrait} layout={"responsive"} />
           </div>
         </div>
         {/* RIGHT CONTAINER */}
         <div className={styles.rightContainer}>
           <div className={styles.greenBox}>
-            <h1>SKILLS</h1>
+            <h1>SKILLS {"&"} TALENTS</h1>
           </div>
           <div className={styles.greenBox}>
             <div className={styles.skillContainer}>
-              <h2>Poster Design</h2>
-              <h2>TRAINED</h2>
-            </div>
-            <div className={styles.skillContainer}>
-              <h2>Web Design</h2>
-              <h2>TRAINED</h2>
-            </div>
-            <div className={styles.skillContainer}>
               <h2>Oil Painting</h2>
-              <h2>TRAINED</h2>
+              <h2>11 Years</h2>
             </div>
             <div className={styles.skillContainer}>
               <h2>Digital Painting</h2>
-              <h2>TRAINED</h2>
+              <h2>3 Years</h2>
             </div>
             <div className={styles.skillContainer}>
-              <h2>Watercolor</h2>
-              <h2>TRAINED</h2>
+              <h2>Poster Design</h2>
+              <h2>5 Years</h2>
+            </div>
+            <div className={styles.skillContainer}>
+              <h2>Web Design</h2>
+              <h2>3 Years</h2>
             </div>
             <div className={styles.skillContainer}>
               <h2>Magazine Design</h2>
-              <h2>TRAINED</h2>
+              <h2>4 Years</h2>
             </div>
             <div className={styles.skillContainer}>
+              <h2>Watercolor</h2>
+              <h2>3 Years</h2>
+            </div>
+
+            <div className={styles.skillContainer}>
               <h2>Unity Engine</h2>
-              <h2>TRAINED</h2>
+              <h2>1 Year</h2>
             </div>
           </div>
           <div className={styles.greenBox}>
