@@ -14,7 +14,7 @@
 
   // width: 50rem;
 
-  //   width: calc(100vw - 20rem);
+//   width: calc(100vw - 20rem);
 
   display: flex;
   flex-direction: row;
@@ -69,6 +69,7 @@
     margin-bottom: 0.5rem;
     margin-top: 0.5rem;
     padding: 1rem 1rem;
+    
   }
 
   .skillContainer {
@@ -89,14 +90,12 @@
     padding-bottom: 0.4rem;
   }
 
-
   h2 {
-    font-size: 1.3rem;
-    line-height: 1.6rem;
+    font-size: 1.1rem;
   }
 
   p {
-    line-height: 1.7rem;
-    font-size: 1.5rem;
+    line-height: 1.2rem;
+    font-size: 1rem;
   }
 }
