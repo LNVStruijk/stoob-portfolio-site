@@ -15,6 +15,14 @@
   // max-height: calc(100vh - 20rem);
 }
 
+.aboutMeWidth {
+  max-width: calc(100vw - 1rem);
+
+  @media #{$mq-mobile} {
+    max-width: calc(100vw - 1rem);
+  }
+}
+
 .smallWidth {
   width: 20rem;
 }

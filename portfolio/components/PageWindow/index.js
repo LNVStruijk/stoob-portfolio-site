@@ -35,7 +35,7 @@ const pageWindow = (props) => {
                   " " +
                   styles.aboutMeBackground +
                   " "+
-                  styles.largeWidth
+                  styles.aboutMeWidth
                 : props.view === "Contact Me"
                 ? styles.content +
                   " " +
