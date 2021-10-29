@@ -45,19 +45,17 @@
   z-index: 100;
 }
 
-// .crtSwitch {
-//     background-color: #00009b;
-//     position: absolute;
-//     bottom: 0;
-//     right: 0;
-//     margin: 1rem;
-//     padding: 1rem;
+.shortcuts {
+  z-index: -1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin-top: 1rem;
+}
 
-//     border-top: 0.35rem solid #9d9df5;
-//     border-left: 0.35rem solid #9d9df5;
-//     border-right: 0.35rem solid #00002f;
-//     border-bottom: 0.35rem solid #00002f;
-// }
+.windows {
+  z-index: 2;
+}
 
 .container {
   cursor: default;

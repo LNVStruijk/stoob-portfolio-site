@@ -3,6 +3,7 @@ import Image from 'next/image'
 
 import styles from "./AboutMe.module.scss";
 import BackgroundImage from "../../public/images/planet-earth.gif"
+import Portrait from "../../public/images/portrait-32bit.png"
 
 
 const AboutMe = (props) => {
@@ -25,8 +26,8 @@ const AboutMe = (props) => {
             <h2>Profession</h2>
             <h2>Graphic Designer</h2>
           </div>
-          <div className={styles.greenBox}>
-            <div className={styles.portrait}></div>
+          <div className={styles.portrait}>
+            <Image src={Portrait} layout={"responsive"}/>
           </div>
         </div>
         {/* RIGHT CONTAINER */}

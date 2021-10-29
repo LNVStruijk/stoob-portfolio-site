@@ -70,7 +70,51 @@ export default function Home() {
 
         {/* {renderMobilePopUp()} */}
         <div className={styles.container}>
-          <section id={"Page Windows"}>
+          <section className={styles.shortcuts} id={"Shortcut Rows"}>
+            {/* SHORTCUT ROW 1 */}
+            <div className={styles.shortcutGrid}>
+                <div onClick={() => setIsGalleryVisible(true)}>
+                  <Shortcut name={"featured works"} image={"Featured"} />
+                </div>
+              <div onClick={() => setIsAboutMeVisible(true)}>
+                <Shortcut name={"about me"} image={"AboutMe"} />
+              </div>
+              <div onClick={() => setIsContactMeVisible(true)}>
+                <Shortcut name={"contact me"} image={"ContactMe"} />
+              </div>
+            </div>
+
+            {/* SHORTCUT ROW 2 */}
+            <div className={styles.shortcutGrid}>
+              <div onClick={() => setTypographyVisible(true)}>
+                <Shortcut name={"typography"} image={"Typography"} />
+              </div>
+              <div onClick={() => setPostersVisible(true)}>
+                <Shortcut name={"posters"} image={"Posters"} />
+              </div>
+              <div onClick={() => setPaintingsVisible(true)}>
+                <Shortcut name={"paintings"} image={"Paintings"} />
+              </div>
+            </div>
+
+            {/* SHORTCUT ROW 3 */}
+            <div className={styles.shortcutGrid}>
+              <Shortcut name={'say "hi" '} image={"Doom"} />
+              <div onClick={() => setOtherWorksVisible(true)}>
+                <Shortcut name={"other works"} image={"OtherWorks"} />
+              </div>
+            </div>
+
+            {/* PLAYER ROW */}
+            {/* <div className={styles.shortcutGrid}>
+              <ReactAudioPlayer src="my_audio_file.ogg" autoPlay controls />
+            </div> */}
+
+            {/* TEST */}
+            <div className={styles.shortcutGrid}></div>
+          </section>
+
+          <section className={styles.windows} id={"Page Windows"}>
             {/* GALLERY VIEW */}
             <PageWindow
               view={"Featured Works"}
@@ -117,49 +161,7 @@ export default function Home() {
             />
           </section>
 
-          <section id={"Shortcut Rows"}>
-            {/* SHORTCUT ROW 1 */}
-            <div className={styles.shortcutGrid}>
-                <div onClick={() => setIsGalleryVisible(true)}>
-                  <Shortcut name={"featured works"} image={"Featured"} />
-                </div>
-              <div onClick={() => setIsAboutMeVisible(true)}>
-                <Shortcut name={"about me"} image={"AboutMe"} />
-              </div>
-              <div onClick={() => setIsContactMeVisible(true)}>
-                <Shortcut name={"contact me"} image={"ContactMe"} />
-              </div>
-            </div>
-
-            {/* SHORTCUT ROW 2 */}
-            <div className={styles.shortcutGrid}>
-              <div onClick={() => setTypographyVisible(true)}>
-                <Shortcut name={"typography"} image={"Typography"} />
-              </div>
-              <div onClick={() => setPostersVisible(true)}>
-                <Shortcut name={"posters"} image={"Posters"} />
-              </div>
-              <div onClick={() => setPaintingsVisible(true)}>
-                <Shortcut name={"paintings"} image={"Paintings"} />
-              </div>
-            </div>
-
-            {/* SHORTCUT ROW 3 */}
-            <div className={styles.shortcutGrid}>
-              <Shortcut name={'say "hi" '} image={"Doom"} />
-              <div onClick={() => setOtherWorksVisible(true)}>
-                <Shortcut name={"other works"} image={"OtherWorks"} />
-              </div>
-            </div>
-
-            {/* PLAYER ROW */}
-            {/* <div className={styles.shortcutGrid}>
-              <ReactAudioPlayer src="my_audio_file.ogg" autoPlay controls />
-            </div> */}
-
-            {/* TEST */}
-            <div className={styles.shortcutGrid}></div>
-          </section>
+          
         </div>
 
         <video autoPlay={true} muted loop className={styles.backgroundVideo}>
