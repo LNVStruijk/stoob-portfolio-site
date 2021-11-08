@@ -30,8 +30,8 @@ export default function Home() {
      */
     <>
       <Head>
-        <title>Lucas Struijk</title>
-        <meta name="description" content="Created with Next JS" />
+        <title>{'Lucas Struijk\'s Portfolio'}</title>
+        <meta name="description" content="Created by Lucas Struijk and Andrea Ang using Next JS ©2021" />
         <link rel="icon" href="/portfolio-icon.ico" />
       </Head>
 
