@@ -60,7 +60,7 @@ export default function Home() {
       <Head>
         <title>Lucas Struijk</title>
         <meta name="description" content="Created with Next JS" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/portfolio-icon.ico" />
       </Head>
 
       <div className={styles.crt}>
