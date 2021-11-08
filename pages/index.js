@@ -136,7 +136,7 @@ export default function Home() {
           
         </div>
 
-        <video autoPlay={true} muted loop className={styles.backgroundVideo}>
+        <video autoPlay={true} muted className={styles.backgroundVideo}>
           <source
             src={"/videos/backgroundVideoCompressed.mp4"}
             type="video/mp4"
