@@ -10,12 +10,17 @@
   },
   "dependencies": {
     "next": "11.1.2",
+    "next-images": "^1.8.1",
     "react": "17.0.2",
+    "react-audio-player": "^0.17.0",
+    "react-device-detect": "^1.17.0",
     "react-dom": "17.0.2",
+    "react-tooltip": "^4.2.21",
     "sass": "^1.39.0"
   },
   "devDependencies": {
     "eslint": "7.32.0",
-    "eslint-config-next": "11.1.2"
+    "eslint-config-next": "11.1.2",
+    "file-loader": "^6.2.0"
   }
 }
