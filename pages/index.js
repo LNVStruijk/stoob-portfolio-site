@@ -1,7 +1,7 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.scss";
-import Shortcut from "../components/Shortcut"; //imports the Shortcut component
-import PageWindow from "../components/PageWindow"; //imports the PageWindow component
+import Shortcut from "../components/Shortcut";
+import PageWindow from "../components/PageWindow";
 import StickyFooter from "../components/StickyFooter";
 import React, { useState } from "react";
 
