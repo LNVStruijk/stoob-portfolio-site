@@ -1,4 +1,5 @@
 import styles from "./PageWindow.module.scss";
+import React from "react";
 import Image from "next/image";
 import GalleryView from "../GalleryView";
 import AboutMe from "../AboutMe";

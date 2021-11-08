@@ -1,12 +1,8 @@
 import Head from "next/head";
-import Image from "next/image";
-import ReactAudioPlayer from "react-audio-player";
 import styles from "../styles/Home.module.scss";
-import AboutMe from "../components/AboutMe"; //importing the whole AboutMe folder
 import Shortcut from "../components/Shortcut"; //imports the Shortcut component
 import PageWindow from "../components/PageWindow"; //imports the PageWindow component
 import StickyFooter from "../components/StickyFooter";
-import CloseButton from "../components/CloseButton";
 import React, { useState } from "react";
 
 export default function Home() {

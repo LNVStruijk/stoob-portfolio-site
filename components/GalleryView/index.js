@@ -1,7 +1,5 @@
 import styles from "./GalleryView.module.scss";
 import Image from "next/image";
-import Link from "next/link";
-import DitherTexture from "../../public/images/dither-texture.png";
 import Stalker from "../../public/images/gallery-low-resolution/stalker-low.png";
 import Vertigo from "../../public/images/gallery-low-resolution/vertigo-poster-low.png";
 import Radiation from "../../public/images/gallery-low-resolution/radiation2-low.png";
@@ -16,7 +14,6 @@ import OldBoy from "../../public/images/gallery-low-resolution/old-poster-low.pn
 import Reptile from "../../public/images/gallery-low-resolution/reptile-study-low.png";
 import Triggers from "../../public/images/gallery-low-resolution/triggers-link.jpg";
 import ReactTooltip from "react-tooltip";
-import { isMobile } from "react-device-detect";
 import React from "react";
 
 const galleryView = (props) => {

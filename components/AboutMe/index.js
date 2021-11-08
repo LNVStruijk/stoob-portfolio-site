@@ -1,8 +1,8 @@
 //HTML n JAVASCRIPT location for AboutMe page
 import Image from "next/image";
+import React from "react";
 
 import styles from "./AboutMe.module.scss";
-import BackgroundImage from "../../public/images/planet-earth.gif";
 import Portrait from "../../public/images/portrait-32bit.png";
 
 const AboutMe = (props) => {

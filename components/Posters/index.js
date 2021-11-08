@@ -1,17 +1,13 @@
 import styles from "./Posters.module.scss";
 import Image from "next/image";
-import Link from "next/link";
-import DitherTexture from "../../public/images/dither-texture.png";
 import Omikuji from "../../public/images/posters-low-res/omikuji.png";
 import Orange from "../../public/images/posters-low-res/orange.png";
-import PunShirts from "../../public/images/posters-low-res/pun-shirts.png";
 import Shining from "../../public/images/gallery-low-resolution/shining-poster-low.png";
 import Blood from "../../public/images/gallery-low-resolution/blood-poster-low.png";
 import Whiplash from "../../public/images/gallery-low-resolution/whip-poster-low.png";
 import OldBoy from "../../public/images/gallery-low-resolution/old-poster-low.png";
 import Vertigo from "../../public/images/gallery-low-resolution/vertigo-poster-low.png";
 import ReactTooltip from "react-tooltip";
-import { isMobile } from "react-device-detect";
 import React from "react";
 
 const Posters = (props) => {

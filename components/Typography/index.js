@@ -1,7 +1,5 @@
 import styles from "./Typography.module.scss";
 import Image from "next/image";
-import Link from "next/link";
-import DitherTexture from "../../public/images/dither-texture.png";
 import Droid from "../../public/images/typography-low-res/droid.png";
 import Circuit from "../../public/images/typography-low-res/circuit.jpg";
 import CenturyGothic from "../../public/images/typography-low-res/century-gothic.jpg";
@@ -14,7 +12,6 @@ import News2 from "../../public/images/typography-low-res/news-2.jpg";
 import News3 from "../../public/images/typography-low-res/news-3.jpg";
 import News4 from "../../public/images/typography-low-res/news-4.jpg";
 import ReactTooltip from "react-tooltip";
-import { isMobile } from "react-device-detect";
 import React from "react";
 
 const Typography = (props) => {

@@ -1,7 +1,6 @@
 import styles from "./Paintings.module.scss";
+import React from "react";
 import Image from "next/image";
-import Link from "next/link";
-import DitherTexture from "../../public/images/dither-texture.png";
 import Stalker from "../../public/images/gallery-low-resolution/stalker-low.png";
 import Radiation2 from "../../public/images/gallery-low-resolution/radiation2-low.png";
 import Williams from "../../public/images/gallery-low-resolution/ash-williams-low.png";
@@ -18,7 +17,6 @@ import Clouds from "../../public/images/paintings-low-res/clouds-small.png";
 import Plains from "../../public/images/paintings-low-res/plains-small.png";
 
 import ReactTooltip from "react-tooltip";
-import { isMobile } from "react-device-detect";
 import React from "react";
 
 const Paintings = (props) => {

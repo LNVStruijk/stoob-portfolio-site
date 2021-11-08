@@ -1,8 +1,6 @@
 import styles from "./ContactMe.module.scss";
 import Image from "next/image";
-import Passport from "../../public/images/passport.png";
-import Desert from "../../public/images/desert.gif";
-import Eagle from "../../public/images/eagle-loop.gif";
+import React from "react";
 import FullPassport from "../../public/images/contact-me-images/passport-full-fixed.gif";
 
 const contactMe = (props) => {
