@@ -10,16 +10,19 @@ const contactMe = (props) => {
     <>
       <div className={styles.container}>
         <div className={styles.passportContainer}>
-          <div className={styles.passport}>
+          {/* <div className={styles.passport}>
             <Image src={Passport} />
             <div className={styles.desert}>
               <Image src={Desert} layout={"responsive"} />
             </div>
+          </div> */}
+          <div className={styles.fullPassport}>
+            <Image src={FullPassport}/>
           </div>
         </div>
-        <div className={styles.eagle}>
+        {/* <div className={styles.eagle}>
           <Image src={Eagle} />
-        </div>
+        </div> */}
       </div>
     </>
   );
