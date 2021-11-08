@@ -15,20 +15,10 @@ import News3 from "../../public/images/typography-low-res/news-3.jpg";
 import News4 from "../../public/images/typography-low-res/news-4.jpg";
 import ReactTooltip from "react-tooltip";
 import { isMobile } from "react-device-detect";
-import React, { useState, useEffect } from "react";
+import React from "react";
 
 const Typography = (props) => {
   const imgSize = 200;
-
-  useEffect(() => {}, []);
-
-  const dataTip = () => {
-    render(
-      <div>
-        <p>WORDS</p>
-      </div>
-    );
-  };
 
   return (
     <>
@@ -45,6 +35,7 @@ const Typography = (props) => {
             <a
               href="https://drive.google.com/file/d/1peLdSfEPV8BGK1HwXIuzk06SElZ7ezs3/view?usp=sharing"
               target="_blank"
+              rel="noreferrer"
             >
               <Image src={Droid} />
             </a>
@@ -59,6 +50,7 @@ const Typography = (props) => {
             <a
               href="https://drive.google.com/file/d/1nmGKLAhqcddQUV1IK0U6XF88PsZIvQWI/view?usp=sharing"
               target="_blank"
+              rel="noreferrer"
             >
               <Image src={Circuit} />
             </a>
@@ -73,6 +65,7 @@ const Typography = (props) => {
             <a
               href="https://drive.google.com/file/d/1kIAu-ferfKYU4d91S30j1a2fGgtD6sQW/view?usp=sharing"
               target="_blank"
+              rel="noreferrer"
             >
               <Image src={CenturyGothic} />
             </a>
@@ -90,6 +83,7 @@ const Typography = (props) => {
             <a
               href="https://drive.google.com/file/d/1m-4EJv6OrKhjwKd-NE3ggS6oZjUm9a4M/view?usp=sharing"
               target="_blank"
+              rel="noreferrer"
             >
               <Image src={Spread1} />
             </a>
@@ -104,6 +98,7 @@ const Typography = (props) => {
             <a
               href="https://drive.google.com/file/d/1t7ihpVSYfkGGVYKWuhC2sxD2sUlw5_nH/view?usp=sharing"
               target="_blank"
+              rel="noreferrer"
             >
               <Image src={Spread4} />
             </a>
@@ -121,6 +116,7 @@ const Typography = (props) => {
             <a
               href="https://drive.google.com/file/d/1ItHRYer79X22cGEdOrNfPlDiofTulVPs/view?usp=sharing"
               target="_blank"
+              rel="noreferrer"
             >
               <Image src={Spread3} />
             </a>
@@ -135,6 +131,7 @@ const Typography = (props) => {
             <a
               href="https://drive.google.com/file/d/1huptcC_LDnttdrunjY981d3vMlM16X4o/view?usp=sharing"
               target="_blank"
+              rel="noreferrer"
             >
               <Image src={Spread2} />
             </a>
@@ -152,6 +149,7 @@ const Typography = (props) => {
             <a
               href="https://drive.google.com/file/d/1h38UTnFDsSUWaPiWFLThil4WsuTqzgbv/view?usp=sharing"
               target="_blank"
+              rel="noreferrer"
             >
               <Image src={News1} />
             </a>
@@ -166,6 +164,7 @@ const Typography = (props) => {
             <a
               href="https://drive.google.com/file/d/1ETau9EQM9bVjoGN1gMpzDk9G4tDLj6Eo/view?usp=sharing"
               target="_blank"
+              rel="noreferrer"
             >
               <Image src={News2} />
             </a>
@@ -183,6 +182,7 @@ const Typography = (props) => {
             <a
               href="https://drive.google.com/file/d/1RSXmWzI2JyTkCyb4SLcjtquyrVo-gnHK/view?usp=sharing"
               target="_blank"
+              rel="noreferrer"
             >
               <Image src={News3} />
             </a>
@@ -197,6 +197,7 @@ const Typography = (props) => {
             <a
               href="https://drive.google.com/file/d/13oD7oqb_6Rz6MYODAi6DhSqfhrYfQsPh/view?usp=sharing"
               target="_blank"
+              rel="noreferrer"
             >
               <Image src={News4} />
             </a>

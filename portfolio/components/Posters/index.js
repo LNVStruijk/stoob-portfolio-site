@@ -12,12 +12,10 @@ import OldBoy from "../../public/images/gallery-low-resolution/old-poster-low.pn
 import Vertigo from "../../public/images/gallery-low-resolution/vertigo-poster-low.png";
 import ReactTooltip from "react-tooltip";
 import { isMobile } from "react-device-detect";
-import React, { useState, useEffect } from "react";
+import React from "react";
 
 const Posters = (props) => {
   const imgSize = 200;
-
-  useEffect(() => {}, []);
 
   const dataTip = () => {
     render(
@@ -42,6 +40,7 @@ const Posters = (props) => {
             <a
               href="https://drive.google.com/file/d/11yo2IWir46g3O8dINxaPUm6SXegbnYh9/view?usp=sharing"
               target="_blank"
+              rel="noreferrer"
             >
               <Image src={Omikuji} />
             </a>
@@ -56,6 +55,7 @@ const Posters = (props) => {
             <a
               href="https://drive.google.com/file/d/1dg_yEBB2Qj46QEny7tLgg9frYuj7l4en/view?usp=sharing"
               target="_blank"
+              rel="noreferrer"
             >
               <Image src={Orange} />
             </a>
@@ -70,6 +70,7 @@ const Posters = (props) => {
             <a
               href="https://drive.google.com/file/d/1kIAu-ferfKYU4d91S30j1a2fGgtD6sQW/view?usp=sharing"
               target="_blank"
+              rel="noreferrer"
             >
               <Image src={PunShirts} />
             </a>
@@ -87,6 +88,7 @@ const Posters = (props) => {
             <a
               href="https://drive.google.com/file/d/1U1FIcQh0mCDIylKcvw9pM2hrVlLzyI2t/view?usp=sharing"
               target="_blank"
+              rel="noreferrer"
             >
               <Image src={Shining} />
             </a>
@@ -101,6 +103,7 @@ const Posters = (props) => {
             <a
               href="https://drive.google.com/file/d/1s_HggDR7-sRF1A4GmpZDzxQevjPhkv4g/view?usp=sharing"
               target="_blank"
+              rel="noreferrer"
             >
               <Image src={Blood} />
             </a>
@@ -115,6 +118,7 @@ const Posters = (props) => {
             <a
               href="https://drive.google.com/file/d/1EOo4Ul8v_Tg8c5z1nmKqEAVSvsJ8F2bc/view?usp=sharing"
               target="_blank"
+              rel="noreferrer"
             >
               <Image src={Whiplash} />
             </a>
@@ -132,6 +136,7 @@ const Posters = (props) => {
             <a
               href="https://drive.google.com/file/d/1zmxn3moPF8Gm3UOHw2Jjru4cmN6cpTix/view?usp=sharing"
               target="_blank"
+              rel="noreferrer"
             >
               <Image src={Vertigo} />
             </a>
@@ -146,6 +151,7 @@ const Posters = (props) => {
             <a
               href="https://drive.google.com/file/d/1JFpIzT5wW9YVpVsm0lZcKperEFlXZ6Tb/view?usp=sharing"
               target="_blank"
+              rel="noreferrer"
             >
               <Image src={OldBoy} />
             </a>

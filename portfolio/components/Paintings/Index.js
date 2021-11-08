@@ -19,12 +19,10 @@ import Plains from "../../public/images/paintings-low-res/plains-small.png";
 
 import ReactTooltip from "react-tooltip";
 import { isMobile } from "react-device-detect";
-import React, { useState, useEffect } from "react";
+import React from "react";
 
 const Paintings = (props) => {
   const imgSize = 200;
-
-  useEffect(() => {}, []);
 
   const dataTip = () => {
     render(
@@ -49,6 +47,7 @@ const Paintings = (props) => {
             <a
               href="https://drive.google.com/file/d/14v2qsZ__RR7-m-zFJi-BLD9GWwjc7PCS/view?usp=sharing"
               target="_blank"
+              rel="noreferrer"
             >
               <Image src={Stalker} />
             </a>
@@ -64,6 +63,7 @@ const Paintings = (props) => {
             <a
               href="https://drive.google.com/file/d/1BacQuo4TRiacZYgzNA1Z1R0H8COmd18g/view?usp=sharing"
               target="_blank"
+              rel="noreferrer"
             >
               <Image src={Baby} />
             </a>
@@ -81,6 +81,7 @@ const Paintings = (props) => {
             <a
               href="https://drive.google.com/file/d/1JPFo6WKsbDhX7FsDhNVFXYYxOjOc87fG/view?usp=sharing"
               target="_blank"
+              rel="noreferrer"
             >
               <Image src={Williams} />
             </a>
@@ -95,6 +96,7 @@ const Paintings = (props) => {
             <a
               href="https://drive.google.com/file/d/1mMHOQqsLbZ3k0lQFB_rCfXazcHkNJOtQ/view?usp=sharing"
               target="_blank"
+              rel="noreferrer"
             >
               <Image src={BurnVictim} />
             </a>
@@ -112,6 +114,7 @@ const Paintings = (props) => {
             <a
               href="https://drive.google.com/file/d/1DLuVSGGeByaCGQxCDcOe_VeauDLacf1c/view?usp=sharing"
               target="_blank"
+              rel="noreferrer"
             >
               <Image src={Tortoise} />
             </a>
@@ -126,6 +129,7 @@ const Paintings = (props) => {
             <a
               href="https://drive.google.com/file/d/19VueCqKCVcAY4rkhJB1SJfkyAYJk2YjB/view?usp=sharing"
               target="_blank"
+              rel="noreferrer"
             >
               <Image src={Shark1} />
             </a>
@@ -143,6 +147,7 @@ const Paintings = (props) => {
             <a
               href="https://drive.google.com/file/d/1jFLcgLLvdhmf5LzTk0cd4KbZDqkNI2tR/view?usp=sharing"
               target="_blank"
+              rel="noreferrer"
             >
               <Image src={Caligula} />
             </a>
@@ -157,6 +162,7 @@ const Paintings = (props) => {
             <a
               href="https://drive.google.com/file/d/1ec7PMKk7FGdMIfhsLSIVkGfLiR9nhBy0/view?usp=sharing"
               target="_blank"
+              rel="noreferrer"
             >
               <Image src={Radiation2} />
             </a>
@@ -171,6 +177,7 @@ const Paintings = (props) => {
             <a
               href="https://drive.google.com/file/d/1XJ06Q9i24luWjlrRGL8XBrC5regxTiJH/view?usp=sharing"
               target="_blank"
+              rel="noreferrer"
             >
               <Image src={Chernobyl} />
             </a>
@@ -188,6 +195,7 @@ const Paintings = (props) => {
             <a
               href="https://drive.google.com/file/d/1p1IBbgG0ri6_ccYhl6xqyk8UP8ifA2F6/view?usp=sharing"
               target="_blank"
+              rel="noreferrer"
             >
               <Image src={Shark2} />
             </a>
@@ -202,6 +210,7 @@ const Paintings = (props) => {
             <a
               href="https://drive.google.com/file/d/1z6l12fP9db2r4ECLBB8pU4tZtqC7EBQg/view?usp=sharing"
               target="_blank"
+              rel="noreferrer"
             >
               <Image src={Reptile} />
             </a>
@@ -216,6 +225,7 @@ const Paintings = (props) => {
             <a
               href="https://drive.google.com/file/d/1lFHI0z1YkLRjCXXlZ-yMv2kXMLLAZXZw/view?usp=sharing"
               target="_blank"
+              rel="noreferrer"
             >
               <Image src={Radiation1} />
             </a>
@@ -233,6 +243,7 @@ const Paintings = (props) => {
             <a
               href="https://drive.google.com/file/d/1p1IBbgG0ri6_ccYhl6xqyk8UP8ifA2F6/view?usp=sharing"
               target="_blank"
+              rel="noreferrer"
             >
               <Image src={Clouds} />
             </a>
@@ -247,6 +258,7 @@ const Paintings = (props) => {
             <a
               href="https://drive.google.com/file/d/1p1IBbgG0ri6_ccYhl6xqyk8UP8ifA2F6/view?usp=sharing"
               target="_blank"
+              rel="noreferrer"
             >
               <Image src={Plains} />
             </a>

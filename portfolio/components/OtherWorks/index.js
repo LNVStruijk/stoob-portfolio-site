@@ -19,12 +19,10 @@ import RiceSticker from "../../public/images/other-works-low-res/rice-stickers.p
 
 import ReactTooltip from "react-tooltip";
 import { isMobile } from "react-device-detect";
-import React, { useState, useEffect } from "react";
+import React from "react";
 
 const OtherWorks = (props) => {
   const imgSize = 200;
-
-  useEffect(() => {}, []);
 
   const dataTip = () => {
     render(
@@ -49,6 +47,7 @@ const OtherWorks = (props) => {
             <a
               href="https://drive.google.com/file/d/1KA281cvRbwUstpYG8lZiSd2ISdR-MP0c/view?usp=sharing"
               target="_blank"
+              rel="noreferrer"
             >
               <Image src={RiceCards} />
             </a>
@@ -63,6 +62,7 @@ const OtherWorks = (props) => {
             <a
               href="https://drive.google.com/file/d/1pHRdDKotDId7d0n_Bolso16sywkJHh_L/view?usp=sharing"
               target="_blank"
+              rel="noreferrer"
             >
               <Image src={BurgerMachine} />
             </a>
@@ -80,6 +80,7 @@ const OtherWorks = (props) => {
             <a
               href="https://drive.google.com/file/d/1S6NMWSmb0iIh01FaKCEIpEH4exBeaqIC/view?usp=sharing"
               target="_blank"
+              rel="noreferrer"
             >
               <Image src={RicePoster} />
             </a>
@@ -94,6 +95,7 @@ const OtherWorks = (props) => {
             <a
               href="https://drive.google.com/file/d/1gBfZphDjUzipOyrDLdUmK6fHmMXRyxpP/view?usp=sharing"
               target="_blank"
+              rel="noreferrer"
             >
               <Image src={RiceSticker} />
             </a>

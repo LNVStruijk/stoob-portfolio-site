@@ -7,9 +7,7 @@ import Shortcut from "../components/Shortcut"; //imports the Shortcut component
 import PageWindow from "../components/PageWindow"; //imports the PageWindow component
 import StickyFooter from "../components/StickyFooter";
 import CloseButton from "../components/CloseButton";
-import React, { useState, useEffect } from "react";
-import { isMobile } from "react-device-detect";
-import ReactTooltip from "react-tooltip";
+import React, { useState } from "react";
 
 export default function Home() {
   /**
@@ -18,7 +16,6 @@ export default function Home() {
    * useState is where you put DEFAULT value
    * https://reactjs.org/docs/hooks-state.html
    */
-  const [mobileView, setMobileView] = useState(false);
 
   const [isGalleryVisible, setIsGalleryVisible] = useState(true);
   const [isAboutMeVisible, setIsAboutMeVisible] = useState(false);
@@ -29,27 +26,6 @@ export default function Home() {
   const [isOtherWorksVisible, setOtherWorksVisible] = useState(false);
 
   const [crtFilter, setCrtFilter] = useState(true);
-
-  useEffect(() => {
-    setMobileView(isMobile);
-  }, [isMobile]);
-
-  /**
-   * this is the format for a method or function
-   */
-  const testMethod = () => {
-    console.log("method activated");
-  };
-
-  // const renderMobilePopUp = () => {
-  //   if (mobileView) {
-  //     return (
-  //       <div className={styles.mobilePopUp}>
-  //         <p>This site is better with desktop view enabled</p>
-  //       </div>
-  //     );
-  //   }
-  // };
 
   return (
     /**

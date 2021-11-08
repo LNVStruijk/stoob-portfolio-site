@@ -17,12 +17,10 @@ import Reptile from "../../public/images/gallery-low-resolution/reptile-study-lo
 import Triggers from "../../public/images/gallery-low-resolution/triggers-link.jpg";
 import ReactTooltip from "react-tooltip";
 import { isMobile } from "react-device-detect";
-import React, { useState, useEffect } from "react";
+import React from "react";
 
 const galleryView = (props) => {
   const imgSize = 200;
-
-  useEffect(() => {}, []);
 
   const dataTip = () => {
     render(
@@ -47,6 +45,7 @@ const galleryView = (props) => {
             <a
               href="https://drive.google.com/file/d/14v2qsZ__RR7-m-zFJi-BLD9GWwjc7PCS/view?usp=sharing"
               target="_blank"
+              rel="noreferrer"
             >
               <Image src={Stalker} />
             </a>
@@ -62,6 +61,7 @@ const galleryView = (props) => {
             <a
               href="https://drive.google.com/file/d/1zmxn3moPF8Gm3UOHw2Jjru4cmN6cpTix/view?usp=sharing"
               target="_blank"
+              rel="noreferrer"
             >
               <Image src={Vertigo} />
             </a>
@@ -76,6 +76,7 @@ const galleryView = (props) => {
             <a
               href="https://drive.google.com/file/d/1ec7PMKk7FGdMIfhsLSIVkGfLiR9nhBy0/view?usp=sharing"
               target="_blank"
+              rel="noreferrer"
             >
               <Image src={Radiation} />
             </a>
@@ -93,6 +94,7 @@ const galleryView = (props) => {
             <a
               href="https://drive.google.com/file/d/1U1FIcQh0mCDIylKcvw9pM2hrVlLzyI2t/view?usp=sharing"
               target="_blank"
+              rel="noreferrer"
             >
               <Image src={Shining} />
             </a>
@@ -107,6 +109,7 @@ const galleryView = (props) => {
             <a
               href="https://drive.google.com/file/d/1JPFo6WKsbDhX7FsDhNVFXYYxOjOc87fG/view?usp=sharing"
               target="_blank"
+              rel="noreferrer"
             >
               <Image src={Williams} />
             </a>
@@ -121,6 +124,7 @@ const galleryView = (props) => {
             <a
               href="https://drive.google.com/file/d/1mMHOQqsLbZ3k0lQFB_rCfXazcHkNJOtQ/view?usp=sharing"
               target="_blank"
+              rel="noreferrer"
             >
               <Image src={BurnVictim} />
             </a>
@@ -138,6 +142,7 @@ const galleryView = (props) => {
             <a
               href="https://drive.google.com/file/d/1s_HggDR7-sRF1A4GmpZDzxQevjPhkv4g/view?usp=sharing"
               target="_blank"
+              rel="noreferrer"
             >
               <Image src={Blood} />
             </a>
@@ -152,6 +157,7 @@ const galleryView = (props) => {
             <a
               href="https://drive.google.com/file/d/1DLuVSGGeByaCGQxCDcOe_VeauDLacf1c/view?usp=sharing"
               target="_blank"
+              rel="noreferrer"
             >
               <Image src={Tortoise} />
             </a>
@@ -166,6 +172,7 @@ const galleryView = (props) => {
             <a
               href="https://drive.google.com/file/d/1BacQuo4TRiacZYgzNA1Z1R0H8COmd18g/view?usp=sharing"
               target="_blank"
+              rel="noreferrer"
             >
               <Image src={Baby} />
             </a>
@@ -183,6 +190,7 @@ const galleryView = (props) => {
             <a
               href="https://drive.google.com/file/d/1EOo4Ul8v_Tg8c5z1nmKqEAVSvsJ8F2bc/view?usp=sharing"
               target="_blank"
+              rel="noreferrer"
             >
               <Image src={Whiplash} />
             </a>
@@ -197,6 +205,7 @@ const galleryView = (props) => {
             <a
               href="https://drive.google.com/file/d/1z6l12fP9db2r4ECLBB8pU4tZtqC7EBQg/view?usp=sharing"
               target="_blank"
+              rel="noreferrer"
             >
               <Image src={Reptile} />
             </a>
@@ -211,6 +220,7 @@ const galleryView = (props) => {
             <a
               href="https://drive.google.com/file/d/1JFpIzT5wW9YVpVsm0lZcKperEFlXZ6Tb/view?usp=sharing"
               target="_blank"
+              rel="noreferrer"
             >
               <Image src={OldBoy} />
             </a>
@@ -228,6 +238,7 @@ const galleryView = (props) => {
             <a
               href="https://www.youtube.com/watch?v=4ytMCMDOq2M"
               target="_blank"
+              rel="noreferrer"
             >
               <Image src={Triggers} />
             </a>
