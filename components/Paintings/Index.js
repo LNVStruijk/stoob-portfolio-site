@@ -15,20 +15,10 @@ import Chernobyl from "../../public/images/paintings-low-res/child-of-chernobyl.
 import Radiation1 from "../../public/images/paintings-low-res/radiation-1.png";
 import Clouds from "../../public/images/paintings-low-res/clouds-small.png";
 import Plains from "../../public/images/paintings-low-res/plains-small.png";
-
 import ReactTooltip from "react-tooltip";
-import React from "react";
 
 const Paintings = (props) => {
   const imgSize = 200;
-
-  const dataTip = () => {
-    render(
-      <div>
-        <p>WORDS</p>
-      </div>
-    );
-  };
 
   return (
     <>
