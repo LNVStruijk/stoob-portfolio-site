@@ -141,7 +141,7 @@ export default function Home() {
             src={"/videos/backgroundVideoCompressed.mp4"}
             type="video/mp4"
           />
-        </video> */}
+        </video>
 
         <StickyFooter
           currentWindow={
