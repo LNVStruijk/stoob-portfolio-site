@@ -1,0 +1,14 @@
+@font-face {
+    font-family: 'W95FA';
+    font-style: normal;
+    font-weight: normal;
+    src: url('/fonts/W95FA.otf') format('opentype');
+}
+
+$default: "W95FA";
+
+$w-mobile: 768px;
+$w-small: 992px;
+
+$mq-small: '(max-width: #{$w-small})';
+$mq-mobile: '(max-width: #{$w-mobile})';
