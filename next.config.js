@@ -9,33 +9,40 @@ module.exports = {
 const withImages = require("next-images");
 module.exports = withImages();
 
-module.exports = {
-  module: {
-    rules: [
-      {
-        test: /.(png|jpe?g|gif)$/i,
-        use: [
-          {
-            loader: "file-loader",
-          },
-        ],
-      },
-      {
-        test: /.mp3$/,
-        include: SRC,
-        loader: 'file-loader'
-      }
-    ],
-  },
-};
+// module.exports = {
+//   images: {
+//     loader: 'imgix',
+//     path: 'https://example.com/myaccount/',
+//   },
+// }
 
-module.exports = {
-  exportPathMap: async function (
-    defaultPathMap,
-    { dev, dir, outDir, distDir, buildId }
-  ) {
-    return {
-      '/': { page: '/' },
-    }
-  },
-}
+// module.exports = {
+//   module: {
+//     rules: [
+//       {
+//         test: /.(png|jpe?g|gif)$/i,
+//         use: [
+//           {
+//             loader: "file-loader",
+//           },
+//         ],
+//       },
+//       {
+//         test: /.mp3$/,
+//         include: SRC,
+//         loader: 'file-loader'
+//       }
+//     ],
+//   },
+// };
+
+// module.exports = {
+//   exportPathMap: async function (
+//     defaultPathMap,
+//     { dev, dir, outDir, distDir, buildId }
+//   ) {
+//     return {
+//       '/': { page: '/' },
+//     }
+//   },
+// }
