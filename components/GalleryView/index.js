@@ -62,7 +62,7 @@ const galleryView = (props) => {
             </a>
           </div>
 
-          <div
+          {/* <div
             data-tip={
               '<h1>"Vertigo Poster"</h1> <h4> Adobe Photoshop - 2017</h4> <p>Poster inspired by Hitchcock\'s (1958)</p> <h5>Click to see full image</h5>'
             }
@@ -76,7 +76,7 @@ const galleryView = (props) => {
             >
               <Image src={Vertigo} />
             </a>
-          </div>
+          </div> */}
           <div
             data-tip={
               '<h1>"Rice Stickers"</h1> <h4> Adobe Photoshop - 2020</h4> <p>Stickers made for Saving Rice Campaign</p>  <h5>Click to see full image</h5>'
@@ -89,7 +89,8 @@ const galleryView = (props) => {
               target="_blank"
               rel="noreferrer"
             >
-              <Image src={Floorplan} />
+              <Image src={Floorplan} width="400" height="868" />
+              {/* next.js  */}
             </a>
           </div>
           <div

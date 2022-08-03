@@ -56,17 +56,18 @@
   }
   //row 1
   .stalker {
-    flex: 1.7;
+    flex: 1;
   }
 
   .vertigo {
-    flex: 0.91;
+    // flex: 0.91;
   }
-  .floorplan{
 
-  }
   .radiation {
-    flex: 0.95;
+    flex: 1;
+  }
+  .floorplan {
+    flex: 0.5;
   }
   //row 2
   .burgerMachine {
@@ -81,7 +82,6 @@
     flex: 0.8;
   }
 
- 
   //row 3
   .williams {
     flex: 1.5;
@@ -95,19 +95,19 @@
     flex: 0.8;
   }
   //row 4
-  .Spread1{
+  .Spread1 {
     flex: 0.25;
   }
-  .circuit{
+  .circuit {
     flex: 0.25;
   }
 
-  .omikuji{
-    flex:0.25;
+  .omikuji {
+    flex: 0.25;
   }
 
-  .droid{
-    flex:0.25
+  .droid {
+    flex: 0.25;
   }
 
   //row5
