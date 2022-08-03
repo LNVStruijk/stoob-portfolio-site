@@ -1,5 +1,16 @@
 import styles from "./GalleryView.module.scss";
 import Image from "next/image";
+
+import Omikuji from "../../public/images/posters-low-res/omikuji.png";
+import Droid from "../../public/images/typography-low-res/droid.png";
+import Circuit from "../../public/images/typography-low-res/circuit.jpg";
+import News1 from "../../public/images/typography-low-res/news-1.jpg";
+
+import BurgerMachine from "../../public/images/other-works-low-res/bm-menu.jpg";
+import RiceCards from "../../public/images/other-works-low-res/rice-cards.png";
+import RicePoster from "../../public/images/other-works-low-res/rice-poster.png";
+import RiceSticker from "../../public/images/other-works-low-res/rice-stickers.png";
+
 import Stalker from "../../public/images/gallery-low-resolution/stalker-low.png";
 import Vertigo from "../../public/images/gallery-low-resolution/vertigo-poster-low.png";
 import Radiation from "../../public/images/gallery-low-resolution/radiation2-low.png";
@@ -12,7 +23,10 @@ import Baby from "../../public/images/gallery-low-resolution/baby-low.png";
 import Whiplash from "../../public/images/gallery-low-resolution/whip-poster-low.png";
 import OldBoy from "../../public/images/gallery-low-resolution/old-poster-low.png";
 import Reptile from "../../public/images/gallery-low-resolution/reptile-study-low.png";
+
 import Triggers from "../../public/images/gallery-low-resolution/triggers-link.jpg";
+import Floorplan from "../../public/images/gallery-low-resolution/floorplan.gif";
+
 import ReactTooltip from "react-tooltip";
 import React from "react";
 
@@ -65,6 +79,21 @@ const galleryView = (props) => {
           </div>
           <div
             data-tip={
+              '<h1>"Rice Stickers"</h1> <h4> Adobe Photoshop - 2020</h4> <p>Stickers made for Saving Rice Campaign</p>  <h5>Click to see full image</h5>'
+            }
+            data-html={true}
+            className={styles.floorplan + " " + styles.images}
+          >
+            <a
+              href="https://drive.google.com/file/d/1gBfZphDjUzipOyrDLdUmK6fHmMXRyxpP/view?usp=sharing"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <Image src={Floorplan} />
+            </a>
+          </div>
+          <div
+            data-tip={
               '<h1>"radiation2"</h1> <h4> PaintToolSAI - 2019</h4> <p>Digital painting of a radiation Victim</p> <h5>Click to see full image</h5>'
             }
             data-html={true}
@@ -83,6 +112,54 @@ const galleryView = (props) => {
         <div className={styles.flexRow}>
           <div
             data-tip={
+              '<h1>"Burger Machine Menu"</h1> <h4> Photoshop - 2019 </h4> <p>Branding Menu Mockup</p> <h5>Click to see full image</h5>'
+            }
+            data-html={true}
+            className={styles.burgerMachine + " " + styles.images}
+          >
+            <a
+              href="https://drive.google.com/file/d/1pHRdDKotDId7d0n_Bolso16sywkJHh_L/view?usp=sharing"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <Image src={BurgerMachine} />
+            </a>
+          </div>
+          <div
+            data-tip={
+              '<h1>"Rice Posters"</h1> <h4> Adobe Photoshop - 2020</h4> <p>Posters made for Saving Rice Campaign</p> <h5>Click to see full image</h5>'
+            }
+            data-html={true}
+            className={styles.ricePoster + " " + styles.images}
+          >
+            <a
+              href="https://drive.google.com/file/d/1S6NMWSmb0iIh01FaKCEIpEH4exBeaqIC/view?usp=sharing"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <Image src={RicePoster} />
+            </a>
+          </div>
+          <div
+            data-tip={
+              '<h1>"Rice Stickers"</h1> <h4> Adobe Photoshop - 2020</h4> <p>Stickers made for Saving Rice Campaign</p>  <h5>Click to see full image</h5>'
+            }
+            data-html={true}
+            className={styles.rickeStickers + " " + styles.images}
+          >
+            <a
+              href="https://drive.google.com/file/d/1gBfZphDjUzipOyrDLdUmK6fHmMXRyxpP/view?usp=sharing"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <Image src={RiceSticker} />
+            </a>
+          </div>
+        </div>
+        {/* ROW 3 */}
+        <div className={styles.flexRow}>
+          <div
+            data-tip={
               '<h1>"Shining Poster"</h1> <h4> Adobe Illustrator - 2016</h4> <p>Poster of Kubrick\'s Shining (1980) using only type</p> <h5>Click to see full image</h5>'
             }
             data-html={true}
@@ -98,7 +175,7 @@ const galleryView = (props) => {
           </div>
           <div
             data-tip={
-              '<h1>"Ash Williams"</h1> <h4> PaintToolSAI - 2020</h4> <p>Image of Ash Williams from \'Evil Dead II\'</p> <h5>Click to see full image</h5>'
+              "<h1>\"Ash Williams\"</h1> <h4> PaintToolSAI - 2020</h4> <p>Image of Ash Williams from 'Evil Dead II'</p> <h5>Click to see full image</h5>"
             }
             data-html={true}
             className={styles.williams + " " + styles.images}
@@ -127,7 +204,70 @@ const galleryView = (props) => {
             </a>
           </div>
         </div>
-        {/* ROW 3 */}
+        {/* ROW 4 */}
+        <div className={styles.flexRow}>
+          <div
+            data-tip={
+              "<h1>\"Onion Newspaper 1\"</h1> <h4> Adobe InDesign - 2016</h4> <p>Mockup for 'The Onion' Newspaper</p> <h5>Click to see full image</h5>"
+            }
+            data-html={true}
+            className={styles.Spread1 + " " + styles.images}
+          >
+            <a
+              href="https://drive.google.com/file/d/1h38UTnFDsSUWaPiWFLThil4WsuTqzgbv/view?usp=sharing"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <Image src={News1} />
+            </a>
+          </div>
+          <div
+            data-tip={
+              '<h1>"Curcuit Typeface Poster"</h1> <h4> Adobe Illustrator - 2016</h4> <p>Custom-made typeface taken from computer circuitry</p> <h5>Click to see full image</h5>'
+            }
+            data-html={true}
+            className={styles.circuit + " " + styles.images}
+          >
+            <a
+              href="https://drive.google.com/file/d/1nmGKLAhqcddQUV1IK0U6XF88PsZIvQWI/view?usp=sharing"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <Image src={Circuit} />
+            </a>
+          </div>
+          <div
+            data-tip={
+              '<h1>"Omikuji Event Poster"</h1> <h4> Adobe Illustrator - 2017 </h4> <p>Campaign poster for an Organization event</p> <h5>Click to see full image</h5>'
+            }
+            data-html={true}
+            className={styles.omikuji + " " + styles.images}
+          >
+            <a
+              href="https://drive.google.com/file/d/11yo2IWir46g3O8dINxaPUm6SXegbnYh9/view?usp=sharing"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <Image src={Omikuji} />
+            </a>
+          </div>
+          <div
+            data-tip={
+              '<h1>"Droid Typeface Poster"</h1> <h4> Adobe Illustrator - 2016</h4> <p>Poster inspired by the "Droid" typeface</p> <h5>Click to see full image</h5>'
+            }
+            data-html={true}
+            className={styles.droid + " " + styles.images}
+          >
+            <a
+              href="https://drive.google.com/file/d/1peLdSfEPV8BGK1HwXIuzk06SElZ7ezs3/view?usp=sharing"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <Image src={Droid} />
+            </a>
+          </div>
+        </div>
+        {/* ROW 5 */}
         <div className={styles.flexRow}>
           <div
             data-tip={
@@ -161,7 +301,7 @@ const galleryView = (props) => {
           </div>
           <div
             data-tip={
-              '<h1>"Baby"</h1> <h4> PaintToolSAI - 2021 </h4> <p>Inspired by a case of \'Holoproscencephaly\' on a child</p> <h5>Click to see full image</h5>'
+              "<h1>\"Baby\"</h1> <h4> PaintToolSAI - 2021 </h4> <p>Inspired by a case of 'Holoproscencephaly' on a child</p> <h5>Click to see full image</h5>"
             }
             data-html={true}
             className={styles.baby + " " + styles.images}
@@ -175,7 +315,7 @@ const galleryView = (props) => {
             </a>
           </div>
         </div>
-        {/* ROW 4 */}
+        {/* ROW 6 */}
         <div className={styles.flexRow}>
           <div
             data-tip={
@@ -223,11 +363,11 @@ const galleryView = (props) => {
             </a>
           </div>
         </div>
-        {/* ROW 5 */}
+        {/* ROW 7 */}
         <div className={styles.flexRow}>
           <div
             data-tip={
-              '<h1>"Triggers" - Master\'s Thesis</h1> <h4> VR, UnityEngine - 2021 </h4> <p>Therapeutic experiment to address \'Misophonia\' disorder</p> <h5>Click to see video demo</h5>'
+              "<h1>\"Triggers\" - Master's Thesis</h1> <h4> VR, UnityEngine - 2021 </h4> <p>Therapeutic experiment to address 'Misophonia' disorder</p> <h5>Click to see video demo</h5>"
             }
             data-html={true}
             className={styles.triggers + " " + styles.images}

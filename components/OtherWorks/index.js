@@ -42,7 +42,7 @@ const OtherWorks = (props) => {
           </div>
           <div
             data-tip={
-              '<h1>"Burger Machine Menu"</h1> <h4> Photoshop - 2019 </h4> <p>Final project for branding class</p> <h5>Click to see full image</h5>'
+              '<h1>"Burger Machine Menu"</h1> <h4> Photoshop - 2019 </h4> <p>Branding Menu Mockup</p> <h5>Click to see full image</h5>'
             }
             data-html={true}
             className={styles.burgerMachine + " " + styles.images}
@@ -60,7 +60,7 @@ const OtherWorks = (props) => {
         <div className={styles.flexRow}>
           <div
             data-tip={
-              '<h1>"Rice Posters"</h1> <h4> Adobe Photoshop - 2020</h4> <p>Component for bachelor thesis project</p> <h5>Click to see full image</h5>'
+              '<h1>"Rice Posters"</h1> <h4> Adobe Photoshop - 2020</h4> <p>Posters made for Saving Rice Campaign</p> <h5>Click to see full image</h5>'
             }
             data-html={true}
             className={styles.ricePoster + " " + styles.images}
@@ -75,7 +75,7 @@ const OtherWorks = (props) => {
           </div>
           <div
             data-tip={
-              '<h1>"Rice Stickers"</h1> <h4> Adobe Photoshop - 2020</h4> <p>Component for bachelor thesis project</p> <h5>Click to see full image</h5>'
+              '<h1>"Rice Stickers"</h1> <h4> Adobe Photoshop - 2020</h4> <p>Stickers made for Saving Rice Campaign</p>  <h5>Click to see full image</h5>'
             }
             data-html={true}
             className={styles.rickeStickers + " " + styles.images}

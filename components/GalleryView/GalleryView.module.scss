@@ -54,7 +54,7 @@
       display: block;
     }
   }
-
+  //row 1
   .stalker {
     flex: 1.7;
   }
@@ -62,11 +62,27 @@
   .vertigo {
     flex: 0.91;
   }
+  .floorplan{
 
+  }
   .radiation {
     flex: 0.95;
   }
+  //row 2
+  .burgerMachine {
+    flex: 0.94;
+  }
 
+  .ricePoster {
+    flex: 0.95;
+  }
+
+  .rickeStickers {
+    flex: 0.8;
+  }
+
+ 
+  //row 3
   .williams {
     flex: 1.5;
   }
@@ -77,6 +93,26 @@
 
   .burnVictim {
     flex: 0.8;
+  }
+  //row 4
+  .Spread1{
+    flex: 0.25;
+  }
+  .circuit{
+    flex: 0.25;
+  }
+
+  .omikuji{
+    flex:0.25;
+  }
+
+  .droid{
+    flex:0.25
+  }
+
+  //row5
+  .ricePoster {
+    flex: 0.95;
   }
 
   .blood {
@@ -112,7 +148,7 @@
     line-height: 1.5rem;
     text-align: center;
     border: 0.05rem solid white;
-    background-color:#01019eaf;
+    background-color: #01019eaf;
     color: white;
     font-size: 1rem;
     // width: 11rem;

@@ -28,7 +28,7 @@ const Posters = (props) => {
           {/* ROW 1 */}
           <div
             data-tip={
-              '<h1>"Omikuji Event Poster"</h1> <h4> Adobe Illustrator - 2017 </h4> <p>Campaign poster for a school Organization event</p> <h5>Click to see full image</h5>'
+              '<h1>"Omikuji Event Poster"</h1> <h4> Adobe Illustrator - 2017 </h4> <p>Campaign poster for an Organization event</p> <h5>Click to see full image</h5>'
             }
             data-html={true}
             className={styles.omikuji + " " + styles.images}
