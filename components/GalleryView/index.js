@@ -7,6 +7,7 @@ import Omikuji from "../../public/images/posters-low-res/omikuji.png";
 import Droid from "../../public/images/typography-low-res/droid.png";
 import Circuit from "../../public/images/typography-low-res/circuit.jpg";
 import News1 from "../../public/images/typography-low-res/news-1.jpg";
+import LovingLogo from "../../public/images/other-works-low-res/loving-logo.jpg";
 
 import BurgerMachine from "../../public/images/other-works-low-res/bm-menu.jpg";
 import RiceCards from "../../public/images/other-works-low-res/rice-cards.png";
@@ -141,6 +142,21 @@ const galleryView = (props) => {
               rel="noreferrer"
             >
               <Image src={RiceSticker} />
+            </a>
+          </div>
+          <div
+            data-tip={
+              '<h1>"LovingRoomConcerts Logo"</h1> <h4> Adobe Illustrator - 2022</h4> <p>Logo made for LovingRoomConcerts</p>  <h5>Click to see profile</h5>'
+            }
+            data-html={true}
+            className={styles.lovinglogo + " " + styles.images}
+          >
+            <a
+              href="https://www.instagram.com/lovingroomconcerts/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <Image src={LovingLogo} />
             </a>
           </div>
         </div>
