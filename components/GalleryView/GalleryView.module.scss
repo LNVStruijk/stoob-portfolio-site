@@ -56,18 +56,15 @@
   }
   //row 1
   .stalker {
-    flex: 1;
+    flex: 1.1;
   }
 
-  .vertigo {
-    // flex: 0.91;
+  .lovingpost{
+    flex:0.55;
   }
 
-  .radiation {
-    flex: 1;
-  }
   .floorplan {
-    flex: 0.5;
+    flex: 0.4;
   }
   //row 2
   .burgerMachine {
@@ -123,6 +120,10 @@
     flex: 1;
   }
 
+  .vertigo {
+    flex: 0.53;
+  }
+
   .baby {
     flex: 1;
   }
@@ -134,6 +135,9 @@
 
   .reptile {
     flex: 0.99;
+  }
+  .radiation {
+    flex: 0.75;
   }
 
   .oldboy {

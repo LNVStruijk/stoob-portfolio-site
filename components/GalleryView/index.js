@@ -1,6 +1,8 @@
 import styles from "./GalleryView.module.scss";
 import Image from "next/image";
 
+import LovingPost from "../../public/images/gallery-low-resolution/loving-post.jpg";
+
 import Omikuji from "../../public/images/posters-low-res/omikuji.png";
 import Droid from "../../public/images/typography-low-res/droid.png";
 import Circuit from "../../public/images/typography-low-res/circuit.jpg";
@@ -48,6 +50,21 @@ const galleryView = (props) => {
           {/* ROW 1 */}
           <div
             data-tip={
+              '<h1>"Instagram Content"</h1> <h4> Photoshop - 2022</h4> <p>Social Media Content created for LovingRoomConcerts</p> <h5>Click to see post</h5>'
+            }
+            data-html={true}
+            className={styles.lovingpost + " " + styles.images}
+          >
+            <a
+              href="https://www.instagram.com/p/CgKrSIDNM7j/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <Image src={LovingPost} />
+            </a>
+          </div>
+          <div
+            data-tip={
               '<h1>"Stalker"</h1> <h4> PaintToolSAI - 2020</h4> <p>Inspired by Tarkovky\'s Stalker (1979)</p> <h5>Click to see full image</h5>'
             }
             data-html={true}
@@ -62,50 +79,20 @@ const galleryView = (props) => {
             </a>
           </div>
 
-          {/* <div
-            data-tip={
-              '<h1>"Vertigo Poster"</h1> <h4> Adobe Photoshop - 2017</h4> <p>Poster inspired by Hitchcock\'s (1958)</p> <h5>Click to see full image</h5>'
-            }
-            data-html={true}
-            className={styles.vertigo + " " + styles.images}
-          >
-            <a
-              href="https://drive.google.com/file/d/1zmxn3moPF8Gm3UOHw2Jjru4cmN6cpTix/view?usp=sharing"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <Image src={Vertigo} />
-            </a>
-          </div> */}
           <div
             data-tip={
-              '<h1>"Rice Stickers"</h1> <h4> Adobe Photoshop - 2020</h4> <p>Stickers made for Saving Rice Campaign</p>  <h5>Click to see full image</h5>'
+              '<h1>"Floorplan AR Filter"</h1> <h4> SparkAR, Blender - 2022</h4> <p>AR Filter made for Boomerang Agency</p>  <h5>Click to try filter</h5>'
             }
             data-html={true}
             className={styles.floorplan + " " + styles.images}
           >
             <a
-              href="https://drive.google.com/file/d/1gBfZphDjUzipOyrDLdUmK6fHmMXRyxpP/view?usp=sharing"
+              href="https://www.instagram.com/ar/408223837971984/"
               target="_blank"
               rel="noreferrer"
             >
               <Image src={Floorplan} width="400" height="868" />
               {/* next.js  */}
-            </a>
-          </div>
-          <div
-            data-tip={
-              '<h1>"radiation2"</h1> <h4> PaintToolSAI - 2019</h4> <p>Digital painting of a radiation Victim</p> <h5>Click to see full image</h5>'
-            }
-            data-html={true}
-            className={styles.radiation + " " + styles.images}
-          >
-            <a
-              href="https://drive.google.com/file/d/1ec7PMKk7FGdMIfhsLSIVkGfLiR9nhBy0/view?usp=sharing"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <Image src={Radiation} />
             </a>
           </div>
         </div>
@@ -302,6 +289,21 @@ const galleryView = (props) => {
           </div>
           <div
             data-tip={
+              '<h1>"Vertigo Poster"</h1> <h4> Adobe Photoshop - 2017</h4> <p>Poster inspired by Hitchcock\'s (1958)</p> <h5>Click to see full image</h5>'
+            }
+            data-html={true}
+            className={styles.vertigo + " " + styles.images}
+          >
+            <a
+              href="https://drive.google.com/file/d/1zmxn3moPF8Gm3UOHw2Jjru4cmN6cpTix/view?usp=sharing"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <Image src={Vertigo} />
+            </a>
+          </div>
+          <div
+            data-tip={
               "<h1>\"Baby\"</h1> <h4> PaintToolSAI - 2021 </h4> <p>Inspired by a case of 'Holoproscencephaly' on a child</p> <h5>Click to see full image</h5>"
             }
             data-html={true}
@@ -346,6 +348,21 @@ const galleryView = (props) => {
               rel="noreferrer"
             >
               <Image src={Reptile} />
+            </a>
+          </div>
+          <div
+            data-tip={
+              '<h1>"radiation2"</h1> <h4> PaintToolSAI - 2019</h4> <p>Digital painting of a radiation Victim</p> <h5>Click to see full image</h5>'
+            }
+            data-html={true}
+            className={styles.radiation + " " + styles.images}
+          >
+            <a
+              href="https://drive.google.com/file/d/1ec7PMKk7FGdMIfhsLSIVkGfLiR9nhBy0/view?usp=sharing"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <Image src={Radiation} />
             </a>
           </div>
           <div
