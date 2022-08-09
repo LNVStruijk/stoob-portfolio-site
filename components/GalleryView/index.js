@@ -2,6 +2,7 @@ import styles from "./GalleryView.module.scss";
 import Image from "next/image";
 
 import LovingPost from "../../public/images/gallery-low-resolution/loving-post.jpg";
+import Baco from "../../public/images/gallery-low-resolution/baco.gif";
 
 import Omikuji from "../../public/images/posters-low-res/omikuji.png";
 import Droid from "../../public/images/typography-low-res/droid.png";
@@ -62,6 +63,21 @@ const galleryView = (props) => {
               rel="noreferrer"
             >
               <Image src={LovingPost} />
+            </a>
+          </div>
+          <div
+            data-tip={
+              '<h1>"Bacardi Cola Release"</h1> <h4> Photoshop - 2022</h4> <p>Social Media campaign for Project::greyhound\'s single</p> <h5>Click to see post</h5>'
+            }
+            data-html={true}
+            className={styles.baco + " " + styles.images}
+          >
+            <a
+              href="https://www.instagram.com/p/Cg-MKZesYMI/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <Image src={Baco} />
             </a>
           </div>
           <div
