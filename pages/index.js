@@ -30,8 +30,11 @@ export default function Home() {
      */
     <>
       <Head>
-        <title>{'Lucas Struijk\'s Portfolio'}</title>
-        <meta name="description" content="Created by Lucas Struijk and Andrea Ang using Next JS ©2021" />
+        <title>{"Lucas Struijk's Portfolio"}</title>
+        <meta
+          name="description"
+          content="Created by Lucas Struijk and Andrea Ang using Next JS ©2021"
+        />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
@@ -45,9 +48,9 @@ export default function Home() {
           <section className={styles.shortcuts} id={"Shortcut Rows"}>
             {/* SHORTCUT ROW 1 */}
             <div className={styles.shortcutGrid}>
-                <div onClick={() => setIsGalleryVisible(true)}>
-                  <Shortcut name={"featured works"} image={"Featured"} />
-                </div>
+              <div onClick={() => setIsGalleryVisible(true)}>
+                <Shortcut name={"featured works"} image={"Featured"} />
+              </div>
               <div onClick={() => setIsAboutMeVisible(true)}>
                 <Shortcut name={"about me"} image={"AboutMe"} />
               </div>
@@ -71,7 +74,14 @@ export default function Home() {
 
             {/* SHORTCUT ROW 3 */}
             <div className={styles.shortcutGrid}>
-              <Shortcut name={'say "hi" '} image={"Doom"} />
+              <a
+                href="https://www.instagram.com/lucas.makes.stuff/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <Shortcut name={'say "hi" '} image={"Doom"} />
+              </a>
+
               <div onClick={() => setOtherWorksVisible(true)}>
                 <Shortcut name={"other works"} image={"OtherWorks"} />
               </div>
@@ -132,8 +142,6 @@ export default function Home() {
               closeWindow={() => setOtherWorksVisible(false)}
             />
           </section>
-
-          
         </div>
 
         <video autoPlay={true} muted className={styles.backgroundVideo}>
