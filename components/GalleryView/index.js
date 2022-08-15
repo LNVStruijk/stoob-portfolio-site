@@ -53,13 +53,13 @@ const galleryView = (props) => {
           {/* ROW 1 */}
           <div
             data-tip={
-              '<h1>"DgenBOTs Poster"</h1> <h4> Mixed media - 2022</h4> <p>Game Asset for \'DgenBot-Factory\'</p> <h5>Click to see full image</h5>'
+              '<h1>"DgenBOTs Poster"</h1> <h4> Mixed media - 2022</h4> <p>Game Asset for \'DgenBot-Factory\'</p> <h5>Click to play game</h5>'
             }
             data-html={true}
             className={styles.botposter + " " + styles.images}
           >
             <a
-              href="https://www.instagram.com/p/CgKrSIDNM7j/"
+              href="https://monaverse.com/spaces/dgenbot-factory"
               target="_blank"
               rel="noreferrer"
             >
