@@ -55,12 +55,13 @@
     }
   }
   //row 1
-  .stalker {
-    flex: 1.1;
-  }
 
   .lovingpost {
     flex: 0.55;
+  }
+
+  .botposter {
+    flex: 0.6;
   }
 
   .floorplan {
@@ -92,7 +93,9 @@
   .williams {
     flex: 1.5;
   }
-
+  .stalker {
+    flex: 1.5;
+  }
   .shining {
     flex: 0.8;
   }

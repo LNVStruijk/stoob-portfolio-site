@@ -3,6 +3,7 @@ import Image from "next/image";
 
 import LovingPost from "../../public/images/gallery-low-resolution/loving-post.jpg";
 import Baco from "../../public/images/gallery-low-resolution/baco.gif";
+import BotPoster from "../../public/images/gallery-low-resolution/bot-poster.jpg";
 
 import Omikuji from "../../public/images/posters-low-res/omikuji.png";
 import Droid from "../../public/images/typography-low-res/droid.png";
@@ -52,6 +53,21 @@ const galleryView = (props) => {
           {/* ROW 1 */}
           <div
             data-tip={
+              '<h1>"DgenBOTs Poster"</h1> <h4> Mixed media - 2022</h4> <p>Game Asset for \'DgenBot-Factory\'</p> <h5>Click to see full image</h5>'
+            }
+            data-html={true}
+            className={styles.botposter + " " + styles.images}
+          >
+            <a
+              href="https://www.instagram.com/p/CgKrSIDNM7j/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <Image src={BotPoster} />
+            </a>
+          </div>
+          <div
+            data-tip={
               '<h1>"Instagram Content"</h1> <h4> Photoshop - 2022</h4> <p>Social Media Content created for LovingRoomConcerts</p> <h5>Click to see post</h5>'
             }
             data-html={true}
@@ -80,22 +96,7 @@ const galleryView = (props) => {
               <Image src={Baco} />
             </a>
           </div>
-          <div
-            data-tip={
-              '<h1>"Stalker"</h1> <h4> PaintToolSAI - 2020</h4> <p>Inspired by Tarkovky\'s Stalker (1979)</p> <h5>Click to see full image</h5>'
-            }
-            data-html={true}
-            className={styles.stalker + " " + styles.images}
-          >
-            <a
-              href="https://drive.google.com/file/d/14v2qsZ__RR7-m-zFJi-BLD9GWwjc7PCS/view?usp=sharing"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <Image src={Stalker} />
-            </a>
-          </div>
-
+          
           <div
             data-tip={
               '<h1>"Floorplan AR Filter"</h1> <h4> SparkAR, Blender - 2022</h4> <p>AR Filter made for Boomerang Agency</p>  <h5>Click to try filter</h5>'
@@ -193,6 +194,22 @@ const galleryView = (props) => {
               <Image src={Shining} />
             </a>
           </div>
+          <div
+            data-tip={
+              '<h1>"Stalker"</h1> <h4> PaintToolSAI - 2020</h4> <p>Inspired by Tarkovky\'s Stalker (1979)</p> <h5>Click to see full image</h5>'
+            }
+            data-html={true}
+            className={styles.stalker + " " + styles.images}
+          >
+            <a
+              href="https://drive.google.com/file/d/14v2qsZ__RR7-m-zFJi-BLD9GWwjc7PCS/view?usp=sharing"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <Image src={Stalker} />
+            </a>
+          </div>
+
           <div
             data-tip={
               "<h1>\"Ash Williams\"</h1> <h4> PaintToolSAI - 2020</h4> <p>Image of Ash Williams from 'Evil Dead II'</p> <h5>Click to see full image</h5>"
