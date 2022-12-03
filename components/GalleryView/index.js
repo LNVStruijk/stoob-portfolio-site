@@ -1,6 +1,7 @@
 import styles from "./GalleryView.module.scss";
 import Image from "next/image";
 
+import assuCms from "../../public/images/gallery-low-resolution/assu-cms.gif";
 import LovingPost from "../../public/images/gallery-low-resolution/loving-post.jpg";
 import Baco from "../../public/images/gallery-low-resolution/baco.gif";
 import BotPoster from "../../public/images/gallery-low-resolution/bot-poster.jpg";
@@ -53,6 +54,21 @@ const galleryView = (props) => {
           {/* ROW 1 */}
           <div
             data-tip={
+              '<h1>"Assu CMS Software"</h1> <h4> Figma - 2022</h4> <p>CMS Software catering to insurance companies</p> <h5>Click to see full demo</h5>'
+            }
+            data-html={true}
+            className={styles.assuCms + " " + styles.images}
+          >
+            <a
+              href="https://drive.google.com/file/d/1IPFohnlzH29lxMdoSGRQCeHu7dT1ulwD/view?usp=share_link"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <Image src={assuCms} />
+            </a>
+          </div>
+          <div
+            data-tip={
               '<h1>"DgenBOTs Poster"</h1> <h4> Mixed media - 2022</h4> <p>Game Asset for \'DgenBot-Factory\'</p> <h5>Click to play game</h5>'
             }
             data-html={true}
@@ -66,21 +82,7 @@ const galleryView = (props) => {
               <Image src={BotPoster} />
             </a>
           </div>
-          <div
-            data-tip={
-              '<h1>"Instagram Content"</h1> <h4> Photoshop - 2022</h4> <p>Social Media Content created for LovingRoomConcerts</p> <h5>Click to see post</h5>'
-            }
-            data-html={true}
-            className={styles.lovingpost + " " + styles.images}
-          >
-            <a
-              href="https://www.instagram.com/p/CgKrSIDNM7j/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <Image src={LovingPost} />
-            </a>
-          </div>
+          
           <div
             data-tip={
               '<h1>"Bacardi Cola Release"</h1> <h4> Photoshop - 2022</h4> <p>Social Media campaign for Project::greyhound\'s single</p> <h5>Click to see post</h5>'
@@ -144,6 +146,21 @@ const galleryView = (props) => {
               rel="noreferrer"
             >
               <Image src={RicePoster} />
+            </a>
+          </div>
+          <div
+            data-tip={
+              '<h1>"Instagram Content"</h1> <h4> Photoshop - 2022</h4> <p>Social Media Content created for LovingRoomConcerts</p> <h5>Click to see post</h5>'
+            }
+            data-html={true}
+            className={styles.lovingpost + " " + styles.images}
+          >
+            <a
+              href="https://www.instagram.com/p/CgKrSIDNM7j/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <Image src={LovingPost} />
             </a>
           </div>
           <div
