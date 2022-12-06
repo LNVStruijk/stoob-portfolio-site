@@ -21,13 +21,13 @@
 -->
 ### 💻 Contributors
 <!-- ![Contributors][contributors-shield] -->
-[![Andrea][andrea-shield]][andrea-url]
 [![Lucas][lucas-shield]][lucas-url]
+[![Andrea][andrea-shield]][andrea-url]
 
 ### 💼 LinkedIn Profiles
 <!-- ![LinkedIn][linkedin-shield] -->
-[![Andrea][andrea-linkedin-shield]][andrea-linkedin-url]
 [![Lucas][lucas-linkedin-shield]][lucas-linkedin-url]
+[![Andrea][andrea-linkedin-shield]][andrea-linkedin-url]
 
 
 <!-- PROJECT LOGO -->
@@ -42,7 +42,7 @@
   <p align="center">
     A Windows 95 inspired portfolio website
     <br />
-    <a href="https://github.com/github_username/repo_name"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/BawalBakla420/stoob-portfolio-site"><strong>Explore the docs »</strong></a>
     <br />
     <br />
     <a href="https://lucasmakesstuff.vercel.app/">View Live Site</a>
@@ -158,7 +158,7 @@ See the [open issues](https://github.com/BawalBakla420/stoob-portfolio-site/issu
 <!-- CONTACT -->
 ## Contact
 
-Lucas Struijk (UI/UX Designer, Graphic Designer, Painter) - [@lucas.makes.stuff](https://www.instagram.com/lucas.makes.stuff/) - lucasstruijk@gmail.com
+Lucas Struijk (UI/UX Designer, Graphic Designer, Painter) - [@lucas.makes.stuff](https://www.instagram.com/lucas.makes.stuff/) - [Linkedin](https://www.linkedin.com/in/lucas-struijk-3521aa138/) - lucasstruijk@gmail.com
 
 Andrea Ang (Fullstack Developer, Newbie UI/UX Designer) - [@andybodandy_](https://www.instagram.com/andybodandy_/) - [Linkedin](https://www.linkedin.com/in/andrea-ang-6b160217b/) - andreavillang@gmail.com
 
