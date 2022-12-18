@@ -62,7 +62,7 @@ const galleryView = (props) => {
             className={styles.leaseplan + " " + styles.images}
           >
             <a
-              href="https://trustvpndev.wpengine.com/"
+              href="https://drive.google.com/file/d/1MI2hNbenWPf_eXzx_35PiZHBEutb7bId/view?usp=share_link"
               target="_blank"
               rel="noreferrer"
             >
