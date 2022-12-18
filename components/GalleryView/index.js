@@ -1,6 +1,8 @@
 import styles from "./GalleryView.module.scss";
 import Image from "next/image";
 
+import hololens from "../../public/images/gallery-low-resolution/leaseplan.gif";
+import trustVPN from "../../public/images/gallery-low-resolution/trustvpn.gif";
 import assuCms from "../../public/images/gallery-low-resolution/assu-cms.gif";
 import LovingPost from "../../public/images/gallery-low-resolution/loving-post.jpg";
 import Baco from "../../public/images/gallery-low-resolution/baco.gif";
@@ -54,6 +56,36 @@ const galleryView = (props) => {
           {/* ROW 1 */}
           <div
             data-tip={
+              '<h1>"Leaseplan Demo"</h1> <h4>Hololens, UnityEngine - 2022</h4> <p>AR demonstration with Hololens 2</p> <h5>Click to view video</h5>'
+            }
+            data-html={true}
+            className={styles.leaseplan + " " + styles.images}
+          >
+            <a
+              href="https://trustvpndev.wpengine.com/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <Image src={hololens} />
+            </a>
+          </div>
+          <div
+            data-tip={
+              '<h1>"TrustVPN Mockup"</h1> <h4> WordPress, Sketch - 2022</h4> <p>Mockup test site for TrustVPN</p> <h5>Click to visit site</h5>'
+            }
+            data-html={true}
+            className={styles.trustVPN + " " + styles.images}
+          >
+            <a
+              href="https://trustvpndev.wpengine.com/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <Image src={trustVPN} />
+            </a>
+          </div>
+          <div
+            data-tip={
               '<h1>"Assu CMS Software"</h1> <h4> Figma - 2022</h4> <p>CMS Software catering to insurance companies</p> <h5>Click to see full demo</h5>'
             }
             data-html={true}
@@ -67,9 +99,13 @@ const galleryView = (props) => {
               <Image src={assuCms} />
             </a>
           </div>
+        </div>
+        <div className={styles.flexRow}>
+          {/* ROW 1 */}
+
           <div
             data-tip={
-              '<h1>"DgenBOTs Poster"</h1> <h4> Mixed media - 2022</h4> <p>Game Asset for \'DgenBot-Factory\'</p> <h5>Click to play game</h5>'
+              "<h1>\"DgenBOTs Poster\"</h1> <h4> Mixed media - 2022</h4> <p>Game Asset for 'DgenBot-Factory'</p> <h5>Click to play game</h5>"
             }
             data-html={true}
             className={styles.botposter + " " + styles.images}
@@ -82,7 +118,7 @@ const galleryView = (props) => {
               <Image src={BotPoster} />
             </a>
           </div>
-          
+
           <div
             data-tip={
               '<h1>"Bacardi Cola Release"</h1> <h4> Photoshop - 2022</h4> <p>Social Media campaign for Project::greyhound\'s single</p> <h5>Click to see post</h5>'
@@ -98,7 +134,7 @@ const galleryView = (props) => {
               <Image src={Baco} />
             </a>
           </div>
-          
+
           <div
             data-tip={
               '<h1>"Floorplan AR Filter"</h1> <h4> SparkAR, Blender - 2022</h4> <p>AR Filter made for Boomerang Agency</p>  <h5>Click to try filter</h5>'
