@@ -1,6 +1,7 @@
 import styles from "./GalleryView.module.scss";
 import Image from "next/image";
 
+import meatdiscounter from "../../public/images/gallery-low-resolution/meatdiscounter.gif";
 import hololens from "../../public/images/gallery-low-resolution/leaseplan.gif";
 import trustVPN from "../../public/images/gallery-low-resolution/trustvpn.gif";
 import assuCms from "../../public/images/gallery-low-resolution/assu-cms.gif";
@@ -52,8 +53,41 @@ const galleryView = (props) => {
   return (
     <>
       <div className={styles.container}>
-        <div className={styles.flexRow}>
+      <div className={styles.flexRow}>
           {/* ROW 1 */}
+          <div
+            data-tip={
+              '<h1>"Meatdiscounter"</h1> <h4>Sketch, Shopify - 2023</h4> <p>Webshop that delivers premium meat at low prices</p> <p>Aided in overall design, mobile view and countdown timer</p>  <h5>Click to see full demo</h5>'
+            }
+            data-html={true}
+            className={styles.meat + " " + styles.images}
+          >
+            <a
+              href="https://meatdiscounter.nl/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <Image src={meatdiscounter} />
+            </a>
+          </div>
+          <div
+            data-tip={
+              '<h1>"Assu CMS Software"</h1> <h4> Figma - 2022</h4> <p>CMS Software catering to insurance companies</p> <p>Aided stakeholders by creating user-centric features</p> <h5>Click to see full demo</h5>'
+            }
+            data-html={true}
+            className={styles.assuCms + " " + styles.images}
+          >
+            <a
+              href="https://drive.google.com/file/d/1IPFohnlzH29lxMdoSGRQCeHu7dT1ulwD/view?usp=share_link"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <Image src={assuCms} />
+            </a>
+          </div>
+        </div>
+        <div className={styles.flexRow}>
+          {/* ROW 2 */}
           <div
             data-tip={
               '<h1>"Leaseplan Demo"</h1> <h4>Hololens, UnityEngine - 2022</h4> <p>AR demonstration with Hololens 2</p> <h5>Click to view video</h5>'
@@ -62,7 +96,7 @@ const galleryView = (props) => {
             className={styles.leaseplan + " " + styles.images}
           >
             <a
-              href="https://trustvpndev.wpengine.com/"
+              href="https://drive.google.com/file/d/1qQQmz6XQK173uf_dWny0ZMORijrhB-Lq/view?usp=share_link"
               target="_blank"
               rel="noreferrer"
             >
@@ -84,28 +118,14 @@ const galleryView = (props) => {
               <Image src={trustVPN} />
             </a>
           </div>
-          <div
-            data-tip={
-              '<h1>"Assu CMS Software"</h1> <h4> Figma - 2022</h4> <p>CMS Software catering to insurance companies</p> <h5>Click to see full demo</h5>'
-            }
-            data-html={true}
-            className={styles.assuCms + " " + styles.images}
-          >
-            <a
-              href="https://drive.google.com/file/d/1IPFohnlzH29lxMdoSGRQCeHu7dT1ulwD/view?usp=share_link"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <Image src={assuCms} />
-            </a>
-          </div>
+          
         </div>
         <div className={styles.flexRow}>
-          {/* ROW 1 */}
-
+          {/* ROW 3 */}
+          
           <div
             data-tip={
-              "<h1>\"DgenBOTs Poster\"</h1> <h4> Mixed media - 2022</h4> <p>Game Asset for 'DgenBot-Factory'</p> <h5>Click to play game</h5>"
+              "<h1>\"DgenBOTs Poster\"</h1> <h4> Mixed media - 2022</h4> <p>Game Asset for 'DgenBot-Factory'</p> <p>In collaboration with Lucas Guzman and Lovekravt</p> <h5>Click to play game</h5>"
             }
             data-html={true}
             className={styles.botposter + " " + styles.images}
@@ -116,6 +136,21 @@ const galleryView = (props) => {
               rel="noreferrer"
             >
               <Image src={BotPoster} />
+            </a>
+          </div>
+          <div
+            data-tip={
+              '<h1>"LovingRoomConcerts Logo"</h1> <h4> Adobe Illustrator - 2022</h4> <p>Logo made for LovingRoomConcerts</p>  <h5>Click to see profile</h5>'
+            }
+            data-html={true}
+            className={styles.lovinglogo + " " + styles.images}
+          >
+            <a
+              href="https://www.instagram.com/lovingroomconcerts/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <Image src={LovingLogo} />
             </a>
           </div>
 
@@ -152,7 +187,7 @@ const galleryView = (props) => {
             </a>
           </div>
         </div>
-        {/* ROW 2 */}
+        {/* ROW 4 */}
         <div className={styles.flexRow}>
           <div
             data-tip={
@@ -214,23 +249,9 @@ const galleryView = (props) => {
               <Image src={RiceSticker} />
             </a>
           </div>
-          <div
-            data-tip={
-              '<h1>"LovingRoomConcerts Logo"</h1> <h4> Adobe Illustrator - 2022</h4> <p>Logo made for LovingRoomConcerts</p>  <h5>Click to see profile</h5>'
-            }
-            data-html={true}
-            className={styles.lovinglogo + " " + styles.images}
-          >
-            <a
-              href="https://www.instagram.com/lovingroomconcerts/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <Image src={LovingLogo} />
-            </a>
-          </div>
+          
         </div>
-        {/* ROW 3 */}
+        {/* ROW 5 */}
         <div className={styles.flexRow}>
           <div
             data-tip={
@@ -263,7 +284,7 @@ const galleryView = (props) => {
             </a>
           </div>
 
-          <div
+          {/* <div
             data-tip={
               "<h1>\"Ash Williams\"</h1> <h4> PaintToolSAI - 2020</h4> <p>Image of Ash Williams from 'Evil Dead II'</p> <h5>Click to see full image</h5>"
             }
@@ -277,8 +298,8 @@ const galleryView = (props) => {
             >
               <Image src={Williams} />
             </a>
-          </div>
-          <div
+          </div> */}
+          {/* <div
             data-tip={
               '<h1>"Burn Victim"</h1> <h4> PaintToolSAI - 2020</h4> <p>Study of a burn victim</p> <h5>Click to see full image</h5>'
             }
@@ -292,9 +313,9 @@ const galleryView = (props) => {
             >
               <Image src={BurnVictim} />
             </a>
-          </div>
+          </div> */}
         </div>
-        {/* ROW 4 */}
+        {/* ROW 6 */}
         <div className={styles.flexRow}>
           <div
             data-tip={
@@ -357,9 +378,9 @@ const galleryView = (props) => {
             </a>
           </div>
         </div>
-        {/* ROW 5 */}
+        {/* ROW 7 */}
         <div className={styles.flexRow}>
-          <div
+          {/* <div
             data-tip={
               '<h1>"There Will Be Blood Poster"</h1> <h4> Adobe Photoshop - 2017</h4> <p>Poster inspired by Thomas Anderson\'s There Will Be Blood (2007)</p> <h5>Click to see full image</h5>'
             }
@@ -373,7 +394,7 @@ const galleryView = (props) => {
             >
               <Image src={Blood} />
             </a>
-          </div>
+          </div> */}
           <div
             data-tip={
               '<h1>"Tortoise Study"</h1> <h4> PaintToolSAI - 2020 </h4> <p>Study of a tortoise</p> <h5>Click to see full image</h5>'
@@ -404,7 +425,7 @@ const galleryView = (props) => {
               <Image src={Vertigo} />
             </a>
           </div>
-          <div
+          {/* <div
             data-tip={
               "<h1>\"Baby\"</h1> <h4> PaintToolSAI - 2021 </h4> <p>Inspired by a case of 'Holoproscencephaly' on a child</p> <h5>Click to see full image</h5>"
             }
@@ -418,9 +439,9 @@ const galleryView = (props) => {
             >
               <Image src={Baby} />
             </a>
-          </div>
+          </div> */}
         </div>
-        {/* ROW 6 */}
+        {/* ROW 8 */}
         <div className={styles.flexRow}>
           <div
             data-tip={
@@ -452,7 +473,7 @@ const galleryView = (props) => {
               <Image src={Reptile} />
             </a>
           </div>
-          <div
+          {/* <div
             data-tip={
               '<h1>"radiation2"</h1> <h4> PaintToolSAI - 2019</h4> <p>Digital painting of a radiation Victim</p> <h5>Click to see full image</h5>'
             }
@@ -466,7 +487,7 @@ const galleryView = (props) => {
             >
               <Image src={Radiation} />
             </a>
-          </div>
+          </div> */}
           <div
             data-tip={
               '<h1>"Oldboy Poster"</h1> <h4> Adobe Photoshop - 2017 </h4> <p>Inspired by Chan-wook\'s Oldboy (2003)</p> <h5>Click to see full image</h5>'
@@ -483,7 +504,7 @@ const galleryView = (props) => {
             </a>
           </div>
         </div>
-        {/* ROW 7 */}
+        {/* ROW 9 */}
         <div className={styles.flexRow}>
           <div
             data-tip={
