@@ -97,6 +97,7 @@ const galleryView = (props) => {
           >
             <a
               href="https://drive.google.com/file/d/1qQQmz6XQK173uf_dWny0ZMORijrhB-Lq/view?usp=share_link"
+
               target="_blank"
               rel="noreferrer"
             >
