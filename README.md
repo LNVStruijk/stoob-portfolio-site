@@ -33,7 +33,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/BawalBakla420/stoob-portfolio-site">
+  <a href="https://github.com/LNVStruijk/stoob-portfolio-site">
     <img src="https://media.moddb.com/images/mods/1/31/30173/Moddb_thumg.png" alt="Logo" width="80" height="100">
   </a>
 
@@ -42,12 +42,12 @@
   <p align="center">
     A Windows 95 inspired portfolio website
     <br />
-    <a href="https://github.com/BawalBakla420/stoob-portfolio-site"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/LNVStruijk/stoob-portfolio-site"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://lucasmakesstuff.vercel.app/">View Live Site</a>
+    <a href="https://lucasmakesstuff.com">View Live Site</a>
     ·
-    <a href="https://github.com/BawalBakla420/stoob-portfolio-site/issues">Report Bug</a>
+    <a href="https://github.com/LNVStruijk/stoob-portfolio-site/issues">Report Bug</a>
   </p>
 </div>
 
@@ -82,7 +82,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://lucasmakesstuff.vercel.app/)
+[![Product Name Screen Shot][product-screenshot]](https://lucasmakesstuff.com)
 
 <!--
 Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `github_username`, `repo_name`, `twitter_handle`, `linkedin_username`, `email_client`, `email`, `project_title`, `project_description`
@@ -96,7 +96,6 @@ Here's a blank template to get started: To avoid retyping too much info. Do a se
 
 * [![Next][Next.js]][Next-url]
 * [![React][React.js]][React-url]
-* [![Wordpress][Wordpress.org]][Wordpress-url]
 * [![Best Readme][Best-Readme-Template-Badge]][Best-Readme-Template-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -145,11 +144,12 @@ To get a local copy up and running follow these simple example steps.
 - [x] Featured Content Section
 - [x] About Me and Contact Page Section
 - [x] Filtered Content Sections (Typography, Posters, Paintings etc.)
-- [ ] 🔥 CMS-able content 🔥
+- [ ] Code Cleanup & Revamp (with Image Optimizations)
+- [ ] 🔥 CMS-able content 🔥 (with Google Sheets API)
 - [ ] Live toggle for CRT monitor filter
 - [ ] Improved About Me and Contact Page
 
-See the [open issues](https://github.com/BawalBakla420/stoob-portfolio-site/issues) for a full list of proposed features (and known issues).
+See the [open issues](https://github.com/LNVStruijk/stoob-portfolio-site/issues) for a full list of proposed features (and known issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -158,11 +158,11 @@ See the [open issues](https://github.com/BawalBakla420/stoob-portfolio-site/issu
 <!-- CONTACT -->
 ## Contact
 
-Lucas Struijk (UI/UX Designer, Graphic Designer, Painter) - [@lucas.makes.stuff](https://www.instagram.com/lucas.makes.stuff/) - [Linkedin](https://www.linkedin.com/in/lucas-struijk-3521aa138/) - lucasstruijk@gmail.com
+Lucas Struijk (UI/UX Designer, Graphic Designer, Illustrator & Painter) - [@lucas.makes.stuff](https://www.instagram.com/lucas.makes.stuff/) - [Linkedin](https://www.linkedin.com/in/lucas-struijk-3521aa138/) - lucasstruijk@gmail.com
 
 Andrea Ang (Fullstack Developer, Newbie UI/UX Designer) - [@andybodandy_](https://www.instagram.com/andybodandy_/) - [Linkedin](https://www.linkedin.com/in/andrea-ang-6b160217b/) - andreavillang@gmail.com
 
-Project Link: [https://github.com/BawalBakla420/stoob-portfolio-site](https://github.com/BawalBakla420/stoob-portfolio-site)
+Project Link: [https://github.com/LNVStruijk/stoob-portfolio-site](https://github.com/LNVStruijk/stoob-portfolio-site)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -174,7 +174,7 @@ Project Link: [https://github.com/BawalBakla420/stoob-portfolio-site](https://gi
 [andrea-shield]: https://img.shields.io/badge/Andrea-9F1975?style=for-the-badge&logo=github&logoColor=white
 [andrea-url]: https://github.com/andreavillang
 [lucas-shield]: https://img.shields.io/badge/Lucas-193C9F?style=for-the-badge&logo=github&logoColor=white
-[lucas-url]: https://github.com/BawalBakla420
+[lucas-url]: https://github.com/LNVStruijk
 [forks-shield]: https://img.shields.io/github/forks/github_username/repo_name.svg?style=for-the-badge
 [forks-url]: https://github.com/github_username/repo_name/network/members
 [stars-shield]: https://img.shields.io/github/stars/github_username/repo_name.svg?style=for-the-badge
@@ -193,7 +193,5 @@ Project Link: [https://github.com/BawalBakla420/stoob-portfolio-site](https://gi
 [Next-url]: https://nextjs.org/
 [React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
 [React-url]: https://reactjs.org/
-[Wordpress.org]: https://img.shields.io/badge/Wordpress-AEC5D5?style=for-the-badge&logo=wordpress&logoColor=black
-[Wordpress-url]: https://wordpress.org/
 [Best-Readme-Template-Badge]: https://img.shields.io/badge/readme-1A8F98?style=for-the-badge&logo=github&logoColor=white
 [Best-Readme-Template-url]: https://github.com/othneildrew/Best-README-Template
