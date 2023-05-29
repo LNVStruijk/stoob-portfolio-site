@@ -1,10 +1,11 @@
 @font-face {
-    font-family: 'W95FA';
-    font-style: normal;
-    font-weight: normal;
-    src: url('/fonts/W95FA.otf') format('opentype');
+  font-family: 'W95FA';
+  font-style: normal;
+  font-weight: normal;
+  src: url('/fonts/W95FA.otf') format('opentype');
 }
 
+$retro: "W95FA";
 $default: "W95FA";
 
 $w-mobile: 768px;
