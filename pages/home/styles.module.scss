@@ -1,7 +1,6 @@
-.container {
-  height: 100%;
-
-  .data {
-    display: flex;
-  }
+.cardContainer {
+  display: flex;
+  flex-wrap: wrap;
+  grid-gap: 24px;
+  // justify-content: space-between;
 }

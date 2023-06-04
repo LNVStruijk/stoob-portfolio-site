@@ -30,8 +30,8 @@ const Retro = () => {
         </div>
         <video autoPlay={true} muted className={styles.backgroundVideo}>
           <source
-            src={"/videos/backgroundVideoCompressed.mp4"}
-            type="video/mp4"
+            src='/videos/backgroundVideoCompressed.mp4'
+            type='video/mp4'
           />
         </video>
       </div>

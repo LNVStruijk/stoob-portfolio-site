@@ -2,7 +2,7 @@ import React, { useEffect } from 'react'
 import Head from 'next/head'
 import Router from 'next/router'
 
-export default function Home() {
+export default function Home () {
   useEffect(() => {
     Router.push('/home')
   })
@@ -14,7 +14,7 @@ export default function Home() {
      */
     <>
       <Head>
-        <title>{"Lucas Struijk's Portfolio"}</title>
+        <title>Lucas Struijk&apos;s Portfolio</title>
         <meta
           name="description"
           content="Created by Lucas Struijk and Andrea Ang using Next JS ©2023"
