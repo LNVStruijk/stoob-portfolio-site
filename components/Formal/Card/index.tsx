@@ -3,6 +3,7 @@ import styles from './styles.module.scss'
 
 const Card = ({
   title,
+  categories,
   description,
   year,
   materials,
@@ -13,9 +14,9 @@ const Card = ({
   return (
     <div
       className={styles.container}
-      style={{
-        flex: `1 0 ${size}0%`
-      }}
+      // style={{
+      //   minWidth: size === 'large' ? '649px' : 'none'
+      // }}
     >
       <img
         className={styles.image}
@@ -23,8 +24,17 @@ const Card = ({
         alt={`${title}-card-image`}
       />
       <h3 className={styles.title}>{title}</h3>
-      <p className={styles.description}>{`${materials} - ${year}`}</p>
-      <p className={styles.link}>Click to view</p>
+      <div className={styles.descRow}>
+        <p className={styles.description}>{`${materials} - ${year}`}</p>
+        <p className={styles.link}>Click to view</p>
+      </div>
+      <div className={styles.categories}>
+        {categories.split(', ').map((item, index) => (
+          <p className={styles.category} key={index}>
+            {item}
+          </p>
+        ))}
+      </div>
     </div>
   )
 }

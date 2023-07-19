@@ -4,15 +4,37 @@ import Container from '../../components/Formal/Container'
 import Card from '../../components/Formal/Card'
 import styles from './styles.module.scss'
 
-const Home = ({ data }) => {
+const Home = ({ data, headerData }) => {
+  const {
+    title,
+    subtitle,
+    description,
+    profileImage,
+    contactButton
+  } = headerData[1]
+
   return (
     <Container>
+      <div>
+        <button>{contactButton}</button>
+      </div>
+
+      <div className={styles.headerContainer}>
+        <img src={profileImage} />
+        <div className={styles.text}>
+          <h1>{title}</h1>
+          <h2>{subtitle}</h2>
+          <p>{description}</p>
+        </div>
+      </div>
+
       <div className={styles.cardContainer}>
         {data?.map((item, index) => (
           index !== 0 &&
             <Card
               key={index}
               title={item.title}
+              categories={item.category}
               description={item.description}
               year={item.year}
               materials={item.materialsUsed}
@@ -31,38 +53,57 @@ export async function getServerSideProps () {
 
   const sheets = google.sheets({ version: 'v4', auth })
 
-  const range = 'main!A:H'
-
+  let range = 'main!A:H'
   const res = await sheets.spreadsheets.values.get({
     spreadsheetId: process.env.NEXT_PUBLIC_GOOGLE_SPREADSHEET_ID,
     range
   })
-
   const resData = res.data.values
 
   const data = resData.map(([
+    size,
     category,
     title,
     description,
     materialsUsed,
     year,
-    size,
     linkToImage,
     linkToFull
   ]) => ({
+    size,
     category,
     title,
     description,
     materialsUsed,
     year,
-    size,
     linkToImage,
     linkToFull
   }))
 
+  range = 'header!A:E'
+  const resHeader = await sheets.spreadsheets.values.get({
+    spreadsheetId: process.env.NEXT_PUBLIC_GOOGLE_SPREADSHEET_ID,
+    range
+  })
+  const resHeaderData = resHeader.data.values
+
+  const headerData = resHeaderData.map(([
+    title,
+    subtitle,
+    description,
+    profileImage,
+    contactButton
+  ]) => ({
+    title,
+    subtitle,
+    description,
+    profileImage,
+    contactButton
+  }))
+
   return {
     props: {
-      data
+      data, headerData
     }
   }
 }
