@@ -4,6 +4,7 @@ import styles from './styles.module.scss'
 const Card = ({
   title,
   categories,
+  categoryColors,
   description,
   year,
   materials,
@@ -11,6 +12,7 @@ const Card = ({
   link,
   size
 }) => {
+  console.log(categoryColors.split(', '))
   return (
     <div
       className={styles.container}
@@ -23,17 +25,21 @@ const Card = ({
         src={image} 
         alt={`${title}-card-image`}
       />
-      <h3 className={styles.title}>{title}</h3>
-      <div className={styles.descRow}>
-        <p className={styles.description}>{`${materials} - ${year}`}</p>
-        <p className={styles.link}>Click to view</p>
-      </div>
-      <div className={styles.categories}>
-        {categories.split(', ').map((item, index) => (
-          <p className={styles.category} key={index}>
-            {item}
-          </p>
-        ))}
+      <div className={styles.text}>
+        <h2 className={styles.title}>{title}</h2>
+        <div className={styles.categories}>
+          {categories.split(', ').map((item, index) => (
+            <p
+              className={styles.category}
+              style={{
+                backgroundColor: categoryColors.split(', ')[index]
+              }}
+              key={index}
+            >
+              {item}
+            </p>
+          ))}
+        </div>
       </div>
     </div>
   )

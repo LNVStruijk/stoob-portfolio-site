@@ -34,7 +34,8 @@ const Home = ({ data, headerData }) => {
             <Card
               key={index}
               title={item.title}
-              categories={item.category}
+              categories={item.categories}
+              categoryColors={item.categoryColors}
               description={item.description}
               year={item.year}
               materials={item.materialsUsed}
@@ -53,7 +54,7 @@ export async function getServerSideProps () {
 
   const sheets = google.sheets({ version: 'v4', auth })
 
-  let range = 'main!A:H'
+  let range = 'main!A:I'
   const res = await sheets.spreadsheets.values.get({
     spreadsheetId: process.env.NEXT_PUBLIC_GOOGLE_SPREADSHEET_ID,
     range
@@ -62,7 +63,8 @@ export async function getServerSideProps () {
 
   const data = resData.map(([
     size,
-    category,
+    categories,
+    categoryColors,
     title,
     description,
     materialsUsed,
@@ -71,7 +73,8 @@ export async function getServerSideProps () {
     linkToFull
   ]) => ({
     size,
-    category,
+    categories,
+    categoryColors,
     title,
     description,
     materialsUsed,
