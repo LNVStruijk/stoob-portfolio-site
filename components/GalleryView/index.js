@@ -1,6 +1,8 @@
 import styles from "./GalleryView.module.scss";
 import Image from "next/image";
 
+import adg from "../../public/images/gallery-low-resolution/ArboVooruit_2.gif";
+import xcess from "../../public/images/gallery-low-resolution/XCESS-low-res.gif";
 import meatdiscounter from "../../public/images/gallery-low-resolution/meatdiscounter.gif";
 import hololens from "../../public/images/gallery-low-resolution/leaseplan.gif";
 import trustVPN from "../../public/images/gallery-low-resolution/trustvpn.gif";
@@ -57,7 +59,40 @@ const galleryView = (props) => {
           {/* ROW 1 */}
           <div
             data-tip={
-              '<h1>"Meatdiscounter"</h1> <h4>Sketch, Shopify - 2023</h4> <p>Webshop that delivers premium meat at low prices</p> <p>Aided in overall design, mobile view and countdown timer</p>  <h5>Click to see full demo</h5>'
+              '<h1>"XCESS Website"</h1> <h4>Sketch, Wordpress - 2023</h4> <p>Corporate website for software company.</p> <p>Designed the style, pages and components</p>  <h5>Click to view website</h5>'
+            }
+            data-html={true}
+            className={styles.xcess + " " + styles.images}
+          >
+            <a
+              href="https://www.xcess.nl/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <Image src={xcess} />
+            </a>
+          </div>
+          <div
+            data-tip={
+              '<h1>"ArboVooruit Website"</h1> <h4>Sketch, Wordpress - 2023</h4> <p>Company website of ADG Group.</p> <p>Worked with the brand designer to develop</p> <p> a newer website for their daughter company</p> <h5>Click to view website</h5>'
+            }
+            data-html={true}
+            className={styles.adg + " " + styles.images}
+          >
+            <a
+              href="https://www.arbovooruit.nl/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <Image src={adg} />
+            </a>
+          </div>
+        </div>
+      <div className={styles.flexRow}>
+          {/* ROW 1 */}
+          <div
+            data-tip={
+              '<h1>"Meatdiscounter"</h1> <h4>Sketch, Shopify - 2023</h4> <p>Webshop that delivers premium meat at low prices</p> <p>Aided in overall design, mobile view and countdown timer</p>  <h5>Click to view website</h5>'
             }
             data-html={true}
             className={styles.meat + " " + styles.images}
@@ -72,7 +107,7 @@ const galleryView = (props) => {
           </div>
           <div
             data-tip={
-              '<h1>"Assu CMS Software"</h1> <h4> Figma - 2022</h4> <p>CMS Software catering to insurance companies</p> <p>Aided stakeholders by creating user-centric features</p> <h5>Click to see full demo</h5>'
+              '<h1>"Assu CMS Software"</h1> <h4> Figma - 2022</h4> <p>CMS Software catering to insurance companies</p> <p>Aided stakeholders by creating user-centric features</p> <h5>Click to watch demo</h5>'
             }
             data-html={true}
             className={styles.assuCms + " " + styles.images}
