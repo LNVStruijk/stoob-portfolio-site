@@ -1,5 +1,5 @@
-import styles from "./StickyFooter.module.scss";
-import React from "react";
+import React from 'react'
+import styles from './styles.module.scss'
 
 const StickyFooter = (props) => {
   return (
@@ -11,49 +11,49 @@ const StickyFooter = (props) => {
               <span>START</span>
             </p>
           </div>
-          {props.currentWindow === "Featured Works" ? (
+          {props.currentWindow === 'Featured Works' ? (
             <div className={styles.activeWindow}>
               <p className={styles.notStart}>
                 <span>{props.currentWindow}</span>
               </p>
             </div>
-          ) : props.currentWindow === "About Me" ? (
+          ) : props.currentWindow === 'About Me' ? (
             <div className={styles.activeWindow}>
               <p className={styles.notStart}>
                 <span>{props.currentWindow}</span>
               </p>
             </div>
-          ) : props.currentWindow === "Contact Me" ? (
+          ) : props.currentWindow === 'Contact Me' ? (
             <div className={styles.activeWindow}>
               <p className={styles.notStart}>
                 <span>{props.currentWindow}</span>
               </p>
             </div>
-          ) : props.currentWindow === "About Me" ? (
+          ) : props.currentWindow === 'About Me' ? (
             <div className={styles.activeWindow}>
               <p className={styles.notStart}>
                 <span>{props.currentWindow}</span>
               </p>
             </div>
-          ) :props.currentWindow === "Typography" ? (
+          ) :props.currentWindow === 'Typography' ? (
             <div className={styles.activeWindow}>
               <p className={styles.notStart}>
                 <span>{props.currentWindow}</span>
               </p>
             </div>
-          ) :props.currentWindow === "Posters" ? (
+          ) :props.currentWindow === 'Posters' ? (
             <div className={styles.activeWindow}>
               <p className={styles.notStart}>
                 <span>{props.currentWindow}</span>
               </p>
             </div>
-          ) : props.currentWindow === "Paintings" ? (
+          ) : props.currentWindow === 'Paintings' ? (
             <div className={styles.activeWindow}>
               <p className={styles.notStart}>
                 <span>{props.currentWindow}</span>
               </p>
             </div>
-          ) : props.currentWindow === "Other Works" ? (
+          ) : props.currentWindow === 'Other Works' ? (
             <div className={styles.activeWindow}>
               <p className={styles.notStart}>
                 <span>{props.currentWindow}</span>
@@ -62,13 +62,13 @@ const StickyFooter = (props) => {
           ) :null}
           <div className={styles.nonClickable}>
             <p className={styles.creators}>
-              Created by Lucas Struijk {"&"} Andrea Ang
+              Created by Lucas Struijk {'&'} Andrea Ang
             </p>
           </div>
         </div>
       </div>
     </>
-  );
-};
+  )
+}
 
-export default StickyFooter;
+export default StickyFooter

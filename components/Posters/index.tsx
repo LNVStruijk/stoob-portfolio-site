@@ -1,25 +1,19 @@
-import styles from "./Posters.module.scss";
-import Image from "next/image";
-import Omikuji from "../../public/images/posters-low-res/omikuji.png";
-import Orange from "../../public/images/posters-low-res/orange.png";
-import Shining from "../../public/images/gallery-low-resolution/shining-poster-low.png";
-import Blood from "../../public/images/gallery-low-resolution/blood-poster-low.png";
-import Whiplash from "../../public/images/gallery-low-resolution/whip-poster-low.png";
-import OldBoy from "../../public/images/gallery-low-resolution/old-poster-low.png";
-import Vertigo from "../../public/images/gallery-low-resolution/vertigo-poster-low.png";
-import ReactTooltip from "react-tooltip";
-import React from "react";
+import React from 'react'
+import Image from 'next/image'
+
+import Omikuji from '../../public/images/posters-low-res/omikuji.png'
+import Orange from '../../public/images/posters-low-res/orange.png'
+import Shining from '../../public/images/gallery-low-resolution/shining-poster-low.png'
+import Blood from '../../public/images/gallery-low-resolution/blood-poster-low.png'
+import Whiplash from '../../public/images/gallery-low-resolution/whip-poster-low.png'
+import OldBoy from '../../public/images/gallery-low-resolution/old-poster-low.png'
+import Vertigo from '../../public/images/gallery-low-resolution/vertigo-poster-low.png'
+import ReactTooltip from 'react-tooltip'
+
+import styles from './styles.module.scss'
 
 const Posters = (props) => {
-  const imgSize = 200;
-
-  const dataTip = () => {
-    render(
-      <div>
-        <p>WORDS</p>
-      </div>
-    );
-  };
+  const imgSize = 200
 
   return (
     <>
@@ -38,7 +32,7 @@ const Posters = (props) => {
               target="_blank"
               rel="noreferrer"
             >
-              <Image src={Omikuji} />
+              <Image src={Omikuji} alt='' />
             </a>
           </div>
           <div
@@ -53,7 +47,7 @@ const Posters = (props) => {
               target="_blank"
               rel="noreferrer"
             >
-              <Image src={Orange} />
+              <Image src={Orange} alt='' />
             </a>
           </div>
           {/* <div
@@ -86,7 +80,7 @@ const Posters = (props) => {
               target="_blank"
               rel="noreferrer"
             >
-              <Image src={Shining} />
+              <Image src={Shining} alt='' />
             </a>
           </div>
           <div
@@ -101,7 +95,7 @@ const Posters = (props) => {
               target="_blank"
               rel="noreferrer"
             >
-              <Image src={Blood} />
+              <Image src={Blood} alt='' />
             </a>
           </div>
           <div
@@ -116,7 +110,7 @@ const Posters = (props) => {
               target="_blank"
               rel="noreferrer"
             >
-              <Image src={Whiplash} />
+              <Image src={Whiplash} alt='' />
             </a>
           </div>
         </div>
@@ -134,7 +128,7 @@ const Posters = (props) => {
               target="_blank"
               rel="noreferrer"
             >
-              <Image src={Vertigo} />
+              <Image src={Vertigo} alt='' />
             </a>
           </div>
           <div
@@ -149,7 +143,7 @@ const Posters = (props) => {
               target="_blank"
               rel="noreferrer"
             >
-              <Image src={OldBoy} />
+              <Image src={OldBoy} alt='' />
             </a>
           </div>
         </div>
@@ -160,7 +154,7 @@ const Posters = (props) => {
         <ReactTooltip className={styles.toolTip} />
       </div>
     </>
-  );
-};
+  )
+}
 
-export default Posters;
+export default Posters
