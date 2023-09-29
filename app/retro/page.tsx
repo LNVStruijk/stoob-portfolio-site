@@ -1,3 +1,4 @@
+'use client'
 import React, { useState } from 'react'
 import Shortcut from '../../components/Shortcut'
 import PageWindow from '../../components/PageWindow'

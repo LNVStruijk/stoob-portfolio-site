@@ -1,5 +1,5 @@
-import ReactTooltip from 'react-tooltip'
 import React from 'react'
+import Tooltip from 'react-tooltip'
 import Image from 'next/image'
 
 import Droid from '../../public/images/typography-low-res/droid.png'
@@ -202,7 +202,7 @@ const Typography = (props) => {
             </a>
           </div>
         </div>
-        <ReactTooltip className={styles.toolTip} />
+        <Tooltip className={styles.toolTip} />
       </div>
     </>
   )

@@ -5,50 +5,50 @@
   src: url('/fonts/W95FA.otf') format('opentype');
 }
 
-@font-face {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
-  src: url('/fonts/formal/Roboto-Regular.ttf');
-}
+// @font-face {
+//   font-family: 'Roboto';
+//   font-style: normal;
+//   font-weight: 400;
+//   src: url('/fonts/formal/Roboto-Regular.ttf');
+// }
 
-@font-face {
-  font-family: 'Roboto';
-  font-style: italic;
-  font-weight: 400;
-  src: url('/fonts/formal/Roboto-Italic.ttf');
-}
+// @font-face {
+//   font-family: 'Roboto';
+//   font-style: italic;
+//   font-weight: 400;
+//   src: url('/fonts/formal/Roboto-Italic.ttf');
+// }
 
-@font-face {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 700;
-  src: url('/fonts/formal/Roboto-Bold.ttf');
-}
+// @font-face {
+//   font-family: 'Roboto';
+//   font-style: normal;
+//   font-weight: 700;
+//   src: url('/fonts/formal/Roboto-Bold.ttf');
+// }
 
-@font-face {
-  font-family: 'Roboto';
-  font-style: italic;
-  font-weight: 700;
-  src: url('/fonts/formal/Roboto-BoldItalic.ttf');
-}
+// @font-face {
+//   font-family: 'Roboto';
+//   font-style: italic;
+//   font-weight: 700;
+//   src: url('/fonts/formal/Roboto-BoldItalic.ttf');
+// }
 
-@font-face {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 100;
-  src: url('/fonts/formal/Roboto-Thin.ttf');
-}
+// @font-face {
+//   font-family: 'Roboto';
+//   font-style: normal;
+//   font-weight: 100;
+//   src: url('/fonts/formal/Roboto-Thin.ttf');
+// }
 
-@font-face {
-  font-family: 'Roboto';
-  font-style: italic;
-  font-weight: 100;
-  src: url('/fonts/formal/Roboto-ThinItalic.ttf');
-}
+// @font-face {
+//   font-family: 'Roboto';
+//   font-style: italic;
+//   font-weight: 100;
+//   src: url('/fonts/formal/Roboto-ThinItalic.ttf');
+// }
 
 $retro: "W95FA";
-$default: "Roboto";
+// $default: "Roboto";
 
 $w-mobile: 768px;
 $w-small: 992px;
