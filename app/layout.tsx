@@ -23,15 +23,17 @@ export default function RootLayout({
 
   return (
     <html lang='en'>
-      <body className={roboto.className}>
-        <NextUIProvider>
-          <NextThemesProvider attribute='class' defaultTheme='dark'>
-            <div className='text-foreground bg-background'>
-              <Navbar />
-              {children}
-            </div>
-          </NextThemesProvider>
-        </NextUIProvider>
+      <body>
+        <div className={roboto.className}>
+          <NextUIProvider>
+            <NextThemesProvider attribute='class' defaultTheme='dark'>
+              <div className='text-foreground bg-background'>
+                <Navbar />
+                {children}
+              </div>
+            </NextThemesProvider>
+          </NextUIProvider>
+        </div>
       </body>
     </html>
   )
