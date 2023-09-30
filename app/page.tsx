@@ -1,5 +1,5 @@
 import React from 'react'
-import { Metadata } from 'next'
+import type { Metadata } from 'next/types'
 import { google } from 'googleapis'
 
 import Home from './home/page'
@@ -80,9 +80,7 @@ const getSheetsData = async () => {
 const Page = async () => {
   const sheetsData = await getSheetsData()
 
-  return (
-    <Home headerData={sheetsData.headerData[1]} data={sheetsData.data} />
-  )
+  return <Home headerData={sheetsData.headerData[1]} data={sheetsData.data} />
 }
 
 export default Page

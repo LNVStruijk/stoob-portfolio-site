@@ -5,8 +5,7 @@ const SRC = path.resolve(__dirname, 'node_modules')
 /**
  * @type {import('next').NextConfig}
  */
-const nextConfig = {
-}
+const nextConfig = {}
 
 module.exports = {
   reactStrictMode: true,
