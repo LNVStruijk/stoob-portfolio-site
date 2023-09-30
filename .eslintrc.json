@@ -3,27 +3,31 @@
     "browser": true,
     "es2021": true
   },
-  "extends": [
-    "plugin:react/recommended",
-    "standard-with-typescript"
-  ],
-  "overrides": [
-  ],
+  "extends": ["plugin:react/recommended", "standard-with-typescript", "next"],
+  "overrides": [],
   "parserOptions": {
     "ecmaVersion": "latest",
     "sourceType": "module",
     "project": ["./tsconfig.json"]
   },
-  "plugins": [
-    "react"
-  ],
+  "plugins": ["react"],
   "rules": {
-    "semi": ["error", "never"],
-    "quotes": ["error", "single"],
+    "semi": ["off", "always"],
+    "quotes": ["warn", "single"],
     "@typescript-eslint/strict-boolean-expressions": "off",
     "@typescript-eslint/prefer-nullish-coalescing": "off",
     "@typescript-eslint/explicit-function-return-type": "warn",
     "@typescript-eslint/no-floating-promises": "warn",
-    "react/prop-types": "warn"
+    "@typescript-eslint/indent": "warn",
+    "@typescript-eslint/no-confusing-void-expression": "off",
+    "react/prop-types": "warn",
+    "@typescript-eslint/comma-dangle": "off",
+    "@typescript-eslint/no-unused-vars": "warn",
+    "@typescript-eslint/space-before-function-paren": "off",
+    "@typescript-eslint/block-spacing": "off",
+    "space-in-parens": "off",
+    "@typescript-eslint/object-curly-spacing": "off",
+    "multiline-ternary": "off",
+    "spaced-comment": "off"
   }
 }

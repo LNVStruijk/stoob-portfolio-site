@@ -9,7 +9,7 @@ body {
   padding: 0;
   margin: 0;
   overflow: auto;
-  background-color: #0D0D0D; //commented out for retro
+  background-color: #0d0d0d; //commented out for retro
   //background-image: url('/backgrounds/gallery-background.png');
   background-repeat: no-repeat;
   // background-position: center;
@@ -19,7 +19,14 @@ body {
   -o-background-size: cover;
 }
 
-p,h1,h2,h3,h4,h5,h6, span {
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span {
   margin: 0;
   padding: 0;
 }

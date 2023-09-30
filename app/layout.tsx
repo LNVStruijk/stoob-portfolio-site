@@ -1,23 +1,32 @@
-import { Metadata } from 'next'
+'use client'
+import React from 'react'
+import { Roboto } from 'next/font/google'
+import { NextUIProvider } from '@nextui-org/react'
+import { ThemeProvider as NextThemesProvider } from 'next-themes'
 import '../styles/globals.scss'
 
-export const metadata: Metadata = {
-  title: 'Lucas Struijk\'s Portfolio',
-  description: 'Created by Lucas Struijk and Andrea Ang using Next JS ©2023'
-}
+import Navbar from '../components/Formal/Navbar'
 
-export default function RootLayout({
-  // Layouts must accept a children prop.
-  // This will be populated with nested layouts or pages
-  children,
-}: {
-  children: React.ReactNode
-}) {
+const roboto = Roboto({
+  weight: ['400', '500', '700'],
+  subsets: ['latin'],
+  display: 'swap',
+})
+
+export default function RootLayout( {children}: {children: React.ReactNode} ) {
   return (
     <html lang='en'>
       <body>
-        <div>navbar</div>
-        {children}
+        <div className={roboto.className}>
+          <NextUIProvider>
+            <NextThemesProvider attribute='class' defaultTheme='dark'>
+              <div className='text-foreground bg-background'>
+                <Navbar />
+                {children}
+              </div>
+            </NextThemesProvider>
+          </NextUIProvider>
+        </div>
       </body>
     </html>
   )

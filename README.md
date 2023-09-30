@@ -1,4 +1,5 @@
 <!-- Improved compatibility of back to top link: See: https://github.com/othneildrew/Best-README-Template/pull/73 -->
+
 <a name="readme-top"></a>
 
 <!--
@@ -9,8 +10,6 @@
 *** Thanks again! Now go create something AMAZING! :D
 -->
 
-
-
 <!-- PROJECT SHIELDS -->
 <!--
 *** I'm using markdown "reference style" links for readability.
@@ -19,16 +18,20 @@
 *** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
+
 ### 💻 Contributors
+
 <!-- ![Contributors][contributors-shield] -->
+
 [![Lucas][lucas-shield]][lucas-url]
 [![Andrea][andrea-shield]][andrea-url]
 
 ### 💼 LinkedIn Profiles
+
 <!-- ![LinkedIn][linkedin-shield] -->
+
 [![Lucas][lucas-linkedin-shield]][lucas-linkedin-url]
 [![Andrea][andrea-linkedin-shield]][andrea-linkedin-url]
-
 
 <!-- PROJECT LOGO -->
 <br />
@@ -51,9 +54,7 @@
   </p>
 </div>
 
-
-
-<!-- TABLE OF CONTENTS 
+<!-- TABLE OF CONTENTS
 <details>
   <summary>Table of Contents</summary>
   <ol>
@@ -78,8 +79,8 @@
 </details>
 -->
 
-
 <!-- ABOUT THE PROJECT -->
+
 ## About The Project
 
 [![Product Name Screen Shot][product-screenshot]](https://lucasmakesstuff.com)
@@ -90,26 +91,23 @@ Here's a blank template to get started: To avoid retyping too much info. Do a se
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
-
 ### Built With
 
-* [![Next][Next.js]][Next-url]
-* [![React][React.js]][React-url]
-* [![Best Readme][Best-Readme-Template-Badge]][Best-Readme-Template-url]
+- [![Next][Next.js]][Next-url]
+- [![React][React.js]][React-url]
+- [![Best Readme][Best-Readme-Template-Badge]][Best-Readme-Template-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
-
 <!-- GETTING STARTED -->
+
 ## Getting Started
 
 To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
-* npm
+- npm
   ```sh
   npm install npm@latest -g
   ```
@@ -133,12 +131,10 @@ To get a local copy up and running follow these simple example steps.
    http://localhost:3000
    ```
 
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
-
 <!-- ROADMAP -->
+
 ## Roadmap
 
 - [x] Featured Content Section
@@ -153,23 +149,21 @@ See the [open issues](https://github.com/LNVStruijk/stoob-portfolio-site/issues)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
-
 <!-- CONTACT -->
+
 ## Contact
 
 Lucas Struijk (UI/UX Designer, Graphic Designer, Illustrator & Painter) - [@lucas.makes.stuff](https://www.instagram.com/lucas.makes.stuff/) - [Linkedin](https://www.linkedin.com/in/lucas-struijk-3521aa138/) - lucasstruijk@gmail.com
 
-Andrea Ang (Fullstack Developer, Newbie UI/UX Designer) - [@andybodandy_](https://www.instagram.com/andybodandy_/) - [Linkedin](https://www.linkedin.com/in/andrea-ang-6b160217b/) - andreavillang@gmail.com
+Andrea Ang (Fullstack Developer, Newbie UI/UX Designer) - [@andybodandy\_](https://www.instagram.com/andybodandy_/) - [Linkedin](https://www.linkedin.com/in/andrea-ang-6b160217b/) - andreavillang@gmail.com
 
 Project Link: [https://github.com/LNVStruijk/stoob-portfolio-site](https://github.com/LNVStruijk/stoob-portfolio-site)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
-
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+
 [contributors-shield]: https://img.shields.io/badge/contributors-000000?style=for-the-badge
 [andrea-shield]: https://img.shields.io/badge/Andrea-9F1975?style=for-the-badge&logo=github&logoColor=white
 [andrea-url]: https://github.com/andreavillang

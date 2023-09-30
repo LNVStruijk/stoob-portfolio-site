@@ -1,8 +1,8 @@
 // make class .container
-@import "../../styles/fonts.scss";
+@import '../../styles/fonts.scss';
 
 .crt::before {
-  content: " ";
+  content: ' ';
   display: block;
   position: absolute;
   top: 0;
@@ -17,12 +17,14 @@
       rgba(0, 0, 255, 0.06)
     );
   z-index: 1000;
-  background-size: 100% 5px, 5px 100%;
+  background-size:
+    100% 5px,
+    5px 100%;
   pointer-events: none;
 }
 
 .crt::after {
-  content: " ";
+  content: ' ';
   display: block;
   position: absolute;
   top: 0;
@@ -61,7 +63,7 @@
     align-items: center;
     justify-content: center;
     gap: 16px;
-    background-color: rgba(0,0,0,0.7);
+    background-color: rgba(0, 0, 0, 0.7);
     padding: 8px 16px;
 
     @media (max-width: 1023px) {
