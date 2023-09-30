@@ -1,10 +1,10 @@
-import { Metadata } from 'next'
+'use client'
+import React, { useState } from 'react'
+import { NextUIProvider } from '@nextui-org/react'
+import { ThemeProvider as NextThemesProvider } from 'next-themes'
 import '../styles/globals.scss'
 
-export const metadata: Metadata = {
-  title: 'Lucas Struijk\'s Portfolio',
-  description: 'Created by Lucas Struijk and Andrea Ang using Next JS ©2023'
-}
+import Navbar from '../components/Formal/Navbar'
 
 export default function RootLayout({
   // Layouts must accept a children prop.
@@ -13,11 +13,19 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
+  const [theme, setTheme] = useState<boolean>(true)
+
   return (
     <html lang='en'>
       <body>
-        <div>navbar</div>
-        {children}
+        <NextUIProvider>
+          <NextThemesProvider attribute='class' defaultTheme='dark'>
+            <div className='text-foreground bg-background'>
+              <Navbar />
+              {children}
+            </div>
+          </NextThemesProvider>
+        </NextUIProvider>
       </body>
     </html>
   )

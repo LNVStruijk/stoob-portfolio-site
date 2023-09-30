@@ -1,13 +1,13 @@
-const path = require('path');
+const path = require('path')
 
-const SRC = path.resolve(__dirname, 'node_modules');
+const SRC = path.resolve(__dirname, 'node_modules')
 
 module.exports = {
   reactStrictMode: true,
-};
+}
 
-const withImages = require("next-images");
-module.exports = withImages();
+const withImages = require('next-images')
+module.exports = withImages()
 
 module.exports = {
   images: {
@@ -23,18 +23,18 @@ module.exports = {
         test: /.(png|jpe?g|gif)$/i,
         use: [
           {
-            loader: "file-loader",
+            loader: 'file-loader',
           },
         ],
       },
       {
         test: /.mp3$/,
         include: SRC,
-        loader: 'file-loader'
-      }
+        loader: 'file-loader',
+      },
     ],
   },
-};
+}
 
 module.exports = {
   exportPathMap: async function (

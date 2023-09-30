@@ -1,4 +1,5 @@
 import React from 'react'
+import cn from 'classnames'
 import styles from './styles.module.scss'
 
 const Card = ({
@@ -10,21 +11,11 @@ const Card = ({
   materials,
   image,
   link,
-  size
+  size,
 }) => {
-  console.log(categoryColors.split(', '))
   return (
-    <div
-      className={styles.container}
-      // style={{
-      //   minWidth: size === 'large' ? '649px' : 'none'
-      // }}
-    >
-      <img
-        className={styles.image}
-        src={image} 
-        alt={`${title}-card-image`}
-      />
+    <div className={cn(styles.container, 'shadow-lg dark:shadow-gray-800')}>
+      <img className={styles.image} src={image} alt={`${title}-card-image`} />
       <div className={styles.text}>
         <h2 className={styles.title}>{title}</h2>
         <div className={styles.categories}>
@@ -32,7 +23,7 @@ const Card = ({
             <p
               className={styles.category}
               style={{
-                backgroundColor: categoryColors.split(', ')[index]
+                backgroundColor: categoryColors.split(', ')[index],
               }}
               key={index}
             >

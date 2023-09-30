@@ -1,24 +1,18 @@
 'use client'
-import React, { useState } from 'react'
-import Shortcut from '../../components/Shortcut'
-import PageWindow from '../../components/PageWindow'
-import StickyFooter from '../../components/StickyFooter'
+import React from 'react'
+// import Shortcut from '../../components/Retro/Shortcut'
+// import PageWindow from '../../components/Retro/PageWindow'
+// import StickyFooter from '../../components/Retro/StickyFooter'
 import styles from './styles.module.scss'
 
 const Retro = () => {
-  /**
-   * constant that updates itself automatically using SET method of itself
-   * useState() = checks for change in 'state' in website then updates the constant value automatically
-   * useState is where you put DEFAULT value
-   * https://reactjs.org/docs/hooks-state.html
-   */
-  const [isGalleryVisible, setIsGalleryVisible] = useState(true)
-  const [isAboutMeVisible, setIsAboutMeVisible] = useState(false)
-  const [isContactMeVisible, setIsContactMeVisible] = useState(false)
-  const [isTypographyVisible, setTypographyVisible] = useState(false)
-  const [isPostersVisible, setPostersVisible] = useState(false)
-  const [isPaintingsVisible, setPaintingsVisible] = useState(false)
-  const [isOtherWorksVisible, setOtherWorksVisible] = useState(false)
+  // const [isGalleryVisible, setIsGalleryVisible] = useState(true)
+  // const [isAboutMeVisible, setIsAboutMeVisible] = useState(false)
+  // const [isContactMeVisible, setIsContactMeVisible] = useState(false)
+  // const [isTypographyVisible, setTypographyVisible] = useState(false)
+  // const [isPostersVisible, setPostersVisible] = useState(false)
+  // const [isPaintingsVisible, setPaintingsVisible] = useState(false)
+  // const [isOtherWorksVisible, setOtherWorksVisible] = useState(false)
 
   return (
     <div className={styles.crt}>

@@ -1,0 +1,79 @@
+@import '../../styles/fonts.scss';
+
+.container {
+  border-top: 0.35rem solid #000064;
+  border-left: 0.35rem solid #000064;
+  border-right: 0.35rem solid #b9a2ec;
+  border-bottom: 0.35rem solid #b9a2ec;
+
+  max-height: calc(100vh - 12rem);
+  padding: 1rem;
+  overflow-y: scroll;
+
+  background-image: url('../../public/backgrounds/gallery-background.png');
+  background-size: 80rem;
+  background-repeat: no-repeat;
+
+  @media #{$mq-mobile} {
+    border-top: 0.25rem solid #000064;
+    border-left: 0.25rem solid #000064;
+    border-right: 0.25rem solid #b9a2ec;
+    border-bottom: 0.25rem solid #b9a2ec;
+  }
+
+  .texture {
+    transform: scale(0.2);
+    opacity: 0.5;
+    // z-index: 1;
+    position: absolute;
+  }
+
+  .images {
+    margin: 1rem;
+    // z-index: 2;
+    box-shadow: 1rem 0.75rem 0.8rem 0.25rem #1b1b1b;
+    background-color: #1b1b1b;
+
+    @media #{$mq-mobile} {
+      margin: 0.5rem;
+    }
+  }
+
+  .images:hover {
+    margin: 2.5rem;
+    transform: scale(1.1);
+  }
+
+  .flexRow {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-around;
+
+    @media #{$mq-mobile} {
+      display: block;
+    }
+  }
+
+  .toolTip {
+    line-height: 1.5rem;
+    text-align: center;
+    border: 0.05rem solid white;
+    background-color: #01019eaf;
+    color: white;
+    font-size: 1rem;
+    // width: 11rem;
+  }
+
+  .omikuji {
+    flex: 0.5;
+  }
+
+  .orange {
+    flex: 0.5;
+  }
+
+  .punShirts {
+    flex: 0.4;
+  }
+}

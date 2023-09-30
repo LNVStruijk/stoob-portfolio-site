@@ -1,0 +1,63 @@
+@import '../../styles/fonts.scss';
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  text-align: left;
+  font-size: 1.2rem;
+  text-shadow: 0.15rem 0.15rem #1b1b1b;
+  padding: 0.2rem;
+  background: linear-gradient(180deg, #00009b 0%, #926ce2 100%);
+  border-top: 0.25rem solid #b9a2ec;
+
+  .notStart {
+    font-size: 1rem;
+    padding-right: 2rem;
+  }
+}
+
+.taskWindow {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  align-items: center;
+
+  .creators {
+    text-align: end;
+    font-size: 1rem;
+  }
+
+  p {
+    span {
+      margin-left: 0.25rem;
+      padding-right: 00.5rem;
+      padding-left: 0.5rem;
+    }
+  }
+}
+
+.nonClickable {
+  flex: 5;
+  align-items: center;
+}
+
+.activeWindow {
+  background-color: #000064;
+  border-top: 0.2rem solid #000020;
+  border-left: 0.2rem solid #000020;
+  border-right: 0.2rem solid #b9a2ec;
+  border-bottom: 0.2rem solid #b9a2ec;
+  margin-right: 0.25rem;
+  padding: 0.12rem;
+}
+
+.inactiveWindow {
+  border-top: 0.2rem solid #b9a2ec;
+  border-left: 0.2rem solid #b9a2ec;
+  border-right: 0.2rem solid #000064;
+  border-bottom: 0.2rem solid #000064;
+  margin-right: 0.25rem;
+}

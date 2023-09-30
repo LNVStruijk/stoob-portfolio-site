@@ -1,0 +1,142 @@
+@import '../../styles/fonts.scss';
+
+.container {
+  // position: absolute;
+  // left: 0;
+  // top: 0;
+  display: flex;
+  justify-content: center;
+
+  // width: 100%;
+  // height: 100%;
+}
+
+.largeWidth {
+  max-width: calc(100vw - 1rem);
+  // max-height: calc(100vh - 20rem);
+}
+
+.aboutMeWidth {
+  max-width: calc(100vw - 1rem);
+
+  @media #{$mq-mobile} {
+    max-width: calc(100vw - 1rem);
+  }
+}
+
+.smallWidth {
+  width: 20rem;
+}
+
+.content {
+  margin: 2rem auto;
+  padding: 0.5rem;
+
+  .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    margin-left: 0.2rem;
+    margin-bottom: 0.2rem;
+
+    .pageTitle {
+      align-items: center;
+      display: flex;
+    }
+
+    h1 {
+      font-size: 1.5rem;
+      align-items: center;
+
+      @media #{$mq-mobile} {
+        font-size: 1rem;
+      }
+    }
+
+    .image {
+      width: 2rem;
+
+      @media #{$mq-mobile} {
+        height: 1.5rem;
+        width: 1.5rem;
+      }
+    }
+  }
+}
+
+.galleryBackground {
+  background: linear-gradient(180deg, #00009b 0%, #926ce2 100%);
+  border-top: 0.35rem solid #9d9df5;
+  border-left: 0.35rem solid #9d9df5;
+  border-right: 0.35rem solid #00002f;
+  border-bottom: 0.35rem solid #00002f;
+
+  width: 80rem;
+
+  @media #{$mq-mobile} {
+    border-top: 0.25rem solid #9d9df5;
+    border-left: 0.25rem solid #9d9df5;
+    border-right: 0.25rem solid #00002f;
+    border-bottom: 0.25rem solid #00002f;
+  }
+}
+
+.aboutMeBackground {
+  //background: #969696;
+  background: linear-gradient(135deg, #414141 0%, #c3c3c3 100%);
+  border-top: 0.35rem solid #ebebeb;
+  border-left: 0.35rem solid #ebebeb;
+  border-right: 0.35rem solid #2c2c2c;
+  border-bottom: 0.35rem solid #2c2c2c;
+}
+
+.contactMeBackground {
+  background: linear-gradient(180deg, #412b17 0%, #bcbcbc 100%);
+  border-top: 0.35rem solid #956c49;
+  border-left: 0.35rem solid #956c49;
+  border-right: 0.35rem solid #312011;
+  border-bottom: 0.35rem solid #312011;
+
+  width: 40rem;
+}
+
+.TypographyBackground {
+  background: linear-gradient(180deg, #00009b 0%, #926ce2 100%);
+  border-top: 0.35rem solid #9d9df5;
+  border-left: 0.35rem solid #9d9df5;
+  border-right: 0.35rem solid #00002f;
+  border-bottom: 0.35rem solid #00002f;
+
+  width: 80rem;
+}
+
+.PostersBackground {
+  background: linear-gradient(180deg, #00009b 0%, #926ce2 100%);
+  border-top: 0.35rem solid #9d9df5;
+  border-left: 0.35rem solid #9d9df5;
+  border-right: 0.35rem solid #00002f;
+  border-bottom: 0.35rem solid #00002f;
+
+  width: 80rem;
+}
+
+.PaintingsBackground {
+  background: linear-gradient(180deg, #00009b 0%, #926ce2 100%);
+  border-top: 0.35rem solid #9d9df5;
+  border-left: 0.35rem solid #9d9df5;
+  border-right: 0.35rem solid #00002f;
+  border-bottom: 0.35rem solid #00002f;
+
+  width: 80rem;
+}
+
+.OtherWorksBackground {
+  background: linear-gradient(180deg, #00009b 0%, #926ce2 100%);
+  border-top: 0.35rem solid #9d9df5;
+  border-left: 0.35rem solid #9d9df5;
+  border-right: 0.35rem solid #00002f;
+  border-bottom: 0.35rem solid #00002f;
+
+  width: 80rem;
+}
