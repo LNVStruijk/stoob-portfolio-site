@@ -1,3 +1,6 @@
+/**
+ * @type {import('next').NextConfig}
+ */
 const path = require('path')
 
 const SRC = path.resolve(__dirname, 'node_modules')
@@ -33,16 +36,5 @@ module.exports = {
         loader: 'file-loader',
       },
     ],
-  },
-}
-
-module.exports = {
-  exportPathMap: async function (
-    defaultPathMap,
-    { dev, dir, outDir, distDir, buildId }
-  ) {
-    return {
-      '/': { page: '/' },
-    }
   },
 }
