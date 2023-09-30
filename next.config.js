@@ -1,9 +1,12 @@
-/**
- * @type {import('next').NextConfig}
- */
 const path = require('path')
 
 const SRC = path.resolve(__dirname, 'node_modules')
+
+/**
+ * @type {import('next').NextConfig}
+ */
+const nextConfig = {
+}
 
 module.exports = {
   reactStrictMode: true,
@@ -37,4 +40,9 @@ module.exports = {
       },
     ],
   },
+  eslint: {
+    dirs: ['app', 'components', 'utils', 'lib'], // Only run ESLint on the 'pages' and 'utils' directories during production builds (next build)
+  },
 }
+
+module.exports = nextConfig
